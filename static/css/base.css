@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+body {
+    font-family: 'Satisfy', cursive;
+    overflow-x: hidden;
+    color: black;
+    
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: 2;
+}
+
+.landing-page {
+        background: url('/media/kesaralmond-shampoo.jpg') no-repeat center center fixed;
+        color: blue;
+        background-size: cover;
+        margin-bottom: 4.5rem;
+        height: calc(100vh - 164px);
+        
+        
+    }
+    .landing-page-content {
+        margin-top: 20rem;
+        color:blue;
+    }
+
+    .nav-link-main {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        font-size: 1.3rem;
+    }
+    .nav-center {
+        margin-top: .7rem;
+    }
+    
