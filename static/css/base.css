@@ -5,6 +5,7 @@ body {
     font-family: 'Satisfy', cursive;
     overflow-x: hidden;
     color: black;
+    height: 100%;
     
 }
 html {
@@ -76,12 +77,13 @@ html {
 	z-index: 2;
 }
 
+
 .landing-page {
-        background: url('/media/kesaralmond-shampoo.jpg') no-repeat center center fixed;
-        color: blue;
+        background: url('/media/home_page/landing-page.jpg') no-repeat center center fixed;
+        
         background-size: cover;
         margin-bottom: 4.5rem;
-        height: calc(100vh - 164px);
+        height: 800px;
         
         
     }
@@ -98,4 +100,14 @@ html {
     .nav-center {
         margin-top: .7rem;
     }
+
+.div-product-card-img{
+    margin-left: 50px;
+}
     
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 100%;
+    }
+  }
