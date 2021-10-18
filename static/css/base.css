@@ -153,7 +153,100 @@ html {
     transition: none;
     opacity: unset;
 }
-    
+
+.contact-container {
+    background: url("/static/images/home_page/contact.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.ct-contact {
+    background-color: white;
+}
+
+footer,
+header,
+section {
+    display: block;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    transition: all 0.25s ease-in-out;
+    color: #b75d69;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+/** Disable default decorations for Links **/
+a:focus,
+a:hover,
+a:active {
+    outline: none !important;
+    text-decoration: none !important;
+    border: 0 !important;
+    color: #daa9af;
+}
+
+/** Footer **/
+
+.footer-all {
+    background-color: #774c60;
+    color: white;
+}
+
+.footer-title {
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-corporate-list > li > a {
+    color: white;
+}
+
+.footer-corporate-list > li > a:hover {
+    color: #eacdc2;
+}
+
+.footer-corporate-list {
+    columns: 2;
+    break-inside: avoid;
+}
+
+.second-footer-panel {
+    background: #372549;
+}
+
+ul#social-icon li {
+    display: inline;
+}
+
+ul#social-icon {
+    padding-left: 0px !important;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+ul#social-icon a {
+    color: white;
+}
+
+ul#social-icon a:hover {
+    color: #eacdc2;
+}
+
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
