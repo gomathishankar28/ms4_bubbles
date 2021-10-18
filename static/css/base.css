@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 
 
 body {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Akaya Telivigala', cursive;
     overflow-x: hidden;
     color: black;
     height: 100%;
@@ -74,7 +74,7 @@ html {
 	left: 0;
 	position: fixed;
 	background: white;
-	z-index: 2;
+	z-index: -1;
 }
 
 
@@ -172,6 +172,8 @@ section {
     display: block;
 }
 
+
+
 ul,
 li {
     list-style-type: none;
@@ -198,55 +200,127 @@ a:active {
     color: #daa9af;
 }
 
-/** Footer **/
+/* Allauth form formatting */
 
-.footer-all {
-    background-color: #774c60;
-    color: white;
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
 }
 
-.footer-title {
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em;
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+
+/*------ Footer ------*/
+
+footer {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    min-height: 130px;
+    margin-top: 4rem;
+}
+
+.footer-link {
     text-transform: uppercase;
-    font-weight: bold;
+    display: block;
+    color: var(--color-white);
+    padding: .2rem;
 }
 
-.footer-corporate-list > li > a {
-    color: white;
+.footer-link:hover {
+    text-decoration: underline;
+    color: var(--color-white);
 }
 
-.footer-corporate-list > li > a:hover {
-    color: #eacdc2;
+.footer-link-brand {
+    text-transform: none;
 }
 
-.footer-corporate-list {
-    columns: 2;
-    break-inside: avoid;
+footer p {
+    margin-bottom: 0;
 }
 
-.second-footer-panel {
-    background: #372549;
+.footer-row {
+    padding-top: 35px;
+    margin: 0;
 }
 
-ul#social-icon li {
-    display: inline;
+.mb-7 {
+    margin-bottom: 7px;
 }
 
-ul#social-icon {
-    padding-left: 0px !important;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+.div-footer-some {
+    width: 27px;
+    display: inline-block;
+    font-size: 1.7rem;
 }
 
-ul#social-icon a {
-    color: white;
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
 }
 
-ul#social-icon a:hover {
-    color: #eacdc2;
+.div-footer-some:hover {
+    border-bottom: 1px solid var(--color-white);
 }
 
+.fa-youtube-square:before,
+.fa-pinterest-p:before,
+.fa-instagram:before,
+.fa-facebook-f:before {
+    color: var(--color-white);
+}
+
+#footer {
+    bottom: 0;
+    position: relative;
+
+}
 .mobile-logo {
     margin-left: 80px;
 }
