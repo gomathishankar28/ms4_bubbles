@@ -254,6 +254,8 @@ a:active {
 	color: #17a2b8; /* text-info */
 }
 
+/* Product Form -widgets */
+
 
 /*------ Footer ------*/
 
@@ -324,6 +326,153 @@ footer p {
 .mobile-logo {
     margin-left: 80px;
 }
+
+/*------ Products Page ------*/
+
+.logo-font {
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    color: var(--color-olive);
+    font-weight: 600;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-top: 1.3rem;
+    padding-bottom: 1.1rem;
+    text-transform: uppercase;
+}
+
+.row-products {
+    background-color: var(--color-light-green);
+}
+
+.offset-1 {
+    margin-top: 2.5rem;
+}
+
+.head-flowers {
+    width: 11.5rem;
+}
+
+/*------ Products Page/Sort By Box ------*/
+
+#sort-selector {
+    height: 45px;
+    width: 250px;
+    border: var(--border-black);
+    color: var(--color-black);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 5%;
+    outline: none;
+}
+
+.dropdown-sort-products {
+    margin-top: 37px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+/*------ Products Page/breadcrumbs------*/
+
+.breadcrumbs {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.breadcrumb-link, .breadcrumb-link:hover {
+    color: var(--color-green);
+    margin: 3px;
+}
+
+.active-breadcrumb {
+    color: var(--color-black);
+    margin: 3px;
+}
+
+.breadcrumbs-text {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+/*------ Products Details Page ------*/
+
+#accordion {
+    margin: 35px auto 50px auto;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: var(--color-white);
+    border-bottom: var(--border-black);
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.btn-link:hover {
+    color: var(--color-black);
+}
+
+.product-details-additional {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 18px;
+    width: fit-content;
+    display: block;
+    float: left;
+    color: var(--color-black);
+}
+
+.accordion-card-paragraph {
+    font-size: 14px;
+    line-height: 170%;
+}
+
+/*------ Empty Cart Page ------*/
+
+.empty-cart {
+    margin: auto;
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs-text-cart {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-left: 5rem;
+}
+
+/*------ Shopping Cart ------*/
+
+.div-line-item {
+    margin: 0 auto 50px auto;
+    max-width: 825px;
+    border: var(--border-black);
+    display: flex;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.input-group-product-quantity {
+    border: var(--border-black);
+    width: 120px;
+}
+
+.update-link ,.remove-item {
+    cursor: pointer;
+}
+
+.remove-item {
+    padding-left: 3.5rem;
+}
+
+.form-group-buttons {
+    margin-bottom: .3rem;
+}
+
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {

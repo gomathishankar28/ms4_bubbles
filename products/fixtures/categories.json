@@ -1,0 +1,7 @@
+[
+{"pk": 1, "model": "products.category", "fields": {"name": "bubblebath", "friendly_name": "BubbleBath"}}, 
+{"pk": 2, "model": "products.category", "fields": {"name": "bathbombs", "friendly_name": "BathBombs"}}, 
+{"pk": 3, "model": "products.category", "fields": {"name": "conditioners", "friendly_name": "Conditioners"}}, 
+{"pk": 4, "model": "products.category", "fields": {"name": "shampoos", "friendly_name": "Shampoos"}},
+{"pk": 5, "model": "products.category", "fields": {"name": "soaps", "friendly_name": "Soaps"}}
+]

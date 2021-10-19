@@ -1,0 +1,57 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000001",
+            "name": "Agave Lime Soap",
+            "description": "Agave Lime sea salt soap is a palm-free cold process scented salt soap bar with spa citric notes, musk, and sandalwood. Made with moisturizing organic virgin coconut oil and regenerative virgin wheat germ oil along with mild exfoliating European sea salt. Handmade soap formulated for men and women of all skin types, including sensitive skin.",
+            "price": 2.99,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": null,
+            "image": "agavelime-soap.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000002",
+            "name": "Almond & Oatmilk soap",
+            "description": "Agave Lime sea salt soap is a palm-free cold process scented salt soap bar with spa citric notes, musk, and sandalwood. Made with moisturizing organic virgin coconut oil and regenerative virgin wheat germ oil along with mild exfoliating European sea salt. Handmade soap formulated for men and women of all skin types, including sensitive skin.",
+            "price": 3.99,
+            "category": 5,
+            "rating": 4.8,
+            "image_url": null,
+            "image": "almond-oatmilk-soap.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000003",
+            "name": "Aloevera soap",
+            "description":"Featuring a beautiful contrast of white and brown  hand-finished wood, this side table is a chic accent for any space. Slight variation in natural wood may occur. Sealed with clear lacquer for protection Wipe clean with soft cloth. Avoid chemical cleaners This piece is intended for indoor use. Imported.Dimensions: Overall: 20.75, 16 diameter Table Top Thickness: 0.5.",
+            "price": 2.59,
+            "category": 5,
+            "rating": 4.8,
+            "image_url": null,
+            "image": "aloevera-soap.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000004",
+            "name": "Cafe soap",
+            "description": "Our beautiful cushion from the Lupia series is made from 100% cotton and comes with a decorative embroidered floral design. The design is inspired by the colorful Lupinus flower. Embroidered on an off white cotton background. Besides the decorative design with the Lupinus flowers, the cotton makes the cushion soft as silk.",
+            "price": 19.99,
+            "category": 2,
+            "rating": 4.3,
+            "image_url": null,
+            "image": "cafe-soap.jpg"
+        }
+    }]

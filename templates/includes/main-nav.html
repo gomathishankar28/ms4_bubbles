@@ -15,17 +15,17 @@
                 <a href="" class="dropdown-item ">Conditioner</a>
                 <a href="" class="dropdown-item ">Shampoos</a>
                 <a href="" class="dropdown-item ">Soaps</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link-main" href="">About</a>
+            <a class="nav-link-main" href="{% url 'home' %}#about">About</a>
         </li>
         <li class="nav-item">
             <a class="nav-link-main" href="">Blog</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link-main" href="">Contact</a>
+            <a class="nav-link-main" href="{% url 'home' %}#contact">Contact</a>
         </li>
     </ul>
 </div>
