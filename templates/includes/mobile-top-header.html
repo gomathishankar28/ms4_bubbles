@@ -37,8 +37,8 @@
         <div class="dropdown-menu border-0" aria-labelledby="user-optionsm">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-            <a href="" class="dropdown-item">Product Management</a>
-            <a href="" class="dropdown-item">Blog Management</a>
+            <a href="" class="dropdown-item">Manage Products</a>
+            <a href="" class="dropdown-item">Manage Blogs</a>
             {% endif %}
             <a href="" class="dropdown-item">My Profile</a>
             <a href="" class="dropdown-item">Logout</a>
@@ -59,10 +59,4 @@
     </li>
     </ol>
 
-    <div class="text-center mobile-logo">
-        <a class="text-black nav-link d-block d-lg-none" href="{% url 'home' %}">
-            <h1>
-                Bubbles
-            </h1>
-        </a>
-    <div>
+   
