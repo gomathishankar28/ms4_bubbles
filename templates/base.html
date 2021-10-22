@@ -47,7 +47,7 @@
     <header class="container-fluid">
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h4 class="logo-font-banner my-1 wow SlideInLeft">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+                <h4 class="logo-font-banner my-1 wow slideInLeft">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
             </div>
         </div>
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
@@ -94,7 +94,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item mx-2">
-                        <a href="" class="shopping-cart-icon">
+                        <a href="{% url 'view_bag' %}" class="shopping-cart-icon">
                             <i class="fas fa-shopping-basket"></i>
                             {% if bag_items %}
                             <span class="badge rounded-pill">{{ product_count }}</span>

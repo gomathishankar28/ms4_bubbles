@@ -50,7 +50,7 @@
     </li>
     <!--- shopping cart --->
     <li class="list-inline-item">
-        <a href="" class="shopping-cart-icon nav-link d-block d-lg-none">
+        <a href="{% url 'view_bag' %}" class="shopping-cart-icon nav-link d-block d-lg-none">
             <i class="fas fa-shopping-basket"></i>
             {% if bag_items %}
             <span class="badge rounded-pill">{{ product_count }}</span>
