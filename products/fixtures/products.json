@@ -108,7 +108,7 @@
             "category": 5,
             "rating": 4.8,
             "image_url": null,
-            "image": "honey-milk-soap.jpeg"
+            "image": "milk-honey-soap.jpeg"
         }
    },
    {
@@ -122,7 +122,7 @@
             "category": 5,
             "rating": 4.9,
             "image_url": null,
-            "image": "orangezest-soap.jpeg"
+            "image": "orangezest-soap.jpg"
         }
    },
    {
@@ -164,7 +164,7 @@
             "category": 5,
             "rating": 4.4,
             "image_url": null,
-            "image": "shea-soap.png"
+            "image": "shea-soap.jpg"
         }
    },
 {
@@ -220,7 +220,7 @@
             "category": 4,
             "rating": 4.8,
             "image_url": null,
-            "image": "jasmijn-shampoo.jpg"
+            "image": "jasmijn-Shampoo.jpg"
         }
     },
     {
@@ -248,7 +248,7 @@
             "category": 4,
             "rating": 4.7,
             "image_url": null,
-            "image": "kaneel-shampoo.jpg"
+            "image": "kaneel-Shampoo.jpg"
         }
     },
     {
@@ -276,7 +276,7 @@
             "category": 4,
             "rating": 4.0,
             "image_url": null,
-            "image": "kiwi-shampoo.jpg"
+            "image": "papaya-cherry-shampoo.jpg"
         }
    },
    {
@@ -290,7 +290,7 @@
             "category": 4,
             "rating": 4.6,
             "image_url": null,
-            "image": "lavendel-shampoo.jpg"
+            "image": "lavendel-Shampoo.jpg"
         }
    },
    {
@@ -319,6 +319,90 @@
             "rating": 4.9,
             "image_url": null,
             "image": "mango-coco-shampoo.jpg"
+        }
+   },
+   {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000057",
+            "name": "Vanilla Shampoo Bar",
+            "description": "This shampoo bar with cocoa butter, hemp seed oil, avocado oil and coconut milk, and vanilla oil nourishes the hair and is gentle on the skin. This hair soap is suitable for all hair types.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "vanilla-shampoo.jpg"
+        }
+   },
+   {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000058",
+            "name": "Eucalyptus Shampoo Bar",
+            "description": "Like stepping into a spa! With our Shampoo Bar Eucalyptus you create a wellness experience in addition to a sustainable shower experience. The delicious and special scent of Eucalyptus is refreshing and stimulates your senses.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "eucalyptus-shampoo.jpg"
+        }
+   },
+   {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000059",
+            "name": "Turmeric Late Shampoo Bar",
+            "description": "This canele features an anti-fungal and anti-inflammatory recipe blend of Organic Turmeric, Tea tree and Moroccan Lava Clay to help combat scalp issues related to itching, hair loss and scales caused by dandruff.This shampoo is best suited for those with dyed hair looking to enhance its colour durability.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "turmericlate-shampoo.jpg"
+        }
+   },
+   {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000060",
+            "name": "Citron Shampoo Bar",
+            "description": "Fresh lemons! You see it, you smell it and you feel it! Specially developed for strands that become greasy earlier. This will make you happy!",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "citron-shampoo.jpg"
+        }
+   },
+   {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000061",
+            "name": "Teatree Shampoo Bar",
+            "description": "For the real Tea Tree lovers, this is the Shampoo Bar. The intense natural Tea Tree scent is so unique that this is one of our most special Shampoo Bars.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "teatree-shampoo.jpg"
+        }
+   },
+   {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000062",
+            "name": "Kiwi Shampoo Bar",
+            "description": "The Shampoo Bar Kiwi smells fresh, sweet and looks delicious. For clean, fresh & fruity hair!",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "kiwi-shampoo.jpg"
         }
    },
    {
@@ -584,7 +668,7 @@
             "category": 2,
             "rating": 4.9,
             "image_url": null,
-            "image": "starynights.png"
+            "image": "starynights-bomb.png"
         }
    },
    {
@@ -609,10 +693,10 @@
             "name": "Alien BubbleBar",
             "description": "Prepare to be transported to another world with mountains of uplifting and zesty bubbles. New dimensions await as neon waters refresh and revive with uplifting bergamot and litsea cubeba.Crumble a little or the whole thing under running water for juicy, fruity neon water and out of this world bubbles.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "alien-bubble.png"
+            "image": "Alien-bubble.png"
         }
    },
    {
@@ -623,7 +707,7 @@
             "name": "Apple BubbleBar",
             "description": "Crumble a little, a lot, or the whole thing under the tap as you run the bath. Climb in to enjoy fluffy bubbles and blush-coloured waters.This makes you think of a nice cold glass of apple and raspberry flavoured sparkling water on a hot summers' day..",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
             "image": "apple-bubble.png"
@@ -637,10 +721,10 @@
             "name": "Citrus BubbleBar",
             "description": "Break half and crumble under the running water to create mountains of juicy bubbles. Save the other half for next time.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "citrus-bubble.png"
+            "image": "citrus-bubbles.png"
         }
    },
     {
@@ -651,10 +735,10 @@
             "name": "Bluesky BubbleBar",
             "description": "For those who don't much like the floral or citrus smells, this one is for you. It's what we would call a fresh, almost masculine smell making plenty of bubbles and giving water a lovely pale blue.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "citrus-bubble.png"
+            "image": "bluesky-bubbles.png"
         }
    },
  {
@@ -665,10 +749,10 @@
             "name": "Bottle BubbleBar",
             "description": "You can use this bubble bottle over, and over, and over again. Hold under the tap for mountains of bubbles, then save for when you’re ready to summon splendid suds all over again. Best used fres",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "bottle-bubble.png"
+            "image": "bottle-bubbles.png"
         }
    },
     {
@@ -679,10 +763,10 @@
             "name": "Candycane BubbleBar",
             "description": "This year's Candy Cane has a new look and a new scent. Refreshing minty bubbles atop candy pink waters, use to decorate your tree before whipping up foam in 3-4 plastic-free bubble baths.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "ccandycane-bubble.png"
+            "image": "candycane-bubbles.png"
         }
    },
     {
@@ -693,10 +777,10 @@
             "name": "Castle BubbleBar",
             "description": "Crumble a little, or a lot, of this castle under running water and create your own clouds of bubbles.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "castle-bubble.png"
+            "image": "castle-bubbles.png"
         }
    },
    {
@@ -707,10 +791,10 @@
             "name": "Kitty BubbleBar",
             "description": "You'll be feeling fur-nastically fortunate after soaking in a bed of cheerful neroli bubbles, thanks to this tide-turning feline. Crumble under running water to create seriously poppable mounds of joy.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "kitty-bubble.png"
+            "image": "kitty-bubbles.png"
         }
    },
    {
@@ -721,10 +805,10 @@
             "name": "Monster BubbleBar",
             "description": "Whisper your concerns to the Worry Monster then crumble him under the tap and watch your worries dissolve.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "monster-bubble.png"
+            "image": "monster-bubbles.png"
         }
    },
    {
@@ -735,10 +819,10 @@
             "name": "Rainbow BubbleBar",
             "description": "A little, a lot, or the whole thing and crumble under running water. You’ll find mounds of brilliant bubbles at the end of this rainbow.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "rainbow-bubble.png"
+            "image": "rainbow-bubbles.png"
        }
    },
    {
@@ -749,10 +833,10 @@
             "name": "Mermaid BubbleBar",
             "description": "Wishing for one bath or two? Crumble the bubble bar section under running water for a zesty grapefruit oil immersion. Alternatively, allow the organic cocoa butter fin to melt in warm water for a softening bath melt-enriched soak. Feeling indulgent? Combine both for the ultimate splash session!",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "mermaid-bubble.png"
+            "image": "mermaid-bubbles.png"
         }
    },
    {
@@ -763,7 +847,7 @@
             "name": "Unicorn BubbleBar",
             "description": "Crumble your replica unicorn horn under the tap (we’d never use the horn of a real unicorn, and we never test products on them either), click three times, and say “I do believe in unicorns.” The fairies will know if you don’t do it. Best used fresh for optimum magic",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
             "image": "unicorn-bubble.png"
@@ -777,10 +861,10 @@
             "name": "Frozen BubbleBar",
             "description": "Sweep your bubble bar across the water or release in the bath while the tap is running to create peaks of magical frozen bubbles.",
             "price": 2.99,
-            "category": 2,
+            "category": 1,
             "rating": 4.9,
             "image_url": null,
-            "image": "frozen-bubble.png"
+            "image": "frozen-bubbles.png"
         }
    }
 ]
