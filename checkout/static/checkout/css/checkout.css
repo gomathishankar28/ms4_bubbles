@@ -1,4 +1,4 @@
-
+/* stripe payment element formatting */
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -39,6 +39,8 @@
 fieldset .form-control, #card-element  {
     width: 100%;
 }
+
+/* load spinner formatting */
 #loading-overlay {
 	display: none;
 	position: fixed;
@@ -56,4 +58,14 @@ fieldset .form-control, #card-element  {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+/* country field formatting */
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
 }
