@@ -1,29 +1,36 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
-{% endblock %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block content %}
-
 <!-- Header -->
 <div class="container-fluid">
     <div class="row-products">
         <div class="col text-center mt-3 mb-3 pb-1">
-            <h3 class="logo-font">ThankYou for your Order!</h3>
+            <h2 class="logo-font">Thank You</h2>
+            <img src="{{ MEDIA_URL }}flowers.png" alt="flowers" class="head-flowers"
+                style="position: absolute;right:0;top:-85px">
         </div>
     </div>
-
-    <!-- Order summary -->
+    <!-- Breadcrumbs -->
+    <div class="container">
+        <div class="row shop-top-row">
+            <div class="col-12">
+                <div class="breadcrumbs">
+                    <p class="breadcrumbs-text">
+                        <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
+                        |
+                        <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
+                        |
+                        <a href="{% url 'view_bag' %}" class="breadcrumb-link">Shopping cart</a>
+                        |
+                        <span class="active-breadcrumb">Checkout</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Order summary -->
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
