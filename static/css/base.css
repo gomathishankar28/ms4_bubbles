@@ -21,6 +21,11 @@ html {
     width: fit-content;
 }
 
+#brand-logo {
+    width: 250px;
+    
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -79,7 +84,7 @@ html {
 
 
 .landing-page {
-        background: url('/static/images/home_page/landing-page.jpg') no-repeat center center fixed;
+        background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
         
         background-size: cover;
         margin-bottom: 4.5rem;
@@ -181,7 +186,7 @@ li {
 
 a {
     transition: all 0.25s ease-in-out;
-    color: #b75d69;
+    color: black;
 }
 
 .btn:focus,
