@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
     <!--- Landing Page --->
-        <div class="container landing-page">
+        <div class="container-fluid landing-page">
             <div class="row">
                 <div class="col-7 col-md-6 my-auto">
                     <h2 class="text-black landing-page-content logo-font wow animate__animated animate__fadeInDown">
@@ -25,57 +25,75 @@
                 <h2 class="text-center logo-font">Latest Arrivals</h2>
             </div>
         </div>
-        <div class="row">
-                    <!--- first new product --->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="div-product-card">
-                            <div class="div-product-card-img">
-                                <div class="product-card-content">
-                                    <a href="" class="product-page-link">
-                                        <div class="div-product-card-img">
-                                            <img src="{% static 'images/home_page/lavender-bathsalt.jpg' %}" height=400px width=300px alt="bathsalt pic"/>
-                                        </div>
-                                        <h3 class="product-card-title text-center">Lavender Bath Salts</h3>
-                                        <h3 class="product-price text-center">€5 per pack</h3>
-                                    </a>
-                                </div>
+        <div class="row mt-4">
+        <div class="container">
+            <div class="row product-card-row mb-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="div-product-card">
+                        <div class="div-product-card-img">
+                            <div class="product-card-content">
+                                <!--- feature product one --->
+                                <a href="{% url 'product_detail' latest_arrival_1.id %}" class="product-page-link">
+                                    <div class="div-product-card-img">
+                                        {% if latest_arrival_1.image %}
+                                        <img src="{{ MEDIA_URL }}{{ latest_arrival_1.image }}" width=270 height=270px
+                                            alt="{{ latest_arrival_1.name }}">
+                                        {% else %}
+                                        <img src="{{ MEDIA_URL }}no_image.png" width=270 height=270px alt="No Image Available">
+                                        {% endif %}
+                                    </div>
+                                    <p class="product-card-title">{{ latest_arrival_1.name }}</p>
+                                    <p class="product-price text-center">€{{ latest_arrival_1.price }}</p>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!--- Second New product  --->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="div-product-card">
-                            <div class="div-product-card-img">
-                                <div class="product-card-content">
-                                    <a href="" class="product-page-link">
-                                        <div class="div-product-card-img">
-                                            <img src="{% static 'images/home_page/lime-sugarscrub.jpg' %}" height=400px width=300px alt=""/>
-                                        </div>
-                                        <h3 class="product-card-title text-center">Lime Sugar Scrub</h3>
-                                        <h3 class="product-price text-center">€5 per pack</h3>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="div-product-card">
+                        <div class="div-product-card-img">
+                            <!--- feature product two --->
+                            <div class="product-card-content">
+                                <a href="{% url 'product_detail' latest_arrival_2.id %}" class="product-page-link">
+                                    <div class="div-product-card-img">
+                                        {% if latest_arrival_2.image %}
+                                        <img src="{{ MEDIA_URL }}{{ latest_arrival_2.image }}" width=270 height=270px
+                                            alt="{{ featured_product_2.name }}">
+                                        {% else %}
+                                        <img src="{{ MEDIA_URL }}no_image.png" width=270 height=270px alt="No Image Available">
+                                        {% endif %}
+                                    </div>
+                                    <p class="product-card-title">{{ latest_arrival_2.name }}</p>
+                                    <p class="product-price text-center">€{{ latest_arrival_2.price }}</p>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!--- Third New product  --->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="div-product-card">
-                            <div class="div-product-card-img">
-                                <div class="product-card-content">
-                                    <a href="" class="product-page-link">
-                                        <div class="div-product-card-img">
-                                            <img src="{% static 'images/home_page/lipbalms.jpg' %}" height=400px width=300px alt=""/>
-                                        </div>
-                                        <h3 class="product-card-title text-center">Lip Balms</h3>
-                                        <h3 class="product-price text-center">€2 per pack</h3>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="div-product-card">
+                        <div class="div-product-card-img">
+                            <!--- feature product three --->
+                            <div class="product-card-content">
+                                <a href="{% url 'product_detail' latest_arrival_3.id %}" class="product-page-link">
+                                    <div class="div-product-card-img">
+                                        {% if latest_arrival_3.image %}
+                                        <img src="{{ MEDIA_URL }}{{ latest_arrival_3.image }}" width=270 height=270px
+                                            alt="{{ latest_arrival_3.name }}">
+                                        {% else %}
+                                        <img src="{{ MEDIA_URL }}no_image.png" width=270 height=270px alt="No Image Available">
+                                        {% endif %}
+                                    </div>
+                                    <p class="product-card-title">{{ latest_arrival_3.name }}</p>
+                                    <p class="product-price text-center">€{{ latest_arrival_3.price }}</p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
         
     
 

@@ -105,10 +105,21 @@ html {
     .nav-center {
         margin-top: .7rem;
     }
-
-.div-product-card-img{
+/** Latest Arrivals */
+.product-card {
     margin-left: 50px;
 }
+.product-card-title {
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--color-black);
+    }
+    
+.product-price {
+        text-align: center;
+        line-height: .1rem;
+        color: var(--color-black);
+    }
 
 #demo {
     background: linear-gradient( 
