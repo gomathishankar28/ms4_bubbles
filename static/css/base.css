@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
     color: black;
     height: 100%;
+    background-color: #ccf0e6;
     
 }
 html {
@@ -26,10 +27,10 @@ html {
     
 }
 
-.shop-now-button {
+.cta-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 100px;
 }
 
 .btn-black {
@@ -50,9 +51,9 @@ html {
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.cta-button:hover,
+.cta-button:active,
+.cta-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -81,30 +82,62 @@ html {
 	background: white;
 	z-index: -1;
 }
+.fa-shopping-basket {
+    font-size: 1.3rem;
+}
+.nav-link {
+    font-weight: 700!important;
+}
+.nav-link-main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1.3rem;
+    font-weight: 700!important;
+}
+.nav-center {
+    margin-top: .7rem;
+}
+.dropdown-item {
+    margin-left: -20px;
+}
+.latest-arrivals {
+    background-color: cadetblue;
+}
 
-
-.landing-page {
+@media (min-width: 300px) {
+    .landing-page {
         background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
-        
         background-size: cover;
         margin-bottom: 4.5rem;
-        height: 800px;
-        
-        
+        height: 800px;  
+        overflow-x: hidden; 
+    }
+        .landing-page-content {
+            margin-top: 12rem;
+            font-size: 30px;
+        }
+      }
+      .mobile-logo {
+        display: block;
+        text-align: center;
+    }
+@media (min-width: 840px) {  
+      .mobile-logo {
+          display: none;
+      }
+
+@media (min-width: 420px) {
+    .landing-page {
+        background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin-bottom: 4.5rem;
+        height: 800px;  
+        overflow-x: hidden; 
     }
     .landing-page-content {
-        margin-top: 20rem;
-        color:blue;
+        margin-top: 15rem;
     }
-
-    .nav-link-main {
-        padding-left: 5rem;
-        padding-right: 5rem;
-        font-size: 1.3rem;
-    }
-    .nav-center {
-        margin-top: .7rem;
-    }
+}
 /** Latest Arrivals */
 .product-card {
     margin-left: 50px;
@@ -120,10 +153,10 @@ html {
         line-height: .1rem;
         color: var(--color-black);
     }
-
+/** Testimonials **/
 #demo {
     background: linear-gradient( 
-        112deg, rgb(218 196 212 / 25%) 50%, rgb(175 128 174 / 50%) 50%);
+        112deg, rgb(182 218 204) 50%, rgb(232 247 242) 50%);
     max-width: 900px;
     margin: auto
 }
@@ -153,7 +186,7 @@ html {
 }
 
 .fa-arrow-right:before, .fa-arrow-left:before {
-    background-color: #8D6346;
+    background-color: #212529;
     padding: 1.4rem;
 } 
 .carousel-control-prev {
