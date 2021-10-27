@@ -32,8 +32,7 @@
                                 <img class="card-img" src="{{ MEDIA_URL }}{{ latest_arrival_1.image }}" alt="{{ latest_arrival_1.name }}" width=270 height=270px>
                             </a>
                             <div class="card-body pb-0 text-center">
-                                <p class="mb-0 text-center">{{ latest_arrival_1.name }}</p>
-                                <a href="{% url 'product_detail' latest_arrival_1.id %}" class="cta-button btn btn-ls rounded-5">VIEW</a>
+                                <a href="{% url 'product_detail' latest_arrival_1.id %}" class="cta-button btn btn-ls rounded-5">{{ latest_arrival_1.name }}</a>
                             </div>
                         </div>
                     </div>
@@ -43,8 +42,7 @@
                                 <img class="card-img" src="{{ MEDIA_URL }}{{ latest_arrival_2.image }}" alt="{{ latest_arrival_2.name }}" width=270 height=270px>
                             </a>
                             <div class="card-body pb-0 text-center">
-                                <p class="mb-0 text-center">{{ latest_arrival_2.name }}</p>
-                                <a href="{% url 'product_detail' latest_arrival_2.id %}" class="cta-button btn btn-ls rounded-5">VIEW</a>
+                                <a href="{% url 'product_detail' latest_arrival_2.id %}" class="cta-button btn btn-ls rounded-5">{{ latest_arrival_2.name }}</a>
                             </div>
                         </div>
                     </div>
@@ -54,14 +52,14 @@
                                 <img class="card-img" src="{{ MEDIA_URL }}{{ latest_arrival_3.image }}" alt="{{ latest_arrival_3.name }}" width=270 height=270px>
                             </a>
                             <div class="card-body pb-0 text-center">
-                                <p class="mb-0 text-center">{{ latest_arrival_3.name }}</p>
-                                <a href="{% url 'product_detail' latest_arrival_3.id %}" class="cta-button btn btn-ls rounded-5">VIEW</a>
+                                <a href="{% url 'product_detail' latest_arrival_3.id %}" class="cta-button btn btn-ls rounded-5">{{ latest_arrival_3.name }}</a>
                             </div>
                         </div>
                     </div>
                
         </div>
     </div>
+    
         <!--- About  --->
     <div class="container-fluid" id="about">
         <div class="container-fluid">
