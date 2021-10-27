@@ -6,7 +6,7 @@ body {
     overflow-x: hidden;
     color: black;
     height: 100%;
-    background-color: #ccf0e6;
+    
     
 }
 html {
@@ -28,8 +28,8 @@ html {
 }
 
 .cta-button {
-    background: black;
-    color: white;
+    background: #f07972 ;
+    color: black;
     min-width: 100px;
 }
 
@@ -69,8 +69,9 @@ html {
     border: 1px solid black !important;
 }
 
-.bg-black {
-    background: #000 !important;
+.banner {
+    background-color: black !important;
+    color:white;
 }
 
 .overlay {
@@ -84,6 +85,9 @@ html {
 }
 .fa-shopping-basket {
     font-size: 1.3rem;
+}
+.nav-bg {
+    background-color: #7bcbc8;
 }
 .nav-link {
     font-weight: 700!important;
@@ -101,12 +105,12 @@ html {
     margin-left: -20px;
 }
 .latest-arrivals {
-    background-color: cadetblue;
+    
 }
 
 @media (min-width: 300px) {
     .landing-page {
-        background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
+        background: url('/static/images/home_page/landing-mobile.jpg') no-repeat center center fixed;
         background-size: cover;
         margin-bottom: 4.5rem;
         height: 800px;  
@@ -126,7 +130,7 @@ html {
           display: none;
       }
 
-@media (min-width: 420px) {
+@media (min-width: 810px) {
     .landing-page {
         background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
         background-size: cover;
@@ -139,20 +143,7 @@ html {
     }
 }
 /** Latest Arrivals */
-.product-card {
-    margin-left: 50px;
-}
-.product-card-title {
-        font-size: 1.2rem;
-        text-align: center;
-        color: var(--color-black);
-    }
-    
-.product-price {
-        text-align: center;
-        line-height: .1rem;
-        color: var(--color-black);
-    }
+
 /** Testimonials **/
 #demo {
     background: linear-gradient( 

@@ -9,7 +9,7 @@ def index(request):
     latest_arrival_2 = get_object_or_404(Product, pk=64)
     latest_arrival_3 = get_object_or_404(Product, pk=65)
 
-    template = 'home/index.html'
+    template = 'home/index1.html'
     context = {
         'latest_arrival_1': latest_arrival_1,
         'latest_arrival_2': latest_arrival_2,
