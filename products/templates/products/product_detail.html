@@ -9,12 +9,12 @@
             <div class="breadcrumbs">
                 <p class="breadcrumbs-text">
                     <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
-                    |
+                    >
                     <a href="{% url 'products' %}" class="breadcrumb-link">Shop</a>
-                    |
+                    >
                     <a href="{% url 'products' %}?category={{ product.category }}"
                         class="breadcrumb-link">{{ product.category.friendly_name }}</a>
-                    |
+                    >
                     <span class="active-breadcrumb">{{ product.name }}</span>
                 </p>
             </div>

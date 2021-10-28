@@ -1,79 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 
-
+/*-----Generic Styles ------*/
 body {
     font-family: 'Akaya Telivigala', cursive;
     overflow-x: hidden;
     color: black;
-    height: 100%;
-    
-    
+    height: 100%;   
 }
 html {
     scroll-behavior: smooth;
     height: 100%;
 }
-
-.logo-font {
-    text-transform: uppercase;
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
-#brand-logo {
-    width: 250px;
-    
-}
-
-.cta-button {
-    background: #f07972 ;
-    color: black;
-    min-width: 100px;
-}
-
 .btn-black {
     background: black;
     color: white;
 }
-
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
-
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
     color: white !important;
 }
-
-.cta-button:hover,
-.cta-button:active,
-.cta-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
-
 .text-black {
     color: #000 !important;
 }
-
 .border-black {
     border: 1px solid black !important;
 }
-
-.banner {
-    background-color: black !important;
-    color:white;
-}
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -83,20 +41,54 @@ html {
 	background: white;
 	z-index: -1;
 }
+/* -------------HomePage -----------------*/
+.banner {
+    background-color: black !important;
+    color:white;
+}
+.logo-font {
+    text-transform: uppercase;
+}
+.main-logo-link {
+    width: fit-content;
+}
+#brand-logo {
+    width: 250px;  
+}
+.mobile-logo {
+    margin-left: 80px;
+}
+.cta-button {
+    background: #f07972 ;
+    color: black;
+    min-width: 100px;
+}
+.cta-button:hover,
+.cta-button:active,
+.cta-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
 .fa-shopping-basket {
     font-size: 1.3rem;
+    color: black!important;
 }
 .nav-bg {
     background-color: #7bcbc8;
 }
 .nav-link {
     font-weight: 700!important;
+    color: black!important;
 }
 .nav-link-main {
     padding-left: 5rem;
     padding-right: 5rem;
     font-size: 1.3rem;
     font-weight: 700!important;
+    color: black!important;
 }
 .nav-center {
     margin-top: .7rem;
@@ -104,51 +96,8 @@ html {
 .dropdown-item {
     margin-left: -20px;
 }
-.latest-arrivals {
-    
-}
 
-@media (min-width: 300px) {
-    .landing-page {
-        background: url('/static/images/home_page/landing-mobile.jpg') no-repeat center center fixed;
-        background-size: cover;
-        margin-bottom: 4.5rem;
-        height: 800px;  
-        overflow-x: hidden; 
-    }
-        .landing-page-content {
-            margin-top: 12rem;
-            font-size: 30px;
-        }
-      }
-      .mobile-logo {
-        display: block;
-        text-align: center;
-    }
-@media (min-width: 840px) {  
-      .mobile-logo {
-          display: none;
-      }
-
-@media (min-width: 810px) {
-    .landing-page {
-        background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
-        background-size: cover;
-        margin-bottom: 4.5rem;
-        height: 800px;  
-        overflow-x: hidden; 
-    }
-    .landing-page-content {
-        margin-top: 15rem;
-    }
-}
 /** About */
-/*@media (max-width: 600px) {  
-    .about-img {
-        width: 300px;
-        height: 150px;
-    }
-}*/
 #about {
     background:#7bcbc8;
 }
@@ -170,7 +119,7 @@ html {
     margin-bottom: 30px;
 }
 
-/*  Carousel Fade Transition   */
+/*  Carousel Fade Transition copied from stack overflow  */
 .layer {
     background-color: rgba(248, 247, 216, 0.7);
     position: relative;
@@ -242,7 +191,7 @@ html {
 }
 
 
-/*----------Contact--------*/
+/*----------Contact us--------*/
 .bg-contact {
     background: url('/static/images/home_page/contact.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -255,40 +204,65 @@ html {
     background-color: white;
 }
 
-footer,
-header,
-section {
+.contact-btn {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+    letter-spacing: 0.05em;
+    border-radius: 0;
+    border: 1px solid black !important;
+}
+
+.contact-btn:hover {
+    color: #6ac4c5;
+    text-decoration: none;
+}
+
+/*------ Footer ------*/
+
+footer {
+    background-color: black;
+    color: white;
+    min-height: 130px;
+    margin-top: 4rem;
+    bottom: 0;
+    
+}
+@meida (max-width: 1024px) {
+    #footer {
+        background-color: black!important;
+        color: white;
+        min-height: 130px;
+        margin-top: 4rem;
+        bottom: 0;
+    }
+}
+.footer-link {
+    text-transform: uppercase;
     display: block;
+    color: white;
+    padding: .2rem;
 }
-
-
-
-ul,
-li {
-    list-style-type: none;
+.footer-link:hover {
+    text-decoration: underline;
+    color: white;
 }
-
-a {
-    transition: all 0.25s ease-in-out;
-    color: black;
+footer p {
+    margin-bottom: 0;
 }
-
-.btn:focus,
-.btn:active {
-    outline: none !important;
-    box-shadow: none;
+.footer-row {
+    padding-top: 35px;
+    margin: 0;
 }
-
-/** Disable default decorations for Links **/
-a:focus,
-a:hover,
-a:active {
-    outline: none !important;
-    text-decoration: none !important;
-    border: 0 !important;
-    color: #daa9af;
+.mb-7 {
+    margin-bottom: 7px;
 }
-
+.fa-linkedin:before,
+.fa-github:before,
+.fa-instagram-square:before,
+.fa-facebook:before {
+    color: white;
+}
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -345,83 +319,12 @@ a:active {
 
 /* Product Form -widgets */
 
-
-/*------ Footer ------*/
-
-footer {
-    background-color: var(--color-green);
-    color: var(--color-white);
-    min-height: 130px;
-    margin-top: 4rem;
-}
-
-.footer-link {
-    text-transform: uppercase;
-    display: block;
-    color: var(--color-white);
-    padding: .2rem;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-    color: var(--color-white);
-}
-
-.footer-link-brand {
-    text-transform: none;
-}
-
-footer p {
-    margin-bottom: 0;
-}
-
-.footer-row {
-    padding-top: 35px;
-    margin: 0;
-}
-
-.mb-7 {
-    margin-bottom: 7px;
-}
-
-.div-footer-some {
-    width: 27px;
-    display: inline-block;
-    font-size: 1.7rem;
-}
-
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.div-footer-some:hover {
-    border-bottom: 1px solid var(--color-white);
-}
-
-.fa-youtube-square:before,
-.fa-pinterest-p:before,
-.fa-instagram:before,
-.fa-facebook-f:before {
-    color: var(--color-white);
-}
-
-#footer {
-    bottom: 0;
-    position: relative;
-
-}
-.mobile-logo {
-    margin-left: 80px;
-}
-
 /*------ Products Page ------*/
 
 .logo-font {
     letter-spacing: .1rem;
     font-size: 3rem;
-    color: var(--color-olive);
+    color: black;
     font-weight: 600;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding-top: 1.3rem;
     padding-bottom: 1.1rem;
@@ -429,7 +332,7 @@ footer p {
 }
 
 .row-products {
-    background-color: var(--color-light-green);
+    background-color: white;
 }
 
 .offset-1 {
@@ -445,8 +348,8 @@ footer p {
 #sort-selector {
     height: 45px;
     width: 250px;
-    border: var(--border-black);
-    color: var(--color-black);
+    border: 2px solid black;
+    color: black;
     font-size: 1rem;
     text-transform: uppercase;
     padding-left: 5%;
@@ -459,6 +362,22 @@ footer p {
     -webkit-box-pack: end;
     justify-content: flex-end;
 }
+.scroll-to-top {
+    position: fixed;
+    z-index: 1000;
+    bottom: 2.5%;
+    right: 5%;
+    width: 48px;
+    height: 48px;
+    border: solid 1px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.fa-arrow-up:before {
+    width: 30%;
+    display: block;
+    margin: 17px auto;
+}
 
 /*------ Products Page/breadcrumbs------*/
 
@@ -468,13 +387,14 @@ footer p {
 }
 
 .breadcrumb-link, .breadcrumb-link:hover {
-    color: var(--color-green);
+    color: black;
     margin: 3px;
 }
 
 .active-breadcrumb {
     color: var(--color-black);
     margin: 3px;
+    text-decoration: underline;
 }
 
 .breadcrumbs-text {
@@ -483,10 +403,6 @@ footer p {
 }
 
 /*------ Products Details Page ------*/
-
-#accordion {
-    margin: 35px auto 50px auto;
-}
 
 .card {
     border: none;
@@ -564,6 +480,41 @@ footer p {
 
 
 /* Slightly larger container on xl screens */
+@media (min-width: 300px) {
+    .landing-page {
+        background: url('/static/images/home_page/landing-mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin-bottom: 4.5rem;
+        height: 800px;  
+        overflow-x: hidden; 
+    }
+        .landing-page-content {
+            margin-top: 12rem;
+            font-size: 30px;
+        }
+      }
+      .mobile-logo {
+        display: block;
+        text-align: center;
+    }
+
+@media (min-width: 840px) {  
+    .mobile-logo {
+        display: none;
+    }
+
+@media (min-width: 810px) {
+  .landing-page {
+      background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin-bottom: 4.5rem;
+      height: 800px;  
+      overflow-x: hidden; 
+  }
+  .landing-page-content {
+      margin-top: 15rem;
+  }
+}
 @media (min-width: 1200px) {
     .container {
       max-width: 100%;

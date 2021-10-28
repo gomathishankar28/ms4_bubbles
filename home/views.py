@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from products.models import Product
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
@@ -52,7 +52,7 @@ def contactform(request):
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
 
-    return redirect('thankyou_page')
+    return redirect('contact_ack')
 
 
 def contact_ack(request):
