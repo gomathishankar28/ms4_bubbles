@@ -143,14 +143,20 @@ html {
     }
 }
 /** About */
-@media (max-width: 600px) {  
+/*@media (max-width: 600px) {  
     .about-img {
         width: 300px;
         height: 150px;
     }
+}*/
+#about {
+    background:#7bcbc8;
 }
 
 /** Testimonial **/
+#testimonial {
+    background:#7bcbc8;
+}
 
 .carousel-inner {
     position: relative;
@@ -231,11 +237,14 @@ html {
     font-size: 30px;
     color: black;
 }
+.page-section {
+    padding: 4rem 0;
+}
 
 
 /*----------Contact--------*/
-.contact-container {
-    background: url("/static/images/home_page/contact.jpg") no-repeat center center fixed;
+.bg-contact {
+    background: url('/static/images/home_page/contact.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
