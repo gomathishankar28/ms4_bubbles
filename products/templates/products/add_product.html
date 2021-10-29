@@ -8,8 +8,6 @@
     <div class="row-products">
         <div class="col text-center mt-3 mb-3 pb-1">
             <h2 class="logo-font">Add a product</h2>
-            <img src="{{ MEDIA_URL }}flowers.png" alt="flowers" class="head-flowers"
-                style="position: absolute;right:0;top:-85px">
         </div>
     </div>
 </div>
@@ -17,7 +15,7 @@
     <div class="container product-mgmt-container">
         <div class="row">
             <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-                <div class="div-add-product-form">
+                <div class="add-product-form">
                     <form class="mt-3" action="{% url 'add_product' %}" method="POST" enctype="multipart/form-data" id="add-product-form">
                         {% csrf_token %}
                     {% for field in form %}
