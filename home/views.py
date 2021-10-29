@@ -28,7 +28,7 @@ def index(request):
         'latest_arrival_3': latest_arrival_3,
         'contact_form': contact_form,
     }
-    template = 'home/index.html'
+    template = 'home/index1.html'
     return render(request, template, context)
 
 
