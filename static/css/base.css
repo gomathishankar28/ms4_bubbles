@@ -403,7 +403,11 @@ footer p {
 }
 
 /*------ Products Details Page ------*/
-
+.product-mgmt-container {
+    max-width: 650px;
+    margin-bottom: 65px;
+    margin-top: 50px;
+}
 .card {
     border: none;
 }
