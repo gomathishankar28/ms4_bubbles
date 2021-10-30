@@ -11,9 +11,7 @@ class ReviewForm(forms.ModelForm):
         exclude = (
             'user',
             'review_date',
-            'product',
-            'likes',
-            'dislikes')
+            'product')
 
         fields = ['title', 'description', 'rating']
 

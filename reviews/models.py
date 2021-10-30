@@ -23,8 +23,6 @@ class Review(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField()
     rating = models.IntegerField(choices=RATE)
-    likes = models.IntegerField(default=0)
-    dislikes = models.IntegerField(default=0)
     review_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
