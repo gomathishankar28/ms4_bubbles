@@ -1,0 +1,32 @@
+{% block content %}
+{% load static %}
+    <!-- Review header -->
+    <div class="row mt-0">
+        <div class="col-6"></div>
+        <div class="col-6">
+            <h4>Average Rating</h4>
+            <p class="rating-stars" data-value="{{ product.avg_rating }}"><span>({{ reviews.count }})</span></p>
+    
+            <!-- view Reviews accordion -->
+            <div class="bs-example">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-angle-right"></i> view Reviews</button>									
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                {% for review in reviews %}
+                                    <h6 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h6>
+                                    <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
+                                    <p>"{{ review.description }}"</p><span><strong></strong>{{ review.user }}</strong></span>
+                                    <p class="text-secondary text-end mb-0"><small>{{ review.date_posted|date:"M d, Y" }}
+                                    <hr>
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </div>
+{% endblock %}

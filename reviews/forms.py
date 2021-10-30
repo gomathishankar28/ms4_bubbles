@@ -10,7 +10,7 @@ class ReviewForm(forms.ModelForm):
         model = Review
         exclude = (
             'user',
-            'date_added',
+            'review_date',
             'product',
             'likes',
             'dislikes')
