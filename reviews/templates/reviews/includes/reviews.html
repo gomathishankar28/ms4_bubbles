@@ -2,24 +2,15 @@
 {% load static %}
     <!-- Review header -->
     <div class="row mt-0">
-        <div class="col-6"></div>
-        <div class="col-6">
+        <div class="col-12 col-md-6"></div>
+        <div class="col-12 col-md-6 align-items-center">
             <h4>Average Rating</h4>
-            <p class="rating-stars" data-value="{{ product.rating }}"><span>({{ reviews.count }})</span></p>
+            <p class="rating-stars" data-value="{{ product.avg_rating }}"><span>({{ reviews.count }})</span></p>
                 <div>
                     <a href="{% url 'add_review' product.id %}" data-toggle="tooltip" title="Add a Review" data-placement="top" class="btn btn-blue rounded-0">
                         <i class="far fa-plus-square"></i>
                     </a>
-                    <span>
-                        <a href="{% url 'add_review' product.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top" class="btn btn-blue rounded-0">
-                            <i class="far fa-edit"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a href="{% url 'add_review' product.id %}" data-toggle="tooltip" title="Delete Review" data-placement="top" class="btn btn-blue rounded-0">
-                            <i class="far fa-trash-alt"></i>
-                        </a>
-                    </span>
+                    
                 </div>
             
             <!-- view Reviews accordion -->
@@ -35,6 +26,18 @@
                             <div class="card-body">
                                 {% for review in reviews %}
                                     <h6 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h6>
+                                    {% if request.user.is_authenticated %}
+                                        <span>
+                                            <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top" class="btn btn-blue rounded-0">
+                                                <i class="far fa-edit"></i>
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review" data-placement="top" class="btn btn-blue rounded-0">
+                                                <i class="far fa-trash-alt"></i>
+                                            </a>
+                                        </span>
+                                    {% endif %}
                                     <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
                                     <p>"{{ review.description }}"</p><span><strong></strong>{{ review.user }}</strong></span>
                                     <p class="text-secondary text-end mb-0"><small>{{ review.date_posted|date:"M d, Y" }}
