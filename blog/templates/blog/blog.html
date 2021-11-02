@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!--- Header --->
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col text-center mt-3 mb-3 pb-1">
+            <h2 class="logo-font">Blog</h2>
+        </div>
+    </div>
+    <!--- Blog Intro --->
+    <section>
+        <div class="container-fluid div-section">
+            <div class="container">
+                <div class="row">
+                    <h2 class="h2-style text-center">HEALTH BENEFITS OF TAKING A BATH</h2>
+                </div>
+                <div class="row mt-3">
+                    <div class="container">
+                        <p class="paragraph-margin">
+                            Bathing has been a part of the human health for centuries. 
+                            From the Roman people who loved a good bath to Scandinavians 
+                            who take plunges in cold water right after a sauna, each country 
+                            and continent seem to have their own traditions regarding bathing.
+                            Baths are relaxing. This is, while perhaps not a universal truth, at least a decidedly uncontroversial opinion to have. 
+                            And while research on bathing isn’t the booming field of study it deserves to be, the data we do have supports their stress-relieving powers. 
+                            People who regularly take baths seem to have lower stress levels and be less depressed than people who just shower.
+                            Submerging yourself in water on the regular may even help make you less angry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Image -->
+    <div class="row hp-section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="{{ MEDIA_URL }}blog.jpg" alt="decor" class="homepage-cards-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Posts --->
+    <div class="bg-white-trans-blog">
+        <div class="row">
+            <div class="col-8 offset-2">
+            </div>
+        </div>
+        {% for post in posts %}
+            {% if posts %}
+                <div class="row mt-4">
+                    <div class="col-8 offset-2">
+                        <h3 class="blog-title mt-3">{{ post.title }}</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <div class="text-muted">{{ post.date_added | date:"d M - Y | h:i"}}</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <article>{{ post.intro }}</article>
+                    </div>
+                </div>
+                <div class="row pb-2 mt-3">
+                    <div class="col-8 offset-2">
+                        <a href="{% url 'post_detail'  post.slug %}" class="read-text">Read more</a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <h2> No Posts Available</h2>
+                    </div>
+                </div>
+            {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
