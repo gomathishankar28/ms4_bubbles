@@ -30,18 +30,22 @@
         <div class="col-12 ">
             <p class="mb-0 text-center">
                 Welcome to your profile, <strong>{{ user.username }}!</strong>
-            </p>   
-            <p class="text-center">Select an action you would like to do. Happy shopping!</p>
-            <div class="div-profile-action-ctas pt-md-5 pb-md-5 mb-3 pt-3 pb-3">
-                <a href="{% url 'order_history' %}" class="cta cta-white">See order history</a>
-                <a href="{% url 'edit_profile' %}" class="cta cta-white">Edit profile details</a>
-            </div>
-            <div class="div-profile-action-ctas mb-3">
-                <a href="{% url 'products' %}" class="cta cta-black d-inline-block m-auto">Shop now</a>
-            </div>
+            </p>  
+        </div> 
+    </div>
+    <div class="row align-items-center text-align-center mb-5 pb-5 mt-5 pt-5">
+        <div class="col-12 col-md-4">
+            <a href="{% url 'order_history' %}" class="btn cta-button">View order history</a>
+        </div>
+        <div class="col-12 col-md-4">
+            <a href="{% url 'edit_profile' %}" class="btn cta-button">Edit My profile</a>
+        </div>
+        <div class="col-12 col-md-4">
+            <a href="{% url 'products' %}" class="btn cta-button d-inline-block m-auto">Shop now</a>
         </div>
     </div>
 </div>
+  
 
 
 {% endblock %}

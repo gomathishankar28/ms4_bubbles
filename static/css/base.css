@@ -13,6 +13,7 @@ p {
 html {
     scroll-behavior: smooth;
     height: 100%;
+    
 }
 .btn-black {
     background: black;
@@ -99,6 +100,11 @@ html {
 /** About */
 #about {
     background:#7bcbc8;
+}
+
+.latest-arrivals {
+    background-color: white;
+    padding: 20px;
 }
 
 /** Testimonial **/
@@ -189,7 +195,7 @@ html {
     font-size: 30px;
     color: black;
 }
-.page-section {
+#contact {
     padding: 4rem 0;
 }
 
@@ -227,7 +233,6 @@ footer {
     background-color: black;
     color: white;
     min-height: 130px;
-    margin-top: 4rem;
     bottom: 0;
     
 }
@@ -571,6 +576,7 @@ footer p {
       .mobile-logo {
         display: block;
         text-align: center;
+        margin-left: -10px;
     }
 
 @media (min-width: 840px) {  
@@ -580,7 +586,7 @@ footer p {
 
 @media (min-width: 810px) {
   .landing-page {
-      background: url('/static/images/home_page/landing4.jpg') no-repeat center center fixed;
+      background: url('/static/images/home_page/landing.jpg') no-repeat center center fixed;
       background-size: cover;
       margin-bottom: 4.5rem;
       height: 800px;  
