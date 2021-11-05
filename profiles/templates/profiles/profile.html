@@ -7,8 +7,6 @@
     <div class="row-products">
         <div class="col text-center mt-3 mb-3 pb-1">
             <h2 class="logo-font">Profile</h2>
-            <img src="{{ MEDIA_URL }}flowers.png" alt="flowers" class="head-flowers"
-                style="position: absolute;right:0;top:-85px">
         </div>
     </div>
 </div>
@@ -19,7 +17,7 @@
             <div class="breadcrumbs">
                 <p class="breadcrumbs-text">
                     <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
-                    |
+                    >
                     <span class="active-breadcrumb">My profile</span>
                 </p>
             </div>
@@ -28,15 +26,12 @@
 </div>
 <!-- Page content -->
 <div class="container profile-container">
-    <div class="row">
-        <div class="col-12">
-            <p class="mb-0">
-                Welcome to your profile, {{ user.username }}!
-                <br>
-                Select an action you would like to do. Happy shopping!
-                <br>
-                Your BUBBLES team
-            </p>
+    <div class="row align-items-center">
+        <div class="col-12 ">
+            <p class="mb-0 text-center">
+                Welcome to your profile, <strong>{{ user.username }}!</strong>
+            </p>   
+            <p class="text-center">Select an action you would like to do. Happy shopping!</p>
             <div class="div-profile-action-ctas pt-md-5 pb-md-5 mb-3 pt-3 pb-3">
                 <a href="{% url 'order_history' %}" class="cta cta-white">See order history</a>
                 <a href="{% url 'edit_profile' %}" class="cta cta-white">Edit profile details</a>

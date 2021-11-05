@@ -21,7 +21,7 @@ class PostAdmin(admin.ModelAdmin):
 
 class CommentAdmin(admin.ModelAdmin):
     list_display = (
-        'user',
+        'name',
         'comment_desc',
         'date_added',
     )

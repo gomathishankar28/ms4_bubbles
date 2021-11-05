@@ -6,7 +6,7 @@ from .models import Post
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ['comment_desc']
+        fields = ['name', 'comment_desc']
 
     def __init__(self, *args, **kwargs):
         super(CommentForm, self).__init__(*args, **kwargs)

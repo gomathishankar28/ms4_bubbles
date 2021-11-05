@@ -19,15 +19,15 @@
     
     <!--- Latest Arrivals --->
 
-        <div class="container-fluid latest-arrivals mb-5">
+        <div class="container-fluid latest-arrivals mb-5 ">
         <div class="row">
             <div class="col">
                 <h2 class="text-center">Latest Arrivals</h2>
-                <p>Curated for every month of the season. Find below our new Winter Innovations.Give  it a try for a warm and Cozy bath this Christmas</p>
+                <p class="text-center">Curated for every month of the season. Find below our new Winter Innovations.Give  it a try for a warm and Cozy bath this Christmas</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="card border-0">
                             <a href="{% url 'product_detail' latest_arrival_1.id %}">
                                 <img class="card-img" src="{{ MEDIA_URL }}{{ latest_arrival_1.image }}" alt="{{ latest_arrival_1.name }}" width=270 height=270px>
@@ -123,7 +123,7 @@
                                 <div class="carousel-item">
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony1.jpg' %}" alt="Akanksha image" />
                                     <blockquote>
-                                        <h5>Akanksha.S</h5>
+                                        <h5 class="testimony-name">Akanksha.S</h5>
                                         <p>
                                             Love all the soaps I have bought from Bubbles! They are high quality and the scents are amazing.
                                              I especially love using them in the mornings to wake me up and get me going for the day.
@@ -133,7 +133,7 @@
                                 <div class="carousel-item">
                                     <img class="profile-circle mb-3" border-radius="50%" src="{% static 'images/home_page/testimony2.jpg' %}" alt="Aparna image" />
                                     <blockquote>
-                                        <h5>Aparna.K</h5>
+                                        <h5 class="testimony-name">Aparna.K</h5>
                                         <p>
                                             I’m absolutely in love with these soaps. I’ve been on a journey to use less plastic in my home and 
                                             I love the Oatmeal & Honey bar which works great for me since I am allergic to many other soaps and scents! The shipping is very quick, too.
@@ -143,7 +143,7 @@
                                 <div class="active carousel-item">
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony3.jpg' %}" alt="Abitha image" />
                                     <blockquote>
-                                        <h5>Abitha.s</h5>
+                                        <h5 class="testimony-name">Abitha.s</h5>
                                         <p>
                                             I love the Oatmeal & Honey bar which works great for me since I am allergic to many other soaps and scents! The shipping is very quick, too.
                                             Your bars last SO much longer than store bought and are far superior. Thanks for starting my day with a boost of sunshine.
@@ -153,7 +153,7 @@
                                 <div class="carousel-item">
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony4.jpg' %}" alt="Shradha image" />
                                     <blockquote>
-                                        <h5>Shraddha.K</h5>
+                                        <h5 class="testimony-name">Shraddha.K</h5>
                                         <p>
                                             I’m always happy to find great products that are made in my home state, and these products meet that description. 
                                             The soap is great smelling without being overpowering, and it didn’t dry my skin out at all.  As the cold weather returns
@@ -164,7 +164,7 @@
                                 <div class="carousel-item">
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony5.jpg' %}" alt="Jamuna image" />
                                     <blockquote>
-                                        <h5>Jamuna.S</h5>
+                                        <h5 class="testimony-name">Jamuna.S</h5>
                                         <p>
                                             If you are looking for a homemade soap that you don’t have to make yourself I give this one a big thumbs up! The prices are great too!
                                             Besides being a great product to use, it’s beautiful too.I love it when things are functional and beautiful at the same time.
