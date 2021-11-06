@@ -109,7 +109,7 @@ html {
 
 /** Testimonial **/
 #testimonial {
-    background:#7bcbc8;
+    background: white;
 }
 
 .carousel-inner {
@@ -362,6 +362,35 @@ footer p {
 .btn-black {
     background: black;
     color: white;
+}
+
+/* ---- Acknowledgement-------*/
+#ack-btn {
+    color: black;
+    margin-left: 120px;
+}
+.ack-container {
+    background-color:#f8f9fa;;
+    height: 800px;
+    
+}
+@media (min-width: 800px) {
+    #ack-btn {
+        color: black;
+        margin-left: 300px;
+    }
+}
+@media (min-width: 1020px) {
+    #ack-btn {
+        color: black;
+        margin-left: 500px;
+    }
+}
+@media (min-width: 1440px) {
+    #ack-btn {
+        color: black;
+        margin-left: 700px;
+    }
 }
 
 /*------ Products Page ------*/

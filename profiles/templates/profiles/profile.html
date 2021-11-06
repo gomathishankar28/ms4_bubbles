@@ -9,40 +9,32 @@
             <h2 class="logo-font">Profile</h2>
         </div>
     </div>
-</div>
-<!-- Breadcrumbs -->
-<div class="container">
-    <div class="row shop-top-row">
-        <div class="col-12">
-            <div class="breadcrumbs">
-                <p class="breadcrumbs-text">
-                    <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
-                    >
-                    <span class="active-breadcrumb">My profile</span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Page content -->
-<div class="container profile-container">
-    <div class="row align-items-center">
-        <div class="col-12 ">
-            <p class="mb-0 text-center">
+    <!-- welcome msg -->
+    <div class="align-items-center">
+        <p class="mb-0 text-center">
                 Welcome to your profile, <strong>{{ user.username }}!</strong>
-            </p>  
-        </div> 
+        </p>
+    </div> 
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <p class="breadcrumbs-text">
+            <a href="{% url 'home' %}" class="breadcrumb-link">Home</a> >
+            <span class="active-breadcrumb">My profile</span>
+        </p>
     </div>
-    <div class="row align-items-center text-align-center mb-5 pb-5 mt-5 pt-5">
-        <div class="col-12 col-md-4">
-            <a href="{% url 'order_history' %}" class="btn cta-button">View order history</a>
-        </div>
-        <div class="col-12 col-md-4">
-            <a href="{% url 'edit_profile' %}" class="btn cta-button">Edit My profile</a>
-        </div>
-        <div class="col-12 col-md-4">
-            <a href="{% url 'products' %}" class="btn cta-button d-inline-block m-auto">Shop now</a>
-        </div>
+     
+    <!-- links to order historyand edit profile -->
+    <div class="align-items-center">
+        <span>
+            <a href="{% url 'order_history' %}" class="btn cta-button profile-btn">View order history</a>
+        </span>
+        <span>
+            <a href="{% url 'edit_profile' %}" class="btn cta-button profile-btn">Edit My profile</a>
+        </span>
+    </div>
+    <div class="row align-items-center mb-10">
+            <a href="{% url 'products' %}" class="btn cta-button d-inline-block ml-5 mt-5 mb-5 profile-btn">Shop now</a>
+    </div>
     </div>
 </div>
   
