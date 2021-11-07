@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Profile header -->
+<div class="container-fluid">
+    <div class="row-products">
+        <div class="col text-center mt-3 mb-3 pb-1">
+            <h2 class="logo-font">Profile</h2>
+        </div>
+    </div>
+    <!-- welcome msg -->
+    <div class="align-items-center">
+        <p class="mb-0 text-center">
+                Welcome to your profile, <strong>{{ user.username }}!</strong>
+        </p>
+    </div> 
+    
+    <div class = "row">
+        <div class="col-12">
+            <h2>Personal Details :
+            <span>
+                <a href="{% url 'edit_profile' %}" class="btn cta-button profile-btn">Edit My profile</a>
+            </span></h2>
+            <p>NAME: &nbsp; {{ user.username }}</p>
+            <p> {{ user.mobilenumber }}</p>
+            <p>EMAIL: &nbsp; {{ user.email }}</p>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class="col-12">
+            <h2>Shipping Details : <span>
+                <a href="{% url 'order_history' %}" class="btn cta-button profile-btn">View order history</a>
+            </span></h2>
+            <p> {{ orders.street }}</p>
+            <p> {{ user.default_phone_number }}</p>
+            <p> {{ user.default_email }}</p>
+        </div>
+    </div>
+     
+    
+    <div class="row align-items-center mb-10">
+            <a href="{% url 'products' %}" class="btn cta-button d-inline-block ml-5 mt-5 mb-5 profile-btn">Shop now</a>
+    </div>
+</div>
+  
+
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript" src="{% static 'js/countryfield.js' %}"></script>
+{% endblock %}
