@@ -12,14 +12,14 @@ def profile(request):
     """ Display the user's profile. """
 
     profile = get_object_or_404(UserProfile, user=request.user)
-    template = 'profiles/profile1.html'
-    orders = profile.orders.filter.latest()
+    template = 'profiles/profile.html'
+    order = profile.orders.latest('order_number')
     context = {
         'profile': profile,
         'on_profile_page': True,
-        'orders': orders,
+        'order': order,
     }
-
+    print(order)
     return render(request, template, context)
 
 

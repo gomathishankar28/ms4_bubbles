@@ -271,6 +271,16 @@ footer p {
 .fa-facebook:before {
     color: white;
 }
+/* Profile */
+
+.profile {
+    background-color:#aab7c4;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.profile p {
+    font-size: 18px;
+}
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
