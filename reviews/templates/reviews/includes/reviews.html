@@ -1,25 +1,38 @@
 {% block content %}
 {% load static %}
     <!-- Review header -->
+<div class="container review-container mt-0 mb-5">
     <div class="row mt-0">
-        <div class="col-12 col-md-6"></div>
-        <div class="col-12 col-md-6 align-items-center ml-2">
-            <h4>Average Rating</h4>
-            <p class="rating-stars" data-value="{{ product.avg_rating }}"><span>({{ reviews.count }})</span></p>
-                <div>
-                    <a href="{% url 'add_review' product.id %}" data-toggle="tooltip" title="Add a Review" data-placement="top" class="btn btn-blue rounded-0">
-                        <i class="far fa-plus-square"></i>
-                    </a>
-                    
-                </div>
-            
+        <div class="col-12 col-md-6 shipping">
+            <h2> Directions for Storage:</h2>
+            <p>Keep the bars fresh and dry in open bathroom caddies,that keeps it away from water.
+            </p>
+            <h2> Shipping & Returns</h2>
+            <h4><u>Shipping:</u></h4>
+            <p>Ground shipping is free for all purchases of 50 Euros or more.
+               It takes 2-8 business days to arrive after being shipped.
+            </p>
+            <h4><u>Return Policy</u></h4>
+            <p>Please note: we cannot accept returns without prior authorization.
+
+                To return an order made online or over the phone, contact our dedicated Customer Care team to get started.
+                
+                Returned items need to be 75% intact and returned with their original packaging and include a copy of the packing slip. 
+                You can return items up to 90 days after the date we shipped your order. Shipping charges are not usually refundable.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 reviews">
+            <div>
+                <h4>Average Rating</h4>
+                <p class="rating-stars" data-value="{{ product.avg_rating }}"></p>
+            </div>
             <!-- view Reviews accordion -->
-            <div class="bs-example">
+            <div class="bs-example review-accordion">
                 <div class="accordion" id="accordionExample">
                     <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header review-card" id="headingOne">
                             <h2 class="mb-0">
-                                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-angle-right"></i> view Reviews</button>									
+                                <button type="button" class="btn cta-button btn-link" data-toggle="collapse" data-target="#collapseOne">view Reviews</button>									
                             </h2>
                         </div>
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -28,19 +41,20 @@
                                     <h6 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h6>
                                     {% if request.user.is_authenticated %}
                                         <span>
-                                            <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top" class="btn btn-blue rounded-0">
+                                            <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top" class="btn">
                                                 <i class="far fa-edit"></i>
                                             </a>
                                         </span>
                                         <span>
-                                            <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review" data-placement="top" class="btn btn-blue rounded-0">
+                                            <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review" data-placement="top" class="btn">
                                                 <i class="far fa-trash-alt"></i>
                                             </a>
                                         </span>
                                     {% endif %}
                                     <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
-                                    <p>"{{ review.description }}"</p><span><strong></strong>{{ review.user }}</strong></span>
-                                    <p class="text-secondary text-end mb-0"><small>{{ review.date_posted|date:"M d, Y" }}
+                                    <span class="text-secondary review-desc"><u>Posted on</u>: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
+                                    <p class="review-desc">"{{ review.description }}"</p><span class="text-right"><strong>- {{ review.user }} </strong></span>
+                                    
                                     <hr>
                                 {% endfor %}
                                 
@@ -48,6 +62,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <a href="{% url 'add_review' product.id %}" data-toggle="tooltip" title="Add a Review" data-placement="top" class="btn cta-button">
+                        Add Your Review
+                </a>
+            </div> 
 {% endblock %}
 {% block postloadjs %}
 <script type="text/javascript" src="{% static 'js/review.js' %}"></script>

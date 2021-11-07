@@ -4,7 +4,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000001",
-            "name": "Agave Lime Soap",
+            "name": "Agave Lime",
             "description": "Agave Lime sea salt soap is a palm-free cold process scented salt soap bar with spa citric notes, musk, and sandalwood. Made with moisturizing organic virgin coconut oil and regenerative virgin wheat germ oil along with mild exfoliating European sea salt. Handmade soap formulated for men and women of all skin types, including sensitive skin.",
             "price": 2.99,
             "category": 5,
@@ -18,7 +18,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000002",
-            "name": "Calendula Soap",
+            "name": "Calendula",
             "description": "Calendula Soap is a vegetable oil based soap with calendula and chamomile plant extracts to gently clean your skin.",
             "price": 3.99,
             "category": 5,
@@ -32,7 +32,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000003",
-            "name": "Pink Orchid Soap",
+            "name": "Pink Orchid",
             "description":"Lovely detoxing natural soap with Pink Kaolin clay which is perfect for oily and normal skins. It helps control sebum production, regenerating and mineralizing of the dry areas and leaving your skin smooth and glowing. Rich Coconut oil, moisturizing Cocoa and Shea butter and a dash of Rose Geranium & Lavender scent make this soap to die for!",
             "price": 2.59,
             "category": 5,
@@ -46,7 +46,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000004",
-            "name": "Cafe Soap",
+            "name": "Cafe",
             "description": "Smells just like a pot of fresh brewed black coffee, with a natural coffee ground exfoliate.A mixture of Goat Milk, Organic Extra Virgin Olive Oil, Organic Coconut Oil, Vegetable Oil, Fragrance Oils, Ground Coffee Bean.",
             "price": 1.99,
             "category": 5,
@@ -60,7 +60,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000005",
-            "name": "Cherry Blossom Soap",
+            "name": "Cherry Blossom",
             "description": "Cherry blossoms are spellbinding little flowers with aroma to arrest you in your place, although you only have about a week to enjoy the beautiful blossoms, it doesn't have to be so, this soap will take you back to the picturesque alleys in no time. Made with luxurious and protective Shea Butter, nourishing Olive and Sweet Almond Oils, Cambrian Blue and Kaolin Rose Clays",
             "price": 3.99,
             "category": 5,
@@ -74,7 +74,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000006",
-            "name": "Ginger Soap",
+            "name": "Ginger",
             "description": "With its powerful antiseptic properties, ginger eliminates acne-causing bacteria that clog pores to clear up skin imperfections and reduce the inflammation caused by unsightly blemishes. Ginger will come to the rescue if you're suffering from skin burns.",
             "price": 1.99,
             "category": 5,
@@ -88,7 +88,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000007",
-            "name": "Citrus & Milk Soap",
+            "name": "Citrus & Milk",
             "description": "Strong lemony earthy scent. The bar can assist with muscles aches, oily skin, stress reducer, great for acne prone skin, and athletes foot. Use caution if skin is hypersensitive. Not recommended for use on children.",
             "price": 2.59,
             "category": 5,
@@ -102,7 +102,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000008",
-            "name": "Milk & Honey Soap",
+            "name": "Milk & Honey",
             "description": "The soap contains the goodness of milk and honey and prevents the skin from dryness. As the product contains antioxidant properties, it prevents the skin from damages and improves collagen production. The soap deep cleans the skin and gives a perfect glow for the day.",
             "price": 3.00,
             "category": 5,
@@ -116,7 +116,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000009",
-            "name": "Orange Zest Soap",
+            "name": "Orange Zest",
             "description": "The revitalizing soap bar contains orange zest that nourishes and softens the skin.Rich in nutrients and Vitamin C, Orange Zest is extremely beneficial to the skin.Vitamin C not only combats free radicals and oiliness but also helps add a natural glow, which makes orange zest a potent beauty product for the skin.",
             "price": 2.99,
             "category": 5,
@@ -130,7 +130,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000010",
-            "name": "Smokey Marble Soap",
+            "name": "Smokey Marble",
             "description": "Marble Soap is a natural goat milk base soap donnes a beautiful look of marble stone with charcoal and white tea tree oil to remedy and rejuvenate skin from toxins, in ways clearly visible to everyone around you.Natural detox, skin rejuvenation and improvement of tone within a fortnight.",
             "price": 1.99,
             "category": 5,
@@ -144,7 +144,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000011",
-            "name": "PomeAlae & Seasalt Soap",
+            "name": "PomeAlae & Seasalt",
             "description": "Pomegranite & Sea salt has many benefits for the skin. It detoxifies, softens and moisturizes the skin, it reduces irritation to the skin and contains many nourishing minerals such as magnesium, zinc, calcium, potassium and iodine.This combination of minerals helps relax the muscles and skin and provide better circulation.",
             "price": 3.99,
             "category": 5,
@@ -158,7 +158,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000012",
-            "name": "Shea Butter Soap",
+            "name": "Shea Butter",
             "description": "Naturally nourishing, shea butter soap is used to moisturize and replenish the skin.Rich in fatty acids and plant sterols, shea butter can help heal all manner of wounds and burns, as well as improving the appearance of scars. Vitamin A helps the skin heal while Vitamin F is soothing and replenishing for sensitive skin",
             "price": 2.59,
             "category": 5,
@@ -172,7 +172,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000013",
-            "name": "Relaxing Spa Soap",
+            "name": "Relaxing Spa",
             "description": "Spa soap is a soothing treatment for the body and mind.It will guide you to relaxation with its tones of eucalyptus and tea tree oil, all the while loosening up your muscles at the end of the day.",
             "price": 1.99,
             "category": 5,
@@ -186,7 +186,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000014",
-            "name": "Rose & Loofah Soap",
+            "name": "Rose & Loofah",
             "description": " soapis made with an exfoliating loofah to help remove dry skin and replenish moisture.Contains Rose extracts, milk and essential oils",
             "price": 2.99,
             "category": 5,
@@ -200,7 +200,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000015",
-            "name": "Black Molass Shampoo Bar",
+            "name": "Black Molass",
             "description": "Our black molasses shampoo bar is one of its kind. Curl up with cocoa and avocado and enjoy washing your natural hair with this vegan shampoo bar.Ideal for those with scalp issues, it is unscented with a carefully balanced herbal mix of horsetail, yucca and nettle. The addition of black molasses and agave nectar help with the nourishing, strengthening as well as softness of your hair.",
             "price": 2.99,
             "category": 4,
@@ -214,7 +214,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000016",
-            "name": "Jasmine Shampoo Bar",
+            "name": "Jasmine",
             "description": "Jasmine essential oil is believed to strengthen the roots and lengths of the hair, while providing a light coat of moisture to improve suppleness. These effects, when combined, give you more voluminous, fewer breakage and shinier hair.",
             "price": 3.99,
             "category": 4,
@@ -228,7 +228,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000017",
-            "name": "Honey Shampoo bar",
+            "name": "Honey",
             "description":"Hi Honey! Do you have curly hair? Or do you suffer from dry, frizzy or damaged hair? Then you now see a perfectly fitting Shampoo Bar in front of you.",
             "price": 2.59,
             "category": 4,
@@ -242,7 +242,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000018",
-            "name": "Cinnamon shampoo bar",
+            "name": "Cinnamon",
             "description": "The cinnamon oil restores dry and damaged hair. With essential oil of mandarin and ylang ylang and enriched with avocado oil.This handmade and natural shampoo bar is suitable for normal to dry hair. But it is a perfect shampoo bar for dry and damaged hair.",
             "price": 1.99,
             "category": 4,
@@ -256,7 +256,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000019",
-            "name": "Melon ShampooBar",
+            "name": "Melon",
             "description": "Melon as melon should be: sweet and fresh. A scent explosion guaranteed and nice and summery!.",
             "price": 3.99,
             "category": 4,
@@ -270,7 +270,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000020",
-            "name": "Papaya & Cherry Shampoo Bar",
+            "name": "Papaya & Cherry",
             "description": "The Shampoo Bar Papaya Cherry is a feast for your senses. The Bar smells fantastic, feels soft and cleans subtly. Suffering from sensitive skin or a dry scalp? Then this is a very suitable Bar. Suitable for every hair type.",
             "price": 1.99,
             "category": 4,
@@ -284,7 +284,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000021",
-            "name": "Lavender Shampoo Bar",
+            "name": "Lavender",
             "description": "In addition to the beautiful soft purple color and wonderful scent, lavender also has a soothing and calming effect, ideal before going to sleep. An alternative to silver shampoo!",
             "price": 2.59,
             "category": 4,
@@ -298,7 +298,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000022",
-            "name": "Orange Shampoo Bar",
+            "name": "Orange",
             "description": "Orange top! The Shampoo Bar Orange not only provides fresh hair, a delicious orange scent, but also works against greasy hair!",
             "price": 15.00,
             "category": 4,
@@ -312,7 +312,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000023",
-            "name": "Mango & coconut Shampoo Bar",
+            "name": "Mango & coconut",
             "description": "Looking for a natural and sustainable shampoo for curly hair? Then the Shampoo Bar Mango Coconut is recommended. The effect of the shampoo and the wonderful scent provide a welcome addition to your CG method!",
             "price": 2.99,
             "category": 4,
@@ -326,7 +326,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000057",
-            "name": "Vanilla Shampoo Bar",
+            "name": "Vanilla",
             "description": "This shampoo bar with cocoa butter, hemp seed oil, avocado oil and coconut milk, and vanilla oil nourishes the hair and is gentle on the skin. This hair soap is suitable for all hair types.",
             "price": 2.99,
             "category": 4,
@@ -340,7 +340,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000058",
-            "name": "Eucalyptus Shampoo Bar",
+            "name": "Eucalyptus",
             "description": "Like stepping into a spa! With our Shampoo Bar Eucalyptus you create a wellness experience in addition to a sustainable shower experience. The delicious and special scent of Eucalyptus is refreshing and stimulates your senses.",
             "price": 2.99,
             "category": 4,
@@ -354,7 +354,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000059",
-            "name": "Turmeric Late Shampoo Bar",
+            "name": "Turmeric Late",
             "description": "This canele features an anti-fungal and anti-inflammatory recipe blend of Organic Turmeric, Tea tree and Moroccan Lava Clay to help combat scalp issues related to itching, hair loss and scales caused by dandruff.This shampoo is best suited for those with dyed hair looking to enhance its colour durability.",
             "price": 2.99,
             "category": 4,
@@ -368,7 +368,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000060",
-            "name": "Citron Shampoo Bar",
+            "name": "Citron",
             "description": "Fresh lemons! You see it, you smell it and you feel it! Specially developed for strands that become greasy earlier. This will make you happy!",
             "price": 2.99,
             "category": 4,
@@ -382,7 +382,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000061",
-            "name": "Teatree Shampoo Bar",
+            "name": "Teatree",
             "description": "For the real Tea Tree lovers, this is the Shampoo Bar. The intense natural Tea Tree scent is so unique that this is one of our most special Shampoo Bars.",
             "price": 2.99,
             "category": 4,
@@ -396,7 +396,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000062",
-            "name": "Kiwi Shampoo Bar",
+            "name": "Kiwi",
             "description": "The Shampoo Bar Kiwi smells fresh, sweet and looks delicious. For clean, fresh & fruity hair!",
             "price": 2.99,
             "category": 4,
@@ -410,7 +410,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000024",
-            "name": "Aloevera Conditioner",
+            "name": "Aloevera",
             "description": "The most expressive and beautiful feature of our head is our hair! Your hair compliments your face and says a lot about you as a person. Take care of your hair with a product that respects it. Aloe Vera does this in a fantastic way. It provides natural hydration, helps against dry scalp and is packed with natural nutrients. The Conditioner Bar makes your hair wonderfully soft and ensures that it falls well. For an optimal hair day, every day!",
             "price": 2.99,
             "category": 3,
@@ -424,7 +424,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000025",
-            "name": "Chamomile Conditioner",
+            "name": "Chamomile",
             "description": "Calmness in a yellow jacket. This Conditioner Bar gives you the ultimate feeling of peace. Perfect to end a long day (or start a new one!) and dream away with the wonderful scents of chamomile. In addition to these soothing properties, chamomile also softens the hair and prevents skin irritation. The Conditioner Bar makes your hair wonderfully soft and ensures that it falls well. For an optimal hair day, every day!",
             "price": 1.99,
             "category": 3,
@@ -438,7 +438,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000026",
-            "name": "Green Tea Conditioner",
+            "name": "Green Tea",
             "description": "You become more fun with a smile! Fortunately, you can only laugh with this cheerful Bar. Cheerful, sparkling and fresh in a green jacket. The wonderfully sweet scent and composition of natural ingredients automatically put a big smile on your face. The Conditioner Bar makes your hair wonderfully soft and ensures that it falls well. For an optimal hair day, every day!",
             "price": 2.59,
             "category": 3,
@@ -452,7 +452,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000027",
-            "name": "Lavender Bliss Conditioner",
+            "name": "Lavender Bliss",
             "description": "Smell this lavender Bar and you will imagine yourself in a fragrant flower field in France. Besides a beautiful decoration, lavender is also a blessing for your mood, skin and hair. After using this spicy Conditioner Bar you are all set for a new day. Calm, security and care in a cheerful purple Bar. The Conditioner Bar makes your hair wonderfully soft and ensures that it falls well. For an optimal hair day, every day!",
             "price": 1.59,
             "category": 3,
@@ -466,7 +466,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000028",
-            "name": "Melon Conditioner",
+            "name": "Melon",
             "description": "A versatile piece of fruit: melon! Contains a wonderfully sweet scent and is naturally powerful for both your hair and the (scalp) skin. A real one in a melon! And did we mention that the Bar smells fantastic? A genuine fragrance sensation and guaranteed a happy mood after use. The Conditioner Bar makes your hair wonderfully soft and ensures that it falls well.",
             "price": 1.89,
             "category": 3,
@@ -480,7 +480,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000029",
-            "name": "Tender Rose Conditioner",
+            "name": "Tender Rose",
             "description": "Life is much more fun when you look at it through rose-colored glasses. With this Bar, that's a cinch! With the intense scent of roses you get a positive boost. The natural ingredients also moisturize and nourish your hair. The Conditioner Bar makes your hair wonderfully soft and ensures that it falls well. For an optimal hair day, every day!",
             "price": 1.99,
             "category": 3,
@@ -508,7 +508,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000031",
-            "name": "Blackberry Bomb",
+            "name": "Blackberry",
             "description": "Amazingly relaxing, fruity but with so much earthen depth.Let you worries dissolve as you run a bath and drop in this fruity, earthy scented bath bomb. Relax into the lilac waters to feel relaxed and grounded.",
             "price": 2.99,
             "category": 2,
@@ -522,7 +522,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000032",
-            "name": "Sweetheart Bomb",
+            "name": "Sweetheart",
             "description": "Run a bath and drop in this captivating combination of rose, orris root powder and lemon for a gentle relaxing soak.",
             "price": 2.99,
             "category": 2,
@@ -536,7 +536,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000033",
-            "name": "Grande Bomb",
+            "name": "Grande",
             "description": "Once the bath is full, drop this heavenly scented bath bomb in the hot water, let the jasmine absolute seduce you into the lilac and silver waters scented with lashings of dark oudh.",
             "price": 2.99,
             "category": 2,
@@ -550,7 +550,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000034",
-            "name": "Splash Bomb",
+            "name": "Splash",
             "description": "Sink into a warm bath as this softening coarse sea salt and floral mimosa absolute bath bomb fizzes and fills your watery sanctuary.",
             "price": 2.99,
             "category": 2,
@@ -564,7 +564,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000035",
-            "name": "Peach Bomb",
+            "name": "Peach",
             "description": "Drop this swoon-worthy bath bomb into your soak and revel in its warm, sweet davana oil waters.",
             "price": 2.99,
             "category": 2,
@@ -578,7 +578,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000036",
-            "name": "Cool Blue Bomb",
+            "name": "Cool",
             "description": "Gently place into warm bath water to unleash a galaxy of refreshing peppermint oil, cobalt blue clouds and shimmering stardust.",
             "price": 2.99,
             "category": 2,
@@ -592,7 +592,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000037",
-            "name": "Dragon's Egg Bomb",
+            "name": "Dragon's Egg",
             "description": "Release this dragon into your bath water for citrus fizzes before it releases a glittery orange roar.",
             "price": 2.99,
             "category": 2,
@@ -606,7 +606,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000038",
-            "name": "Cindrella Bomb",
+            "name": "Cindrella",
             "description": "Be your own Fairy Godmother and drop into the warm bath water, letting the swirling magic surround you.",
             "price": 2.99,
             "category": 2,
@@ -620,7 +620,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000039",
-            "name": "Rosy Star Bomb",
+            "name": "Rosy Star",
             "description": "The time has come to be true to yourself. The Snow Fairy is here to shine a light on the courage, kindness, and confidence within you.",
             "price": 2.99,
             "category": 2,
@@ -634,7 +634,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000040",
-            "name": "Pudding Bomb",
+            "name": "Pudding",
             "description": "Time to bring in the festive cheer! Inhale the uplifting, bright citrus scent as gold, pink, white and yellow bath art blends into sparkling, peach-coloured waters.",
             "price": 2.99,
             "category": 2,
@@ -648,7 +648,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000041",
-            "name": "Snow Star Bomb",
+            "name": "Snow Star",
             "description": "Get ready for the most relaxing bath possible, full of sleepy tonka and lavender. Run a hot bath, warm up your slippers and open the book. Drop Twilight into the water and relax.",
             "price": 2.99,
             "category": 2,
@@ -662,7 +662,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000042",
-            "name": "Stary Nights Bomb",
+            "name": "Stary Nights",
             "description": "Fizz this cobalt bath bomb in a hot bath and bathe among the stars, brightening moods and pampering skin in a cosmos of your own making.",
             "price": 2.99,
             "category": 2,
@@ -676,7 +676,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000043",
-            "name": "Spotty Sky Bomb",
+            "name": "Spotty Sky",
             "description": "Prepare for mischief and merriment with this patchouli and vanilla fizzer. A fragrance loved by many, this familiar character has had a costume change this year. Allow the colours of the court jester to transform your bathwater and tickle your senses.",
             "price": 2.99,
             "category": 2,
@@ -690,7 +690,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000044",
-            "name": "Alien BubbleBar",
+            "name": "Alien",
             "description": "Prepare to be transported to another world with mountains of uplifting and zesty bubbles. New dimensions await as neon waters refresh and revive with uplifting bergamot and litsea cubeba.Crumble a little or the whole thing under running water for juicy, fruity neon water and out of this world bubbles.",
             "price": 2.99,
             "category": 1,
@@ -704,7 +704,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000045",
-            "name": "Apple BubbleBar",
+            "name": "Apple",
             "description": "Crumble a little, a lot, or the whole thing under the tap as you run the bath. Climb in to enjoy fluffy bubbles and blush-coloured waters.This makes you think of a nice cold glass of apple and raspberry flavoured sparkling water on a hot summers' day..",
             "price": 2.99,
             "category": 1,
@@ -718,7 +718,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000046",
-            "name": "Citrus BubbleBar",
+            "name": "Citrus",
             "description": "Break half and crumble under the running water to create mountains of juicy bubbles. Save the other half for next time.",
             "price": 2.99,
             "category": 1,
@@ -732,7 +732,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000047",
-            "name": "Bluesky BubbleBar",
+            "name": "Bluesky",
             "description": "For those who don't much like the floral or citrus smells, this one is for you. It's what we would call a fresh, almost masculine smell making plenty of bubbles and giving water a lovely pale blue.",
             "price": 2.99,
             "category": 1,
@@ -746,7 +746,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000048",
-            "name": "Bottle BubbleBar",
+            "name": "Bottle",
             "description": "You can use this bubble bottle over, and over, and over again. Hold under the tap for mountains of bubbles, then save for when you’re ready to summon splendid suds all over again. Best used fres",
             "price": 2.99,
             "category": 1,
@@ -760,7 +760,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000049",
-            "name": "Candycane BubbleBar",
+            "name": "Candycane",
             "description": "This year's Candy Cane has a new look and a new scent. Refreshing minty bubbles atop candy pink waters, use to decorate your tree before whipping up foam in 3-4 plastic-free bubble baths.",
             "price": 2.99,
             "category": 1,
@@ -774,7 +774,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000050",
-            "name": "Castle BubbleBar",
+            "name": "Castle",
             "description": "Crumble a little, or a lot, of this castle under running water and create your own clouds of bubbles.",
             "price": 2.99,
             "category": 1,
@@ -788,7 +788,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000051",
-            "name": "Kitty BubbleBar",
+            "name": "Kitty",
             "description": "You'll be feeling fur-nastically fortunate after soaking in a bed of cheerful neroli bubbles, thanks to this tide-turning feline. Crumble under running water to create seriously poppable mounds of joy.",
             "price": 2.99,
             "category": 1,
@@ -802,7 +802,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000052",
-            "name": "Monster BubbleBar",
+            "name": "Monster",
             "description": "Whisper your concerns to the Worry Monster then crumble him under the tap and watch your worries dissolve.",
             "price": 2.99,
             "category": 1,
@@ -816,7 +816,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000053",
-            "name": "Rainbow BubbleBar",
+            "name": "Rainbow",
             "description": "A little, a lot, or the whole thing and crumble under running water. You’ll find mounds of brilliant bubbles at the end of this rainbow.",
             "price": 2.99,
             "category": 1,
@@ -830,7 +830,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000054",
-            "name": "Mermaid BubbleBar",
+            "name": "Mermaid",
             "description": "Wishing for one bath or two? Crumble the bubble bar section under running water for a zesty grapefruit oil immersion. Alternatively, allow the organic cocoa butter fin to melt in warm water for a softening bath melt-enriched soak. Feeling indulgent? Combine both for the ultimate splash session!",
             "price": 2.99,
             "category": 1,
@@ -844,7 +844,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000055",
-            "name": "Unicorn BubbleBar",
+            "name": "Unicorn",
             "description": "Crumble your replica unicorn horn under the tap (we’d never use the horn of a real unicorn, and we never test products on them either), click three times, and say “I do believe in unicorns.” The fairies will know if you don’t do it. Best used fresh for optimum magic",
             "price": 2.99,
             "category": 1,
@@ -858,7 +858,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pp5001000056",
-            "name": "Frozen BubbleBar",
+            "name": "Frozen",
             "description": "Sweep your bubble bar across the water or release in the bath while the tap is running to create peaks of magical frozen bubbles.",
             "price": 2.99,
             "category": 1,

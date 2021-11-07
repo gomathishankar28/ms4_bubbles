@@ -493,10 +493,6 @@ footer p {
     padding-left: 0;
 }
 
-.btn-link:hover {
-    color: var(--color-black);
-}
-
 .product-details-additional {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -511,8 +507,12 @@ footer p {
     font-size: 14px;
     line-height: 170%;
 }
+.shipping {
+    background-color: #7bcbc8;
+}
 
 /*----- Reviews-----------*/
+
 .tooltip {
     position: relative;
     display: inline-block;
@@ -542,7 +542,15 @@ footer p {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
-
+  .review-accordion {
+      background-color: #7bcbc8!important;
+  }
+  .review-desc {
+      font-size: 18px;;
+  }
+.rating-stars {
+    color: #7bcbc8;
+}
 /*------ Empty Cart Page ------*/
 
 .empty-cart {
