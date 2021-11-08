@@ -11,9 +11,9 @@ from .forms import ContactForm
 def index(request):
     """ A view to return the index page """
 
-    latest_arrival_1 = get_object_or_404(Product, pk=6)
-    latest_arrival_2 = get_object_or_404(Product, pk=6)
-    latest_arrival_3 = get_object_or_404(Product, pk=6)
+    latest_arrival_1 = get_object_or_404(Product, pk=66)
+    latest_arrival_2 = get_object_or_404(Product, pk=67)
+    latest_arrival_3 = get_object_or_404(Product, pk=68)
 
     # Prefill the email address field at contact form
     if request.user.is_authenticated:
