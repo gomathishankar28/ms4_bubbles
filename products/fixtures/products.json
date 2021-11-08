@@ -321,90 +321,7 @@
             "image": "mango-coco-shampoo.jpg"
         }
    },
-   {
-        "pk": 57,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001000057",
-            "name": "Vanilla",
-            "description": "This shampoo bar with cocoa butter, hemp seed oil, avocado oil and coconut milk, and vanilla oil nourishes the hair and is gentle on the skin. This hair soap is suitable for all hair types.",
-            "price": 2.99,
-            "category": 4,
-            "rating": 4.9,
-            "image_url": null,
-            "image": "vanilla-shampoo.jpg"
-        }
-   },
-   {
-        "pk": 58,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001000058",
-            "name": "Eucalyptus",
-            "description": "Like stepping into a spa! With our Shampoo Bar Eucalyptus you create a wellness experience in addition to a sustainable shower experience. The delicious and special scent of Eucalyptus is refreshing and stimulates your senses.",
-            "price": 2.99,
-            "category": 4,
-            "rating": 4.9,
-            "image_url": null,
-            "image": "eucalyptus-shampoo.jpg"
-        }
-   },
-   {
-        "pk": 59,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001000059",
-            "name": "Turmeric Late",
-            "description": "This canele features an anti-fungal and anti-inflammatory recipe blend of Organic Turmeric, Tea tree and Moroccan Lava Clay to help combat scalp issues related to itching, hair loss and scales caused by dandruff.This shampoo is best suited for those with dyed hair looking to enhance its colour durability.",
-            "price": 2.99,
-            "category": 4,
-            "rating": 4.9,
-            "image_url": null,
-            "image": "turmericlate-shampoo.jpg"
-        }
-   },
-   {
-        "pk": 60,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001000060",
-            "name": "Citron",
-            "description": "Fresh lemons! You see it, you smell it and you feel it! Specially developed for strands that become greasy earlier. This will make you happy!",
-            "price": 2.99,
-            "category": 4,
-            "rating": 4.9,
-            "image_url": null,
-            "image": "citron-shampoo.jpg"
-        }
-   },
-   {
-        "pk": 61,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001000061",
-            "name": "Teatree",
-            "description": "For the real Tea Tree lovers, this is the Shampoo Bar. The intense natural Tea Tree scent is so unique that this is one of our most special Shampoo Bars.",
-            "price": 2.99,
-            "category": 4,
-            "rating": 4.9,
-            "image_url": null,
-            "image": "teatree-shampoo.jpg"
-        }
-   },
-   {
-        "pk": 62,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001000062",
-            "name": "Kiwi",
-            "description": "The Shampoo Bar Kiwi smells fresh, sweet and looks delicious. For clean, fresh & fruity hair!",
-            "price": 2.99,
-            "category": 4,
-            "rating": 4.9,
-            "image_url": null,
-            "image": "kiwi-shampoo.jpg"
-        }
-   },
+   
    {
         "pk": 24,
         "model": "products.product",
@@ -866,5 +783,199 @@
             "image_url": null,
             "image": "frozen-bubbles.png"
         }
-   }
+    },
+    {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000057",
+            "name": "Vanilla",
+            "description": "This shampoo bar with cocoa butter, hemp seed oil, avocado oil and coconut milk, and vanilla oil nourishes the hair and is gentle on the skin. This hair soap is suitable for all hair types.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "vanilla-shampoo.jpg"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000058",
+            "name": "Eucalyptus",
+            "description": "Like stepping into a spa! With our Shampoo Bar Eucalyptus you create a wellness experience in addition to a sustainable shower experience. The delicious and special scent of Eucalyptus is refreshing and stimulates your senses.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "eucalyptus-shampoo.jpg"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000059",
+            "name": "Turmeric Late",
+            "description": "This canele features an anti-fungal and anti-inflammatory recipe blend of Organic Turmeric, Tea tree and Moroccan Lava Clay to help combat scalp issues related to itching, hair loss and scales caused by dandruff.This shampoo is best suited for those with dyed hair looking to enhance its colour durability.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "turmericlate-shampoo.jpg"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000060",
+            "name": "Citron",
+            "description": "Fresh lemons! You see it, you smell it and you feel it! Specially developed for strands that become greasy earlier. This will make you happy!",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "citron-shampoo.jpg"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000061",
+            "name": "Teatree",
+            "description": "For the real Tea Tree lovers, this is the Shampoo Bar. The intense natural Tea Tree scent is so unique that this is one of our most special Shampoo Bars.",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "teatree-shampoo.jpg"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000062",
+            "name": "Kiwi",
+            "description": "The Shampoo Bar Kiwi smells fresh, sweet and looks delicious. For clean, fresh & fruity hair!",
+            "price": 2.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "kiwi-shampoo.jpg"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000063",
+            "name": "Vanilla & Blackberry",
+            "description": "This listing is for one full sized bar of handmade Blackberry Vanilla w/Shea Butter Soap. Purple swirls of blackberry with creamy white vanilla which create a moisturizing and delicately scented bar. This Soap is a Soothing combination of Oils and Shea Butter which lathers beautifully. The gentle blend of oils and Shea Butter soothes and softens the skin with the sweet mild scent of Blackberry Vanilla. Ground Vanilla Beans adorn the top in a beautiful presentation for gift giving. Everyone loves this rich and nourishing mildly scented soap, great for sensitive skin.",
+            "price": 6.99,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": null,
+            "image": "vanillablackberry-spl_07x74Nd.jpg"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000064",
+            "name": "Comforter",
+            "description": "The purple with pink and white foam forms a familiar blanket under which you can completely relax. Even (or especially) if you are not familiar with our famous berry scent , the combination of blackcurrant and bergamot oil is highly recommended: one ensures relaxation, the other refreshes your mind. Finally, soothing cypress oil provides a bath full of comfort and pleasure.",
+            "price": 7.89,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": null,
+            "image": "comforter-spl_dCX1p0f.jpg"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000065",
+            "name": "Twilight",
+            "description": "Let all your worries and tension melt away in this amazing bubble bath with the scents of lavender, tonka and ylang ylang .",
+            "price": 5.99,
+            "category": 1,
+            "rating": 4.9,
+            "image_url": null,
+            "image": "twilight-bubbles_s0Pxlyo.png"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000066",
+            "name": "Happy Bath Day",
+            "description": "A perfect gift for everyone who is celebrating absolutely anything! Bath lovers and Lush lovers will enjoy the selection of classics and exclusives. Comes complete with decorations to bring the party home.
+            Gift contains -
+            Intergalactic Bath Bomb
+            Mini Brightside Bubble Bar
+            Calm A Llama Party Piñata Bath Bomb
+            Gold Party Balloon Reusable Bubble Bar
+            Toby's Magic Cow Bath Bomb
+            Dragon's Egg Bath Bomb
+            Happy Birthday Llama banner.",
+            "price": 20,
+            "category": 2,
+            "rating": 5,
+            "image_url": null,
+            "image": "happy_bathday.png"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000067",
+            "name": "Art Of Christmas",
+            "description": "A Lush gift that really keeps on giving, with something for every bath, and activities to share with family and friends when you're not enjoying a soak in the tub! Printed inside the box are cut-out illustrations to create a variety of festive finger puppets, family games, as well as Christmas bunting that's made from Lokta paper bark
+                            Paper- Made from 100% recycled paper. No primary fibres are used for our paper production and for every tonne of 100% recycled paper produced, 70% less water is used compared to virgin fibre paper.
+                            Ribbon- 100% recycled polyester made from recycled drinks bottles.
+                            Inner Box- Made from 100% recycled board. Reuse again or recycle with paper recycling.
+                            Contents-
+                        -The North Pole Bubble Bar
+                        -Candy Cane Reusable Bubble Bar
+                        -Snowman Dreaming Bath Bomb
+                        -The Golden Pudding Bath Bomb
+                        -Butterbear Bath Bomb
+                        -Happy Christmas Lokta Paper Banner",
+            "price": 30,
+            "category": 2,
+            "rating": 5,
+            "image_url": null,
+            "image": "christmas_bath.png"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001000068",
+            "name": "Snow Time",
+            "description": "There's Snowtime like the present, and this present is a lovely excuse for our Bears and Snowman to have a Fun Snowball fight! Five playful products for the body and the bath, these snow themed soaks are made to warm you after a chilly day.
+            Box- Made from 100% recycled board. Reuse again, regift or recycle with paper recycling.
+            Ribbon: 100% recycled polyester made from recycled drinks bottles, reuse again.
+            Contents-
+            -Polar Bear Soap 100g
+            -Snowman Dreaming Bath Bomb
+            -Snowball Bath Bomb
+            -Blue Fun 100g
+            -Sleepy Bear Bath Bomb",
+            "price": 28.00,
+            "category": 2,
+            "rating": 5,
+            "image_url": null,
+            "image": "snowtime.png"
+        }
+    }
 ]
