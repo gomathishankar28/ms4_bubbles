@@ -11,14 +11,14 @@
     </div>
     <!--- Blog Intro --->
     <section>
-        <div class="container-fluid div-section">
+        <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <h2 class="h2-style text-center">HEALTH BENEFITS OF TAKING A BATH</h2>
+                    <h2 class="text-center">HEALTH BENEFITS OF TAKING A BATH</h2>
                 </div>
                 <div class="row mt-3">
                     <div class="container">
-                        <p class="paragraph-margin">
+                        <p>
                             Bathing has been a part of the human health for centuries. 
                             From the Roman people who loved a good bath to Scandinavians 
                             who take plunges in cold water right after a sauna, each country 
@@ -32,19 +32,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    
     <!-- Blog Image -->
-    <div class="row hp-section-3">
+    <div class="row">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img src="{{ MEDIA_URL }}blog.jpg" alt="decor" class="homepage-cards-3">
+                    <img src="{{ MEDIA_URL }}blog.jpg" alt="decor" class="blog-img" width=350 height=350>
                 </div>
             </div>
         </div>
     </div>
     <!--- Posts --->
-    <div class="bg-white-trans-blog">
+    <div class="posts">
         <div class="row">
             <div class="col-8 offset-2">
             </div>
@@ -80,4 +80,5 @@
             {% endif %}
     {% endfor %}
 </div>
+</section>
 {% endblock %}

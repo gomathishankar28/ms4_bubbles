@@ -403,6 +403,25 @@ footer p {
     }
 }
 
+/*------ Toasts ------*/
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+    background-color: #f07972;
+}
+
+.custom-toast {
+    overflow: visible;
+    
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /*------ Products Page ------*/
 
 .logo-font {
@@ -421,10 +440,6 @@ footer p {
 
 .offset-1 {
     margin-top: 2.5rem;
-}
-
-.head-flowers {
-    width: 11.5rem;
 }
 
 /*------ Products Page/Sort By Box ------*/
@@ -625,7 +640,19 @@ footer p {
         text-align: center;
         margin-left: -10px;
     }
-
+@media (min-width: 540px) {  
+    .blog-img {
+        width: 500px;
+        height: 500px;
+    }
+}
+@media (min-width: 800px) {  
+    .blog-img {
+        width: 700px;
+        height: 700px;
+    }
+}
+    
 @media (min-width: 840px) {  
     .mobile-logo {
         display: none;

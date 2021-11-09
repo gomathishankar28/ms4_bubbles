@@ -1,108 +1,121 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [BUBBLES](https://gomathishankar28.github.io/ms4_bubbles/)
 
-Welcome gomathishankar28,
+is an online Handmade soap shop, which offers a variety of plastic free and vegan bathing bars.
+The shop also publishes blog posts about benefits of bathing ,use of bathbombs, where the site visitors can leave a comment.
+**Bubbles** is an educational project that serves as the **Milestone Project 4** for the **Full-Stack Software Developer programme** powered by **Code Institute**.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
+  - [Demo](#demo)
+  - [Introduction](#introduction)
+  - [UX](#ux)
+    - [Business Goals](#business-goals)
+    - [User Goals](#user-goals)
+    - [User Stories](#user-stories)
+    - [Strategy](#strategy)
+    - [Scope](#scope)
+    - [Structure](#structure)
+    - [Skeleton](#skeleton)
+    - [Surface](#surface)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Demo 
+[Live Website](https://ms4-bubbles.herokuapp.com/)
 
-## Gitpod Reminders
+![AmIResponsive]()
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Introduction
 
-`python3 -m http.server`
+Bubbles takes great pleasure in looking after our people, our growing tribe and our planet. It aims to make the world a better place, by not only lifting spirits and tickling the senses, but by raising the bar too. And we don’t just mean soap.
 
-A blue button should appear to click: _Make Public_,
+Almost everyone has unused products in the bathroom. Once at home, you found out that the product isn't doing what you hoped it would, or it doesn't suit your skin or hair. And so your bathroom cabinets, window sills and shelves become increasingly full of useless items that eventually end up in the trash. If we make products for every need, everyone can buy exactly what they need and we ultimately reduce waste.
 
-Another blue button should appear to click: _Open Browser_.
+Personal service is best for the environment. If we have a product that meets your needs, you get real value for money, we get a regular customer, consumption of unnecessary products decreases and money is no longer wasted. And what would people really want? Products that consist of rainbows, unicorns and waterfalls, you know: Bubbles products!
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Business Goals
+*   To target the customers who are looking for bathing products that are plastic-free.
 
-A blue button should appear to click: _Make Public_,
+*   To target the customers who are looking for bathing products that are vegan.
 
-Another blue button should appear to click: _Open Browser_.
+*   To target the customers who want to use handmade bathing products.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+*   To target the customers who want to use a bathing product that suits their skin or hair. 
 
-To log into the Heroku toolbelt CLI:
+*   To target children who want to have fun while taking bath
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+*   To Clearly communicate the kinds of product available.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+*   Build a brand image for a Natural handmade soap company.
 
-------
+*   To have a feedback from customers which will provide more ideas for a new product.
 
-## Release History
+## user Goals
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+As a customer, I would like 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+*   To know what kind of products they offer. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+*   To know the main ingredient involved in each product.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+*   To be able to search for a specific bath product.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+*   To know the price, description of each product
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+*   To see the user reviews for each product. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+*   To add my own review and feedback about the product
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+##  User stories
+*   As a prospective customer to the website, I want to easily navigate the site, so that I can easily find the products that  Bubbles offers.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+*   As a prospective customer to the website, I want to precisely know the different varieties of bathing products they sell.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+*   As a prospective customer to the website, I should be able to search based on keywords so that I can get the desired information quickly.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+*   As a prospective customer, I would like to receive suggestions in the search field so that I can narrow down my search easily.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+*   As a prospective customer, I should be able to access all the different bathing products from nav menu.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+*   As a new customer to the website, I want to know if there are any new arrivals.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+*   As a new customer, I want to know the description of each product
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+*   As a new customer to website, I want to know how many products are available under each category.
 
-------
+*   As a customer to the website, I want to know the price of the product.
 
-## FAQ about the uptime script
+*   As a customer, I would like to see any reviews available for the product.
 
-**Why have you added this script?**
+*   As a customer, I would like to add my own review to the product.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+*   As a customer, I would like to see an average rating for each product that would help me to choose a better product.
 
-**How will this affect me?**
+*   As a customer, I would like to knowthe shipping and Return Policy for the products.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+*   As a prospective customer to the website, I want to edit my review for the product.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+*   As a prospective customer to the website, I want to delete my review for the product.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+*   As a prospective customer to the website, I want to contact Bubbles team incase of any issues.
 
-**So….?**
+*  As a prospective customer to the website, I would like to easily update my cart by increasing or decreasing the quantity of the product.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+*  As a prospective customer to the website, I would like to have my delivery information prefilled so that i can complete my purchase quickly.
 
-**Can I opt out?**
+*   As an Administrator, I would like to restrict only the logged in users to add/edit/delete his/her ownreview so that unauthorized/ untraceable changes are prevented.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+*   As an administrator, I would like to add a new product.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+*   As an administrator, I would like to add a new BlogPost.
 
-**Anything more?**
+*   As an administrator, both unregistered and registered users should be able to view the product and the user reviews so that the display of information is not restricted for unregistered users.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+*   As an administrator, I should allow registered users to log out so that unauthorized accesses are prevented.
 
----
+*   As an administrator, I would like to have field level validations on the contact entry so that incorrect or incomplete information is avoided.
 
-Happy coding!
+ 
