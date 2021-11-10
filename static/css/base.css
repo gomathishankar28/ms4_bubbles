@@ -409,16 +409,13 @@ footer p {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 99999999999;
+    z-index: 999;
     background-color: #f07972;
 }
 
 .custom-toast {
     overflow: visible;
-    position: absolute;
-    top: 30px;
-    right: 0;
-    background: #f07972; 
+    
 }
 
 .toast-capper {
