@@ -415,7 +415,10 @@ footer p {
 
 .custom-toast {
     overflow: visible;
-    
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #f07972; 
 }
 
 .toast-capper {
