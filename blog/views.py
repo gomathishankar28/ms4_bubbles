@@ -11,9 +11,11 @@ def blog(request):
     """ BLog page to display all available posts """
 
     posts = Post.objects.all()
+    post_count = len(posts)
     template = 'blog/blog.html'
     context = {
-        'posts': posts
+        'posts': posts,
+        'post_count': post_count
     }
     
     return render(request, template, context)
