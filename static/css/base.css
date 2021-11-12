@@ -689,6 +689,13 @@ footer p {
         text-align: center;
         margin-left: -10px;
     }
+.blog-hr {
+    border: 10px solid #7bcbc8;
+    border-radius: 5px;
+}
+.blog-btn {
+    padding: 5px;
+}
 @media (min-width: 540px) {  
     .blog-img {
         width: 500px;
@@ -699,9 +706,31 @@ footer p {
 @media (min-width: 800px) {  
     .blog-img {
         width: 700px;
-        height: 700px;
+        height: 500px;
     }
 }
+@media (min-width: 1024px) {  
+    .blog-img {
+        margin-left: 130px;
+    }
+}
+@media (min-width: 1200px) {  
+    .blog-img {
+        margin-left: 300px;
+    }
+}
+@media (min-width: 1440px) {  
+    .blog-img {
+        margin-left: 400px;
+    }
+}
+@media (min-width: 1600px) {  
+    .blog-img {
+        margin-left: 600px;
+    }
+}
+
+
 
 
     
