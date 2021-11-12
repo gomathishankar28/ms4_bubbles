@@ -295,8 +295,52 @@ Django allauth was used to set up user registration and built in decorators allo
 
 **Colors**
 
-The color palette chosen here is aqua blue that represents the water t As a symbolic representation of all the blue collared services being listed on this site, this aims to have a quick recall with the users. 
+The color palette chosen here is aqua blue that represents the water. The lightness of the color can mean clarity of thoughts and calmness. .The color is easy on the eyes and can make anyone feel at ease. Also the contrast color that goes with aqua is Pastel Pink.
 
 **Typography**
 
-Two fonts were used for this project, Akaya Telivigala', cursive, and sans-serif with a sans-serif being fallback font. The cursive style fonts are a well-known typography choice, and are particularly popular on the web. Cursive writing fonts can give the website a more personal feel and approach media.
+Two fonts were used for this project, Akaya Telivigala', cursive, and sans-serif with a sans-serif being fallback font. The cursive style fonts are a well-known typography choice, and are particularly popular on the web. Cursive writing fonts can give the website a more personal feel and approach media
+
+**Media**
+
+I used different websites for inspiration and images on my site:
+* [Lush](https://www.lush.com/uk/en)
+* [Thehappysoaps](https://thehappysoaps.com/)
+* [Shampoobars](https://shampoobars.nl/)
+* [DIY Soaps](https://www.diysoap.nl/nl/)
+
+**Iconography**
+
+Icons like pen,star,back arrow have been used throughout the website to improve the efficiency of UX.
+
+## Features
+Each page in the website features a responsive navigation bar with a banner and a quick search bar on the top with conventional placing of Brand Name on the top left. Each page has a very simple footer with allthe nav links, links to social media and copyright information.
+
+**Home**
+
+The Home page features 4 sections areas apart from the header and footer.
+
+***Hero image with CTA***
+
+This is the  first section (call out section)- which features a girl enjoying her bath .It also has a Call to Action button that takes you to the Products page.
+
+***Latest Arrivals***
+
+This section showcases 3 new products added for that month.
+
+***About***
+
+This section elaborates about the owners of the company and what do they do to create these products
+
+***Testimonials***
+
+This section showcases a Carousel of 5 testimonies.
+
+***Contact***
+
+This Section has a Feedback form which can be used by the customers to send their feedback.
+
+### **Products**
+This page displays the following:
+
+
