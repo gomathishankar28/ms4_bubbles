@@ -383,6 +383,9 @@ footer p {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+.div-logout-form {
+    text-align: center!important;
+}
 
 /* Manage Product Form -widgets */
 
