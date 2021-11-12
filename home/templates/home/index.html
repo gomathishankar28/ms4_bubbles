@@ -30,27 +30,27 @@
             <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="card border-0">
                             <a href="{% url 'product_detail' latest_arrival_1.id %}">
-                                <img class="card-img" src="{{ MEDIA_URL }}{{ latest_arrival_1.image }}" alt="{{ latest_arrival_1.name }}" width=270 height=270px>
+                                <img class="card-img la-img" src="{{ MEDIA_URL }}{{ latest_arrival_1.image }}" alt="{{ latest_arrival_1.name }}" width=255 height=400>
                             </a>
                             <div class="card-body pb-0 text-center">
                                 <a href="{% url 'product_detail' latest_arrival_1.id %}" class="cta-button btn btn-ls rounded-5">{{ latest_arrival_1.name }}</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="card border-0">
                             <a href="{% url 'product_detail' latest_arrival_2.id %}">
-                                <img class="card-img" src="{{ MEDIA_URL }}{{ latest_arrival_2.image }}" alt="{{ latest_arrival_2.name }}" width=270 height=270px>
+                                <img class="card-img la-img" src="{{ MEDIA_URL }}{{ latest_arrival_2.image }}" alt="{{ latest_arrival_2.name }}" width=255 height=400>
                             </a>
                             <div class="card-body pb-0 text-center">
                                 <a href="{% url 'product_detail' latest_arrival_2.id %}" class="cta-button btn btn-ls rounded-5">{{ latest_arrival_2.name }}</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="card border-0">
                             <a href="{% url 'product_detail' latest_arrival_3.id %}">
-                                <img class="card-img" src="{{ MEDIA_URL }}{{ latest_arrival_3.image }}" alt="{{ latest_arrival_3.name }}" width=270 height=270px>
+                                <img class="card-img la-img" src="{{ MEDIA_URL }}{{ latest_arrival_3.image }}" alt="{{ latest_arrival_3.name }}" width=255 height=400>
                             </a>
                             <div class="card-body pb-0 text-center">
                                 <a href="{% url 'product_detail' latest_arrival_3.id %}" class="cta-button btn btn-ls rounded-5">{{ latest_arrival_3.name }}</a>
@@ -78,15 +78,15 @@
                     </p>
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center abt-row">
                 <div class="col-12 col-md-12 col-lg-4 mt-2 mb-2">
-                    <img class="abt-img abt1" src="{% static 'images/home_page/about1.jpg' %}" alt="Akanksha image" width=300 height=300/>
+                    <img class="abt-img abt1" src="{% static 'images/home_page/about1.jpg' %}" alt="about image" width=300 height=300/>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4 mt-2 mb-2">
-                    <img class="abt-img" src="{% static 'images/home_page/about2.jpg' %}" alt="Akanksha image" width=300 height=300/>
+                    <img class="abt-img" src="{% static 'images/home_page/about2.jpg' %}" alt="about image" width=300 height=300/>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4 mt-2 mb-2">
-                    <img class="abt-img" src="{% static 'images/home_page/about3.jpg' %}" alt="Akanksha image" width=300 height=300/>
+                    <img class="abt-img" src="{% static 'images/home_page/about3.jpg' %}" alt="about image" width=300 height=300/>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -94,7 +94,7 @@
                     <p class="about-text wow animate__animated animate__slideInRight">As soon as they started selling the soaps they could see that they had created a product that people wanted and needed and that there was a demand for their soaps. 
                         The key was to create the products at a price everyone could afford.The determination to barter, take a risk and deliver on honest handshakes means the business has self-funded its own growth. 
                     </p>
-                    <p class="about-text wow animate__animated animate__slideInRight">We’re a company that is open and transparent, and we’ve created a brand that showcases this, as well as our roots. 
+                    <p class="about-text wow animate__animated animate__slideInRight mb-5">We’re a company that is open and transparent, and we’ve created a brand that showcases this, as well as our roots. 
                         It’s a brand with personality that has genuine heritage and in today’s world this can go a long way to helping build a loyal customer base.
                     </p>
                 </div>
@@ -103,7 +103,7 @@
     
     <!--- Testimonials --->
         <section id="testimonial" class="page-section">
-            <div class="container text-center">
+            <div class="container text-center mt-5">
                 <div class="row mb-3 animate__animated animate__fadeInUp wow">
                     <div class="col-12">
                         <h1>Testimonials</h1>
@@ -170,7 +170,7 @@
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony5.jpg' %}" alt="Jamuna image" />
                                     <blockquote>
                                         <h5 class="testimony-name">Jamuna.S</h5>
-                                        <p>
+                                        <p class="mb-5">
                                             If you are looking for a homemade soap that you don’t have to make yourself I give this one a big thumbs up! The prices are great too!
                                             Besides being a great product to use, it’s beautiful too.I love it when things are functional and beautiful at the same time.
                                         </p>

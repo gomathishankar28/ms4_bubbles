@@ -4,15 +4,15 @@
 <div class="container review-container mt-0 mb-5">
     <div class="row mt-0">
         <div class="col-12 col-md-6 shipping">
-            <h2> Directions for Storage:</h2>
+            <h4> DIRECTIONS FOR STORAGE:</h4>
             <p>Keep the bars fresh and dry in open bathroom caddies,that keeps it away from water.
             </p>
-            <h2> Shipping & Returns</h2>
-            <h4><u>Shipping:</u></h4>
+            <h4>SHIPPING & RETURNS</h4>
+            <h5><u>Shipping:</u></h5>
             <p>Ground shipping is free for all purchases of 50 Euros or more.
                It takes 2-8 business days to arrive after being shipped.
             </p>
-            <h4><u>Return Policy</u></h4>
+            <h5><u>Return Policy</u></h5>
             <p>Please note: we cannot accept returns without prior authorization.
 
                 To return an order made online or over the phone, contact our dedicated Customer Care team to get started.
@@ -23,8 +23,9 @@
         </div>
         <div class="col-12 col-md-6 reviews">
             <div>
-                <h4>Average Rating</h4>
-                <p class="rating-stars" data-value="{{ product.avg_rating }}"></p>
+                <h2><u>AVERAGE RATING</u</h2>
+                <p class="rating-stars" data-value="{{ product.avg_rating }}"><span>{{ product.avg_rating }}</span></p>
+                
             </div>
             <!-- view Reviews accordion -->
             <div class="bs-example review-accordion">
@@ -37,6 +38,7 @@
                         </div>
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
+                            {% if reviews %}
                                 {% for review in reviews %}
                                     <h6 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h6>
                                     {% if request.user.is_authenticated %}
@@ -57,7 +59,9 @@
                                     
                                     <hr>
                                 {% endfor %}
-                                
+                            {% else %}
+                                <p>No review Avalibale for this product</p>
+                            {% endif %}   
                             </div>
                         </div>
                     </div>
