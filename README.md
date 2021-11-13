@@ -314,9 +314,12 @@ I used different websites for inspiration and images on my site:
 Icons like pen,star,back arrow have been used throughout the website to improve the efficiency of UX.
 
 ## Features
-Each page in the website features a responsive navigation bar with a banner and a quick search bar on the top with conventional placing of Brand Name on the top left. Each page has a very simple footer with allthe nav links, links to social media and copyright information.
+Each page in the website features a responsive navigation bar with  conventional placing of Brand Name on the top left. Each page has a very simple footer with allthe nav links, links to social media and copyright information. It also features the following on top of the navbar:
 
-**Home**
+**Banner** which indicates that delievery charges do not apply for purchases greater than 30 euros.
+**search bar** which enablesth user to search for different categories of products
+
+### **HOME**
 
 The Home page features 4 sections areas apart from the header and footer.
 
@@ -340,7 +343,310 @@ This section showcases a Carousel of 5 testimonies.
 
 This Section has a Feedback form which can be used by the customers to send their feedback.
 
-### **Products**
-This page displays the following:
+### **PROFILES**
+This app has the following features
+
+**My Profile** This has the information of all the users who wish to save their personal and shipping information for future purchase.
+
+**Edit Profile** This displays a formforthe user to edit his Personal and Shipping Information incase of relocation.
+
+**View Order History** This enables the user to view his past order History.
+
+### **PRODUCTS**
+
+**Products** This section displays a breadcrumbs on top left to indicate the current category of products that user is in. It also has a sort BY select box on top right to sort the products according to alphabets or Price.Each product in the row is displayed with the name, price and rating. Clicking on each product takes you to the Product detail page.
+
+**Product Detail** This section displays which a zoomed-in version of the product with some description , quantity box and Add to cart button.It also displays additionalinformation about directions for storage and shipping& Return Ploicies.
+
+**Manage Products** This pages displays a form that enables the admin user to add a new product and also Edit or Delete  an Existing Product
+
+### **REVIEWS**
+It is a part of Product_detail page. This section is used by customers to view reviews about the product. It also allows registered users to add,edit and delete their own reviews.
+
+### **BAG**
+Everytime a product is added to the cart, the bag gets updated with the item, price and quantity.
+
+### **CHECKOUT**
+This section displays a Checkout form asking for user'spersonal details and shipping details and payment information. Paymentfield uses a Stripe element. If the user has a saved profile, then checkout form is prefilled with personal and shipping information.Webhooks are used to ensure secure and safe purchase.
+
+### **BLOG**
+This section displays all the posts created with the date and time
+
+**Manage Blog**
+This displays a form that enables the admin user to add a newPost.
+
+**Add Comment**
+This displays a form under each post for any user to write a comment about the post.
+
+### Toasts
+
+* Small snippets of messages divided into 4 main categories: `toast_success`, `toast_info`, `toast_warning` and `toast_error`.
+* They appear on every page whenever a certain action has been done by the user.
+* Their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, updating the cart, editing a blog post, finishing the checkout process, etc.
+
+### Django-allauth feature
+
+* `django-allauth` is a Python package. As written in the [django-allauth docs](https://django-allauth.readthedocs.io/en/latest/), it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
+* It provides a set of features such as **signup**, **login**, **logout** and **password change**
+* After signing up, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the `profiles` app.
+* The links to these features can be found in the navigation, under the **My Account** dropdown menu, as well as on the pages and throughout the web app.
+
+### Automatic e-mails
+
+* An account is working for this project and used as a sender for all verification, reset and confirmation e-mails.
+* For example, users receive an order confirmation e-mail after a purchase, account verification e-mail after the registration, password reset e-mail after requesting a password reset, etc.
+
+## **Features to be implemented in future**
+*   Product Description to include Ingredients.
+*   Sorting products based on color and ingredients.
+*   Display Likes and dislikes for each post.
+
+# Technologies
+
+The website is designed using following technologies:
+
+## Programming languages
+
+* HTML - the project used HTML to define structure and layout of the web page;
+* CSS - the project used CSS stylesheets to specify style of the web document elements;
+* JavaScript - the project used JavaScript to implement Stripe, EmailJS and custom Javascript.
+* Python - the project back-end functions are written using Python.
+
+## Frameworks & Extensions
+
+* [Django](https://www.djangoproject.com/) – Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+* [Bootstrap](https://getbootstrap.com/) – Bootstrap is a web framework that focuses on simplifying the development of informative web pages.
+* [Stripe](https://stripe.com/ie) – Allows individuals and businesses to make and receive payments over the Internet.
 
 
+## Libraries
+
+* [Font Awesome](https://fontawesome.com/v4.7.0/) - Font Awesome icons were used throughout the web-site.
+* [jQuery](https://jquery.com/) - is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation.
+* [Google Fonts](https://fonts.google.com/)
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+* [Wow.js](https://www.delac.io/wow/)
+
+
+## Database
+* [SQlite3](https://www.sqlite.org/index.html)- database used for development.
+* [Heroku Postgres](https://www.heroku.com/postgres/) – PostgreSQL is one of the world's most popular relational database management systems.
+
+## Others
+
+* [GitHub](https://github.com/) - GitHub is a global company that provides hosting for software development version control using Git.
+* [Gitpod](https://gitpod.io/workspaces/) - One-click ready-to-code development environments for GitHub.
+* [Heroku](https://dashboard.heroku.com/) - Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps.
+* [AWS-S3](https://aws.amazon.com/s3/) – Object storage service that offers industry-leading scalability, data availability, security, and performance.
+* [Balsamiq](https://balsamiq.com/) - The wireframes and sitemap for this project were created using Balsamiq.
+* [Google DevTools](https://developers.google.com/web/tools/chrome-devtools) - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. 
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse)** - For testing the **performance of the website.**
+- [Am I Responsive](http://ami.responsivedesign.is/) - This was used to test the responsiveness of the site and also to create the mock-up image presented at the start of this document. Had t ouse an X-frame Chrom extension to create the image.
+
+### **Media**
+
+- [Parenthoodtimes](https://parenthoodtimes.com/) for the hero image.
+- [Alibaba](https://www.alibaba.com/) - for about section images
+- [DIYSoaps](https://thumbtack.com)- for soap images
+- [Shampoobars](https://stockvault.net)- for shampoos and conditioners image
+- [Lush](https://lush.com)- for bathbombs and bubblebars
+
+
+# Testing
+
+**Testing section is located [here](testing.md)**
+
+### Validating code
+
+* HTML
+code is validated through [W3 validator](https://validator.w3.org/).
+
+* CSS
+code is validated through [W3 Jigsaw](https://jigsaw.w3.org/css-validator/).
+
+* JavaScript
+code is validated through [JS Hint](https://jshint.com/).
+
+* Python
+code is validated through [PEP8](http://pep8online.com/).
+
+# Deployment
+## Heroku Deployment with AWS
+This website is deployed on [Heroku](https://www.heroku.com/), following these steps:
+1. Install these packages to your local environment, since these packages are required to deploy a Django project on Heroku.
+- [gnicorn](https://gunicorn.org/): `gnicorn` is Python WSGI(web server gataway interface) server for UNIX.
+- [gninx](https://www.nginx.com/): `gninx` is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.
+- [psycopg2-binary](https://pypi.org/project/psycopg2-binary/): `psycopg2-binary` is PostgreSQL database adapter for the Python programming language.
+- [dj-database-url](https://pypi.org/project/dj-database-url/): `dj-database-url` allows you to utilize the 12factor inspired DATABASE_URL environment variable to configure your Django application.
+2. Create a `requirements.txt` file and freeze all the modules with the command `pip3 freeze > requirements.txt` in the terminal.
+3. Create a `Procfile` write `web: gunicorn boutique_ado.wsgi:application` in the file.
+4. `git add` and `git commit` and `git push` all the changes to the Github repositoty of this project.
+5. Go to Heroku and create a **new app**. Set a name for this app and select the closest region (Europe) and click **Create app**.
+6. Go to **Resources** tab in Heroku, then in the **Add-ons** search bar look for **Heorku Postgres**(you can type postgres), select **Hobby Dev — Free** and click **Submit Order Form** button to add it to your project.
+7. In the heroku dashboard for the application, click on **Setting** > **Reveal Config Vars** and set the values as follows:
+
+| Key | Value |
+| ----------- | ----------- |
+| AWS_ACCESS_KEY_ID | `Your AWS Access Key` |
+| AWS_SECRET_ACCESS_KEY | `Your AWS Secret Access Key` |
+| DATABASE_URL | `Your Postgres Database URL` |
+| EMAIL_HOST_PASS | `Your Email Password (generated by Gmail)` |
+| EMAIL_HOST_USER | `Your Email Address` |
+| SECRET_KEY | `Your Secret Key` |
+| STRIPE_PUBLIC_KEY | `Your Stripe Public Key` |
+| STRIPE_SECRET_KEY | `Your Stripe Secret Key` | 
+| STRIPE_WH_SECRET | `Your Stripe WH Key` |
+| USE_AWS | `True` |
+
+* I used [Djecrety](https://djecrety.ir/) to generate Django Secret Key.
+
+8. Comment out the current database setting in settings.py, and add the code below instead. This is done temporarily to migrate the datbase on Heroku.
+```
+  DATABASES = {     
+        'default': dj_database_url.parse("<your Postrgres database URL here>")     
+    }
+```
+9. Migrate the database models to the Postgres database using the following commands in the terminal:
+`python3 manage.py migrate`
+10. Load the data fixtures(color_table, flower_table, image_table, product_table) into the Postgres database using the following command:
+`python3 manage.py loaddata <fixture_name>`
+11. Create a superuser for the Postgres database by running the following command:
+`python3 manage.py createsuperuser`
+12. Replace the database setting with the code below, so that the right database is used depending on development/deployed environment.
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+```
+13. Disable collect static, so that Heroku won't try to collect static file with: `heroku config:set DISABLE_COLLECTSTATIC=1`
+14. Add `'ms4-bubbles.herokuapp.com', 'localhost', '127.0.0.1'` to `ALLOWED_HOSTS` in settings.py.
+```
+ALLOWED_HOSTS = ['ms4-bubbles.herokuapp.com', 'localhost', '127.0.0.1']
+```
+15. In Stripe, add Heroku app URL a new webhook endpoint.
+16. Update the settings.py with the new Stripe environment variables and email settings.
+17. Commit all the changes to Heroku. Medial files are not connected to the app yet but the app should be working on Heroku.
+
+### Amazon Web Service S3
+The static files and media files for this deployed site (e.g. image files for product/blog) are hosted in the [AWS](https://aws.amazon.com/) S3 Bucket. You will need to create S3 bucket, complete the setting up and upload static files and media files to the S3 bucket. You can find [Amazon S3 documentation](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) for more information on the setting.
+I used CORS configuration below:
+```
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+
+- Setting for static/media files in settings.py
+1. Install `boto3` and `django-storages` with a command `pip3 install boto3` and `pip3 install django-storages` in your terminal, to connect AWS S3 bucket to Django.
+2. Add 'storages' to `INSTALLED_APPS` in settings.py.
+3. Add the following in settings.py.
+```
+if 'USE_AWS' in os.environ:
+    # Cache Control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'ms4-bubbles'
+    AWS_S3_REGION_NAME = 'eu-central-1'
+    AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3-eu-central-1.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+5. Add [custom_storages.py](https://github.com/gomathishankar28/ms4-bubbles/blob/master/custom_storages.py).
+6. Delete DISABLE_COLLECTSTATIC from Heroku Config Var.
+7. Push all the changes to Github/Heroku and all the static files will be uploaded to S3 bucket.
+By setting up above, Heroku will run python3 manage.py collectstatic during the build process and look for static and media files.
+
+### Automatic Deploy on Heroku
+You can enable automatic deploy in the following steps that pushes update to Heroku everytime you push to github.
+1. Go to Deploy in Heroku dashboard.
+2. At `Automatic deploys`, choose a github repository you want to deploy.
+3. Click `Enable Automatic Deploys`.
+
+
+## How to Clone 
+1. Navigate to the GitHub Repository.
+2. Click the Code drop down menu.
+3. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+4. Open your developement editor of choice and open a terminal window in a directory of your choice.
+5. Use the git clone command in terminal followed by the copied git URL.
+6. A clone of the project will be created locally on your machine.
+
+Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages: pip install -r requirements.txt.
+
+### **How to Fork the respository**
+
+1. Log into GitHub.
+2. In Github go to (https://github.com//gomathishakar28/ms3_meercq).
+3. In the top right hand corner click "Fork".
+
+### **Credits**
+* **Content**
+
+	* [Zoofy](https://zoofy.nl/)  as a general inspiration.
+
+* **Media**
+
+    * [WallpaperAccess](https://wallpaperaccess.com) for the hero image.
+    * [BusinessPartner](https://businesspartner.com) - for electrician image
+    * [Thumbtack](https://thumbtack.com)- for plumber image
+    * [Stockvault](https://stockvault.net)- for carpenter image.
+    * [DepositPhotos](https://depositphotos.com)- for cleaner image.
+    * [ecoticias](https://ecoticias.com)- for gardener image.
+    * [Homebli](https://hombli.com)- for painter image.
+    * [StlitsIreland](https://stiltsireland.net)- for Whitegoods image
+    * [BeFunky](https://www.befunky.com/ )** for **resizing and editing images**.
+    * [TinyPNG](https://tinypng.com/)** for **Compressing images**. 
+
+
+* **Code**
+
+	* [Bootsrap](https://getbootstrap.com/) for navbar, collapsible, cards and carousels
+
+	* [W3Schools](https://www.w3schools.com/) as a general source.
+
+  * [WoW.js](https://wowjs.uk/) for animation effects on CTA button,about text and contact form.
+
+  * [stackoverflow](https://stackoverflow.com/) for latest, average functions.
+
+  * [code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) asa base reference for checkout,products and bag app.
+
+    
+### **Acknowledgements**
+    
+* **My mentor: Nishant kumar** by giving lot of inputs and useful tips to improve.
+* **The Slack community** of Code Institute for a peer code review.
+* **My Family and Friends** who provided their honest feedback by testing the website across different devices and different OS.
