@@ -10,20 +10,20 @@ The shop also publishes blog posts about benefits of bathing ,use of bathbombs, 
   - [Business Goals](#business-goals)
   - [User Goals](#user-goals)
   - [User Stories](#user-stories)
-  - [UX](#ux)
+  - [UX](#user-experience-design)
     - [Strategy](#strategy)
     - [Scope](#scope)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
     - [Surface](#surface)
-  - [Features](#features)
+  - [Features](#seatures)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
   - [Deployment](#deployment)
   - [Credits](#credits)
   - [Acknowledgements](#acknowledgements)
 
-## Demo 
+## demo 
 [Live Website](https://ms4-bubbles.herokuapp.com/)
 
 ![AmIResponsive]()
@@ -171,11 +171,11 @@ Please find attached Wireframe for Home page , place order form and acknowledgem
 **Wirefame mockups**
 Wireframe mockups for Home, Login, Register, Add New Contact, Edit Contact, Add Review for small, meidium and Large screens have been given below.
 
-[LARGE screen](https://github.com/gomathishankar28ms4_bubbles/readme_images/wireframes/wireframes-large.pdf)
+[LARGE screen](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/wireframes/wireframes-large.pdf)
 
-[MEDIUM screen](https://github.com/gomathishankar28ms4_bubbles/readme_images/wireframes/wireframes-medium.pdf)
+[MEDIUM screen](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/wireframes/wireframes-medium.pdf)
 
-[SMALL screen](https://github.com/gomathishankar28ms4_bubbles/readme_images/wireframes/wireframes-small.pdf)
+[SMALL screen](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/wireframes/wireframes-small.pdf)
 
 ### Database Schema
 
@@ -616,18 +616,10 @@ Once the project has been loaded into an IDE of choice, run the following comman
 ### **Credits**
 * **Content**
 
-	* [Zoofy](https://zoofy.nl/)  as a general inspiration.
+	* [Lush](https://lush.com/)  as a general inspiration.
 
 * **Media**
 
-    * [WallpaperAccess](https://wallpaperaccess.com) for the hero image.
-    * [BusinessPartner](https://businesspartner.com) - for electrician image
-    * [Thumbtack](https://thumbtack.com)- for plumber image
-    * [Stockvault](https://stockvault.net)- for carpenter image.
-    * [DepositPhotos](https://depositphotos.com)- for cleaner image.
-    * [ecoticias](https://ecoticias.com)- for gardener image.
-    * [Homebli](https://hombli.com)- for painter image.
-    * [StlitsIreland](https://stiltsireland.net)- for Whitegoods image
     * [BeFunky](https://www.befunky.com/ )** for **resizing and editing images**.
     * [TinyPNG](https://tinypng.com/)** for **Compressing images**. 
 
@@ -638,11 +630,15 @@ Once the project has been loaded into an IDE of choice, run the following comman
 
 	* [W3Schools](https://www.w3schools.com/) as a general source.
 
-  * [WoW.js](https://wowjs.uk/) for animation effects on CTA button,about text and contact form.
+    * [WoW.js](https://wowjs.uk/) for animation effects on CTA button,about text and contact form.
 
-  * [stackoverflow](https://stackoverflow.com/) for latest, average functions.
+    * [BootsSnipp](https://bootsnipp.com/snippets/k2RdV) for Testimonials section.
 
-  * [code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) asa base reference for checkout,products and bag app.
+    * [dev.to](https://dev.to/radualexandrub/how-to-create-a-comment-section-for-your-django-blog-3egp) for Comment section of Blog.
+
+    * [stackoverflow](https://stackoverflow.com/) for general code reference
+
+    * [code Institute] (https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) as a base reference for checkout,products and bag app.
 
     
 ### **Acknowledgements**
