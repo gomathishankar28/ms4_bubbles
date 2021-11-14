@@ -26,7 +26,7 @@ The shop also publishes blog posts about benefits of bathing ,use of bathbombs, 
 ## demo 
 [Live Website](https://ms4-bubbles.herokuapp.com/)
 
-![AmIResponsive]()
+![AmIResponsive](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/amiresponsive.jpg?raw=true)
 
 ## Introduction
 
@@ -76,11 +76,13 @@ As a customer, I would like
 
 *   As a prospective customer to the website, I should be able to search based on keywords so that I can get the desired information quickly.
 
-*   As a prospective customer, I would like to receive suggestions in the search field so that I can narrow down my search easily.
-
 *   As a prospective customer, I should be able to access all the different bathing products from nav menu.
 
 *   As a new customer to the website, I want to know if there are any new arrivals.
+
+*   As a new customer to the website, I want to know more about the Bubbles team.
+
+*    As a new customer to the website, I want to see some success stories from customers.
 
 *   As a new customer, I want to know the description of each product
 
@@ -94,7 +96,7 @@ As a customer, I would like
 
 *   As a customer, I would like to see an average rating for each product that would help me to choose a better product.
 
-*   As a customer, I would like to knowthe shipping and Return Policy for the products.
+*   As a customer, I would like to know the shipping and Return Policy for the products.
 
 *   As a prospective customer to the website, I want to edit my review for the product.
 
@@ -106,11 +108,15 @@ As a customer, I would like
 
 *  As a prospective customer to the website, I would like to have my delivery information prefilled so that i can complete my purchase quickly.
 
+*  As a prospective customer to the website, I would like to Edit my personal and shipping details.
+
+*  As a Prospective customer tothe website , I would like to View my previous orders.
+
 *   As an Administrator, I would like to restrict only the logged in users to add/edit/delete his/her ownreview so that unauthorized/ untraceable changes are prevented.
 
 *   As an administrator, I would like to add a new product.
 
-*   As an administrator, I would like to add a new BlogPost.
+*   As an administrator, I would like to add a new Blog Post.
 
 *   As an administrator, both unregistered and registered users should be able to view the product and the user reviews so that the display of information is not restricted for unregistered users.
 
@@ -450,7 +456,7 @@ The website is designed using following technologies:
 - [Alibaba](https://www.alibaba.com/) - for about section images
 - [DIYSoaps](https://thumbtack.com)- for soap images
 - [Shampoobars](https://stockvault.net)- for shampoos and conditioners image
-- [Lush](https://lush.com)- for bathbombs and bubblebars
+- [Lush](https://www.lush.com/uk/en)- for bathbombs and bubblebars
 
 
 # Testing
@@ -616,7 +622,7 @@ Once the project has been loaded into an IDE of choice, run the following comman
 ### **Credits**
 * **Content**
 
-	* [Lush](https://lush.com/)  as a general inspiration.
+	* [Lush](https://www.lush.com/uk/en)  as a general inspiration.
 
 * **Media**
 
