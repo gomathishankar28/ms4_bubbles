@@ -34,7 +34,7 @@ Following testcases were tested as part of smoke testing.
 
 ### **Results from HTML Validator**
 
-HTML was validated with [W3C Validator](https://validator.w3.org/) by direct input. Results came out good except for few errors because of the use of  jinja templating which cannot be avoided.
+HTML was validated with [W3C Validator](https://validator.w3.org/) by direct input. Results came out good without any errors except for few warnings.
 
 
 ### **Results from  W3C CSS**
@@ -141,17 +141,86 @@ Js files were validated with [Jshint](https://jshint.com/). No Errors found
 
    ## Home App
 
+      1. Checked to see if Clicking on "Take a Look" button displays the Products Page - Tested PASS.
+
+      2. Checked to see if searching for appropriate category of product on the search bar displays the corresponding productcategory page- Tested PASS 
+
+      3. Checked to see Manage blog and Manage Products option under  USer Nav menu is displayed only for Admin user. - Tested PASS.
+
+      4. Checked to see if  a Thankyou page is displayed when user sends a feedback using contact form.- Tested PASS.
+
    ## Profiles App
+
+      1. Checked to see if My Profile option is displayed only for Loggedin user.- Tested PASS.
+
+      2. Checked to see if the user details except the name are pre-filled on the checkout form,if the user has saved his profile already.- Tested PASS.
+
+      3. Checked to see if Clicking on "My profile" displays the user Profile with personaland shipping details.- Tested PASS.
+
+      4. Checked to see if clicking on "Edit Profile" on Profile page displays an Edit Form for the user to update his/her details.- Tested PASS.
+
+      5. Checked to see if clicking on "update" on Edit Profile form  updates the users details.- Tested PASS.
+
+      6. Checked to see if clicking on "View Order History" on profile page displays the order summary of allthe previous orders.- Tested PASS.
 
    ## Products App
 
+      1. Checked to see if clicking on each product displays a Product detail page with description, average rating, directions for storage and shipping and return policy.- Tested PASS.
+
+      2. Checked to see if "Manage Product" option is available only for admin user.- Tested PASS.
+
+      3. Checked to see if admin user is able to add a new product via "Add Product Form".- Tested PASS.
+
+      4. Checked to see if admin user is able to Edit an existing product via "Edit Product Form".- Tested PASS.
+
+      5. Checked to see if admin user is able to delete an existing product".- Tested PASS.
+
+      6. Checked to see if the incremenet and decrement quantity button works as appropriate.- Tested PASS.
+
+      7. Checked to see if adding a product to the bag using "ADD to Cart" updates the bag count appropraitely.- Tested PASS.
+
    ## Reviews App
+
+      1. Checked to see if clicking on "View Reviews" on product detail page displays the reviews for that particular product available.
+
+      2. Checked to see if clicking on "View Reviews" on product detail page displays the message "No reviews available forthis product" if reviews for that particular product is NOT available.
+
+      3.Checked to see if the Average Rating is calculated based on the rating of the user reviews.
+
+      4. Checked to see if clicking on "Add Review" invokes a Login form if user is NOT logged in.
+
+      5. Checked to see if clicking on "Add Review" invokes a Add Review form if user is logged in and if review is added to that product.
+
+      6. Checked to see if clicking on Edit Review button displays an Edit Review form for the user who created that review and if review is updated appropriately.
+
+      7. Checked to see if clicking on Delete Review button deletes that review created by the user.
 
    ## Bag App
 
+      1. Checked to see if clicking on Empty bag displays an message saying the cart is empty.
+
+      2. Checked to see if the bag is updated with the item, quantity and price whenever a new product is added.
+
+      3. Checked to see if the bag is updated with the item, quantity and price whenever an existing product is updated.
+
+      4. Checked to see if the bag is updated with the item, quantity and price whenever a  product is deleted from the bag.
+
    ## Checkout App
 
+      1. Checked to see if clicking on checkout button displays the checkout form.
+
+      2. Checked to see if there is an error when any required field is missed outtobe filled.
+
+      3. Checked to see if the successful submission of the form displays a success message with order summary.
+
+
    ## Blog App
+
+      1. Checked to see if total number of available posts is displayed correctly.
+
+      2. Checked to see if Clicking on "Read More" button displays a detailed version of that post.
+
+      3. Checked to see if a comment is added to a Post ,it is displayed under the appropriate post with name,date and time.
 
    ## Responsiveness Testing
 
