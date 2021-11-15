@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from products.models import Product
 from django.core.mail import send_mail, BadHeaderError
+from products.models import Product
 from django.http import HttpResponse
 from profiles.models import UserProfile
 
@@ -8,13 +8,13 @@ from django.conf import settings
 
 from .forms import ContactForm
 
+
 def index(request):
-    """ 
+    """
     A view to return the index page with the latest 3 products
     displayed on the latest arrival section.
     """
-    
-    latest_products = Product.objects.all()
+    latest_products = Product.objects.all()  
     no_of_products = len(latest_products)
     print(no_of_products)
     latest_arrival_1 = get_object_or_404(Product, pk=(no_of_products - 2))

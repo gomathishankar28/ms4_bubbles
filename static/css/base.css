@@ -95,7 +95,14 @@ html {
 .nav-center {
     margin-top: .7rem;
 }
-
+.dropdown-item:hover {
+    background-color: #f07972;
+}
+@media (max-width: 414px) {
+    .dropdown-menu {
+        margin-left: -30px!important;
+    }
+}
 
 /** About */
 #about {
@@ -285,15 +292,7 @@ footer {
 .footer-txt {
     font-size: 14px;
 }
-@meida (max-width: 1024px) {
-    #footer {
-        background-color: black!important;
-        color: white;
-        min-height: 130px;
-        margin-top: 4rem;
-        bottom: 0;
-    }
-}
+
 .footer-link {
     text-transform: uppercase;
     display: block;
@@ -671,7 +670,13 @@ footer p {
 .form-group-buttons {
     margin-bottom: .3rem;
 }
-
+.blog-hr {
+    border: 10px solid #7bcbc8;
+    border-radius: 5px;
+}
+.blog-btn {
+    padding: 5px;
+}
 
 
 @media (min-width: 300px) {
@@ -682,23 +687,17 @@ footer p {
         height: 800px;  
         overflow-x: hidden; 
     }
-        .landing-page-content {
+    .landing-page-content {
             margin-top: 12rem;
             font-size: 30px;
-        }
-      }
+    }
+}
       .mobile-logo {
         display: block;
         text-align: center;
         margin-left: -10px;
     }
-.blog-hr {
-    border: 10px solid #7bcbc8;
-    border-radius: 5px;
-}
-.blog-btn {
-    padding: 5px;
-}
+
 @media (min-width: 540px) {  
     .blog-img {
         width: 500px;
@@ -741,7 +740,7 @@ footer p {
     .mobile-logo {
         display: none;
     }
-
+}
 @media (min-width: 810px) {
   .landing-page {
       background: url('/static/images/home_page/landing.jpg') no-repeat center center fixed;
@@ -764,7 +763,15 @@ footer p {
         font-size: 32px!important;
     }
 }
+@media (max-width: 1024px) {
+    #footer {
+        background-color: black!important;
+        color: white;
+        min-height: 130px;
+        margin-top: 4rem;
+        bottom: 0;
+    }
+}
 
-/* ---media queries for home---- */
 
 

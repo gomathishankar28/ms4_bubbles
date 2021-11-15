@@ -88,15 +88,15 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-optionsd">
                             {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Manage Products</a>
-                            <a href="{% url 'add_post' %}" class="dropdown-item">Manage Blogs</a>
-                            {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item text-rosa-light">Logout</a>
+                                {% if request.user.is_superuser %}
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Manage Products</a>
+                                    <a href="{% url 'add_post' %}" class="dropdown-item">Manage Blogs</a>
+                                {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item text-rosa-light">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item text-rosa-light">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item text-rosa-light">Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item text-rosa-light">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item text-rosa-light">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -104,7 +104,7 @@
                         <a href="{% url 'view_bag' %}" class="shopping-cart-icon">
                             <i class="fas fa-shopping-basket"></i>
                             {% if bag_items %}
-                            <span class="badge rounded-pill">{{ product_count }}</span>
+                            <span class="badge rounded-pill badge-danger">{{ product_count }}</span>
                             {% endif %}
                         </a>
                     </li>
@@ -151,7 +151,11 @@
         {% block content %}
         {% endblock %}
     </main>
+    
+    <!-- Footer -->
+    {% include 'includes/footer.html' %}
 
+    
     <!--- JS Toasts --->
     {% block postloadjs %}
     <script type="text/javascript">
@@ -160,10 +164,7 @@
     </script>
     {% endblock %}
 
-    <!-- Footer -->
-    {% include 'includes/footer.html' %}
-
-
 </body>
+
 
 </html>
