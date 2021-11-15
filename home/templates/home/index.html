@@ -129,7 +129,7 @@
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony1.jpg' %}" alt="Akanksha image" />
                                     <blockquote>
                                         <h5 class="testimony-name">Akanksha.S</h5>
-                                        <p>
+                                        <p class="about-text">
                                             Love all the soaps I have bought from Bubbles! They are high quality and the scents are amazing.
                                              I especially love using them in the mornings to wake me up and get me going for the day.
                                         </p>
@@ -139,7 +139,7 @@
                                     <img class="profile-circle mb-3" border-radius="50%" src="{% static 'images/home_page/testimony2.jpg' %}" alt="Aparna image" />
                                     <blockquote>
                                         <h5 class="testimony-name">Aparna.K</h5>
-                                        <p>
+                                        <p class="about-text">
                                             I’m absolutely in love with these soaps. I’ve been on a journey to use less plastic in my home and 
                                             I love the Oatmeal & Honey bar which works great for me since I am allergic to many other soaps and scents! The shipping is very quick, too.
                                         </p>
@@ -149,7 +149,7 @@
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony3.jpg' %}" alt="Abitha image" />
                                     <blockquote>
                                         <h5 class="testimony-name">Abitha.s</h5>
-                                        <p>
+                                        <p class="about-text">
                                             I love the Oatmeal & Honey bar which works great for me since I am allergic to many other soaps and scents! The shipping is very quick, too.
                                             Your bars last SO much longer than store bought and are far superior. Thanks for starting my day with a boost of sunshine.
                                         </p>
@@ -159,7 +159,7 @@
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony4.jpg' %}" alt="Shradha image" />
                                     <blockquote>
                                         <h5 class="testimony-name">Shraddha.K</h5>
-                                        <p>
+                                        <p class="about-text">
                                             I’m always happy to find great products that are made in my home state, and these products meet that description. 
                                             The soap is great smelling without being overpowering, and it didn’t dry my skin out at all.  As the cold weather returns
                                             it seems dry skin can be a real issue in our household.  This stuff has helped out a lot with that. 
@@ -170,7 +170,7 @@
                                     <img class="profile-circle mb-3" src="{% static 'images/home_page/testimony5.jpg' %}" alt="Jamuna image" />
                                     <blockquote>
                                         <h5 class="testimony-name">Jamuna.S</h5>
-                                        <p class="mb-5">
+                                        <p class="about-text mb-5">
                                             If you are looking for a homemade soap that you don’t have to make yourself I give this one a big thumbs up! The prices are great too!
                                             Besides being a great product to use, it’s beautiful too.I love it when things are functional and beautiful at the same time.
                                         </p>
@@ -191,7 +191,7 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8 ct-contact wow animate__animated animate__fadeInUp">
                     <div class="mt-3 mb-4 text-center">
-                        <h4>please share your feedback with us</h4>
+                        <h5>Share your feedback with us</h5>
                     </div>
                     <form method="POST" action="{% url 'contactform' %}">
                         {% csrf_token %}
