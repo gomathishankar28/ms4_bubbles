@@ -673,7 +673,7 @@ footer p {
 }
 
 
-/* Slightly larger container on xl screens */
+
 @media (min-width: 300px) {
     .landing-page {
         background: url('/static/images/home_page/landing-mobile.jpg') no-repeat center center fixed;
@@ -759,3 +759,12 @@ footer p {
       max-width: 100%;
     }
   }
+@media (min-width: 740px) {
+    .banner-txt {
+        font-size: 32px!important;
+    }
+}
+
+/* ---media queries for home---- */
+
+

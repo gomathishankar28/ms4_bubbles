@@ -181,46 +181,46 @@ Js files were validated with [Jshint](https://jshint.com/). No Errors found
 
    ## Reviews App
 
-      1. Checked to see if clicking on "View Reviews" on product detail page displays the reviews for that particular product available.
+      1. Checked to see if clicking on "View Reviews" on product detail page displays the reviews for that particular product available.- Tested PASS.
 
-      2. Checked to see if clicking on "View Reviews" on product detail page displays the message "No reviews available forthis product" if reviews for that particular product is NOT available.
+      2. Checked to see if clicking on "View Reviews" on product detail page displays the message "No reviews available forthis product" if reviews for that particular product is NOT available.- Tested PASS.
 
-      3.Checked to see if the Average Rating is calculated based on the rating of the user reviews.
+      3.Checked to see if the Average Rating is calculated based on the rating of the user reviews.- Tested PASS.
 
-      4. Checked to see if clicking on "Add Review" invokes a Login form if user is NOT logged in.
+      4. Checked to see if clicking on "Add Review" invokes a Login form if user is NOT logged in.- Tested PASS.
 
-      5. Checked to see if clicking on "Add Review" invokes a Add Review form if user is logged in and if review is added to that product.
+      5. Checked to see if clicking on "Add Review" invokes a Add Review form if user is logged in and if review is added to that product.- Tested PASS.
 
-      6. Checked to see if clicking on Edit Review button displays an Edit Review form for the user who created that review and if review is updated appropriately.
+      6. Checked to see if clicking on Edit Review button displays an Edit Review form for the user who created that review and if review is updated appropriately.- Tested PASS.
 
-      7. Checked to see if clicking on Delete Review button deletes that review created by the user.
+      7. Checked to see if clicking on Delete Review button deletes that review created by the user.- Tested PASS.
 
    ## Bag App
 
-      1. Checked to see if clicking on Empty bag displays an message saying the cart is empty.
+      1. Checked to see if clicking on Empty bag displays an message saying the cart is empty.- Tested PASS.
 
-      2. Checked to see if the bag is updated with the item, quantity and price whenever a new product is added.
+      2. Checked to see if the bag is updated with the item, quantity and price whenever a new product is added.- Tested PASS.
 
-      3. Checked to see if the bag is updated with the item, quantity and price whenever an existing product is updated.
+      3. Checked to see if the bag is updated with the item, quantity and price whenever an existing product is updated.- Tested PASS.
 
-      4. Checked to see if the bag is updated with the item, quantity and price whenever a  product is deleted from the bag.
+      4. Checked to see if the bag is updated with the item, quantity and price whenever a  product is deleted from the bag.- Tested PASS.
 
    ## Checkout App
 
-      1. Checked to see if clicking on checkout button displays the checkout form.
+      1. Checked to see if clicking on checkout button displays the checkout form.- Tested PASS.
 
-      2. Checked to see if there is an error when any required field is missed outtobe filled.
+      2. Checked to see if there is an error when any required field is missed outtobe filled.- Tested PASS.
 
-      3. Checked to see if the successful submission of the form displays a success message with order summary.
+      3. Checked to see if the successful submission of the form displays a success message with order summary.- Tested PASS.
 
 
    ## Blog App
 
-      1. Checked to see if total number of available posts is displayed correctly.
+      1. Checked to see if total number of available posts is displayed correctly.- Tested PASS.
 
-      2. Checked to see if Clicking on "Read More" button displays a detailed version of that post.
+      2. Checked to see if Clicking on "Read More" button displays a detailed version of that post.- Tested PASS.
 
-      3. Checked to see if a comment is added to a Post ,it is displayed under the appropriate post with name,date and time.
+      3. Checked to see if a comment is added to a Post ,it is displayed under the appropriate post with name,date and time.- Tested PASS.
 
    ## Responsiveness Testing
 

@@ -9,13 +9,19 @@ from django.conf import settings
 from .forms import ContactForm
 
 def index(request):
-    """ A view to return the index page """
+    """ 
+    A view to return the index page with the latest 3 products
+    displayed on the latest arrival section.
+    """
+    
+    latest_products = Product.objects.all()
+    no_of_products = len(latest_products)
+    print(no_of_products)
+    latest_arrival_1 = get_object_or_404(Product, pk=(no_of_products - 2))
+    latest_arrival_2 = get_object_or_404(Product, pk=(no_of_products - 1))
+    latest_arrival_3 = get_object_or_404(Product, pk=(no_of_products))
 
-    latest_arrival_1 = get_object_or_404(Product, pk=66)
-    latest_arrival_2 = get_object_or_404(Product, pk=67)
-    latest_arrival_3 = get_object_or_404(Product, pk=68)
-
-    # Prefill the email address field at contact form
+    # Prefill the email address field on the contact form
     if request.user.is_authenticated:
         profile = get_object_or_404(UserProfile, user=request.user)
         contact_form = ContactForm(initial={"email": profile.default_email})
@@ -34,8 +40,8 @@ def index(request):
 
 def contactform(request):
     """
-    Send an email to the admin
-    when site visitors send message via contact form
+    Send an email to Bubbles when users
+    want to share a feedback via contact form
     """
     contact_form = ContactForm(request.POST)
     if contact_form.is_valid():

@@ -31,6 +31,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <!-- Wow.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
@@ -46,9 +47,9 @@
   <body>
     <!--- Free Delivery Banner--->
     <header class="container-fluid">
-        <div id="delivery-banner" class="row text-center">
-            <div class="col text-white banner">
-                <h4 class="logo-font-banner my-1 wow slideInLeft">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+        <div class="row text-center">
+            <div class="col banner">
+                <h5 class="banner-txt my-1 wow animate__animated animate__slideInRight">Free delivery on orders over €{{ free_delivery_threshold }}!</h5>
             </div>
         </div>
         <a href="{% url 'home' %}" class="mobile-logo">
