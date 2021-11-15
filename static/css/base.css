@@ -102,9 +102,12 @@ html {
     .dropdown-menu {
         margin-left: -30px!important;
     }
-    .mobile-search {
+    .search-dd {
         margin-left: 25px;
         
+    }
+    .search-bg {
+        background-color: transparent;
     }
 }
 

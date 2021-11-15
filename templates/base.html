@@ -152,10 +152,6 @@
         {% endblock %}
     </main>
     
-    <!-- Footer -->
-    {% include 'includes/footer.html' %}
-
-    
     <!--- JS Toasts --->
     {% block postloadjs %}
     <script type="text/javascript">
@@ -163,6 +159,9 @@
         $('.toast').delay(10000).fadeOut('300');
     </script>
     {% endblock %}
+
+    <!-- Footer -->
+    {% include 'includes/footer.html' %}
 
 </body>
 
