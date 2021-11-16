@@ -4,22 +4,31 @@
 <div class="container review-container mt-0 mb-5">
     <div class="row mt-0">
         <div class="col-12 col-md-6 shipping">
-            <h4> DIRECTIONS FOR STORAGE:</h4>
-            <p>Keep the bars fresh and dry in open bathroom caddies,that keeps it away from water.
-            </p>
-            <h4>SHIPPING & RETURNS</h4>
-            <h5><u>Shipping:</u></h5>
-            <p>Ground shipping is free for all purchases of 50 Euros or more.
-               It takes 2-8 business days to arrive after being shipped.
-            </p>
-            <h5><u>Return Policy</u></h5>
-            <p>Please note: we cannot accept returns without prior authorization.
-
-                To return an order made online or over the phone, contact our dedicated Customer Care team to get started.
-                
-                Returned items need to be 75% intact and returned with their original packaging and include a copy of the packing slip. 
-                You can return items up to 90 days after the date we shipped your order. Shipping charges are not usually refundable.
-            </p>
+            <div class="view-review">
+                <h4 class="text-center">FIGHTING ANIMAL TESTING</h4>
+                    <p class="text-center p-2">
+                        We have been fighting against animal testing since before we opened our shop, and the fight continues today. 
+                        We test products on humans and promote, fund and use alternative testing methods entirely animal and animal-product free.
+                    </p>
+            </div>
+            <div>
+                <h4> DIRECTIONS FOR STORAGE:</h4>
+                <p class="p-2">Keep the bars fresh and dry in open bathroom caddies,that keeps it away from water.
+                </p>
+            </div>
+            <div>
+                <h4>SHIPPING & RETURNS</h4>
+                    <h5><u>Shipping:</u></h5>
+                        <p class="p-2">Ground shipping is free for all purchases of 30 Euros or more.
+                            It takes 2-8 business days to arrive after being shipped.
+                        </p>
+                    <h5><u>Return Policy</u></h5>
+                        <p class="p-2">Please note: we cannot accept returns without prior authorization.
+                            To return an order made online or over the phone, contact our dedicated Customer Care team to get started.
+                            Returned items need to be 75% intact and returned with their original packaging and include a copy of the packing slip. 
+                             You can return items up to 90 days after the date we shipped your order. Shipping charges are not usually refundable.
+                        </p>
+            </div>
         </div>
         <div class="col-12 col-md-6 reviews">
             <div>
@@ -36,26 +45,29 @@
                                 <button type="button" class="btn cta-button btn-link" data-toggle="collapse" data-target="#collapseOne">view Reviews</button>									
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOne" class="collapse view-review" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
                             {% if reviews %}
                                 {% for review in reviews %}
                                     <h6 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h6>
                                     {% if request.user.is_authenticated %}
-                                        <span>
+                                        
+                                            <span>
                                             <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top" class="btn">
                                                 <i class="far fa-edit"></i>
                                             </a>
-                                        </span>
-                                        <span>
+                                            </span>
+                                            <span>
                                             <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review" data-placement="top" class="btn">
                                                 <i class="far fa-trash-alt"></i>
                                             </a>
-                                        </span>
+                                            </span>
+                                        
                                     {% endif %}
                                     <p class="rating-stars txt-small" data-value="{{ review.rating }}"></p>
-                                    <span class="text-secondary review-desc"><u>Posted on</u>: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
-                                    <p class="review-desc">"{{ review.description }}"</p><span class="text-right"><strong>- {{ review.user }} </strong></span>
+                                    <span class="text-secondary review-desc">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
+                                    <p class="review-desc">"{{ review.description }}"</p>
+                                    <p class="text-right review-desc"> - {{ review.user }} </p>
                                     
                                     <hr>
                                 {% endfor %}
@@ -68,7 +80,7 @@
                 </div>
             </div>
             <div>
-                <a href="{% url 'add_review' product.id %}" data-toggle="tooltip" title="Add a Review" data-placement="top" class="btn cta-button">
+                <a href="{% url 'add_review' product.id %}" class="btn cta-button mt-3">
                         Add Your Review
                 </a>
             </div> 
