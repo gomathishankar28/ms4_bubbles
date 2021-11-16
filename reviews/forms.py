@@ -10,8 +10,9 @@ class ReviewForm(forms.ModelForm):
         model = Review
         exclude = (
             'user',
-            'review_date',
-            'product')
+            'date_added',
+            'product',
+        )
 
         fields = ['title', 'description', 'rating']
 
@@ -37,5 +38,4 @@ class ReviewForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
                 self.fields[field].label = False
 
-            self.fields[field].widget.attrs['class'] = (
-                'add-blog-form-field')
+            self.fields[field].widget.attrs['class'] = 'add-product-form-field'
