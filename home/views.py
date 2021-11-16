@@ -63,6 +63,7 @@ def contactform(request):
 
 def contact_ack(request):
     """
-    A view to render thank you page after site visitors send a contact form
+    A view to render thank you message after the user sends a msg
+    via contact form
     """
     return render(request, 'home/acknowledgement.html')
