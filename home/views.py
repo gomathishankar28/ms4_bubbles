@@ -16,7 +16,6 @@ def index(request):
     """
     latest_products = Product.objects.all()  
     no_of_products = len(latest_products)
-    print(no_of_products)
     latest_arrival_1 = get_object_or_404(Product, pk=(no_of_products - 2))
     latest_arrival_2 = get_object_or_404(Product, pk=(no_of_products - 1))
     latest_arrival_3 = get_object_or_404(Product, pk=(no_of_products))

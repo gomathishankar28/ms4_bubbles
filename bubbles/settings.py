@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'profiles',
     'reviews',
     'blog',
+    
 
     # other
     'crispy_forms',
@@ -119,6 +120,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'bubbles.wsgi.application'
+
 
 
 # Database
