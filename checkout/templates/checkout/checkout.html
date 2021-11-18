@@ -25,7 +25,7 @@
                         |
                         <a href="{% url 'view_bag' %}" class="breadcrumb-link">Shopping cart</a>
                         |
-                        <span class="active-breadcrumb">Checkout</span>
+                        <span class="active-breadcrumb form-bg">Checkout</span>
                     </p>
                 </div>
             </div>
@@ -119,14 +119,11 @@
                         <!-- Pass the client secret to the view  -->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
-                    <div class="submit-button text-right mt-5 mb-2">
-                        <a href="{% url 'view_bag' %}" class="btn cta cta-green rounded-0">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="font-weight-bold">Adjust Cart</span>
+                    <div class="submit-button text-center mt-5 mb-5">
+                        <a href="{% url 'view_bag' %}" class="btn cta btn-info rounded-0">
+                            <span class="font-weight-bold">Revisit Cart</span>
                         </a>
-                        <button id="submit-button" class="cta cta-white product-page-cta">
+                        <button id="submit-button" class="btn cta-button product-page-cta">
                             <span class="font-weight-bold">Complete Order</span>
                         </button>
                     </div>

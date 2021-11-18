@@ -15,10 +15,9 @@ def index(request):
     displayed on the latest arrival section.
     """
     products = Product.objects.all()  
-    no_of_products = len(products)
-    latest_arrival_1 = get_object_or_404(Product, pk=(no_of_products - 2))
-    latest_arrival_2 = get_object_or_404(Product, pk=(no_of_products - 1))
-    latest_arrival_3 = get_object_or_404(Product, pk=(no_of_products))
+    latest_arrival_1 = get_object_or_404(Product, pk=66)
+    latest_arrival_2 = get_object_or_404(Product, pk=67)
+    latest_arrival_3 = get_object_or_404(Product, pk=68)
 
     # Prefill the email address field on the contact form
     if request.user.is_authenticated:

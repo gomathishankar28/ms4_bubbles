@@ -14,7 +14,10 @@ html {
     scroll-behavior: smooth;
     height: 100%;   
 }
-
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
 .btn-black {
     background: black;
     color: white;
@@ -48,6 +51,11 @@ html {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+.general-container {
+    max-width: 650px;
+    margin-bottom: 65px;
+    margin-top: 50px;
 }
 /* -------------HomePage -----------------*/
 .banner {
@@ -116,6 +124,9 @@ html {
 }
 .la-img {
     object-fit: contain;
+}
+.la-name {
+    margin-top: -75px;
 }
 
 /* ------Testimonials---------- */
@@ -207,7 +218,7 @@ html {
     -o-background-size: cover;
 }
 .ct-contact {
-    background-color: white;
+    background-color:white;
 }
 .contact-btn {
     color: #fff;
@@ -554,8 +565,10 @@ footer p {
 .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  /** #7bcbc8; **/
 .view-review {
-      background-color: #e9ecef;
+      background-color:#e9ecef;
   }
 .review-desc {
       font-size: 18px;;
@@ -696,7 +709,7 @@ footer p {
         font-size: 20px;
     }
 }
-@media (min-width: 600px) {
+@media (min-width: 540px) {
     .abt-row {
         margin-left: 100px;
     }
