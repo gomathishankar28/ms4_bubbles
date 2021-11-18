@@ -483,7 +483,6 @@ footer p {
 .card {
     border: none;
 }
-
 .card-header {
     background-color: var(--color-white);
     border-bottom: var(--border-black);
@@ -507,6 +506,21 @@ footer p {
 }
 .shipping {
     padding: 20px;
+}
+@media(min-width: 1024px) {
+    .pdetail {
+        margin-left: -70px;
+    }
+}
+@media(min-width: 1280px) {
+    .pdetail {
+        margin-left: -90px;
+    }
+}
+@media(min-width: 1440px) {
+    .pdetail {
+        margin-left: -120px;
+    }
 }
 
 /*----- Reviews-----------*/
