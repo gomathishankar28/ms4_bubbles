@@ -20,11 +20,11 @@
                     id="add-blog-form">
                     {% csrf_token %}
                     {% for field in form %}
-                    {% if field.name != 'image' %}
-                    {{ field | as_crispy_field }}
-                    {% else %}
-                    {{ field }}
-                    {% endif %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
                     {% endfor %}
                     <div class="div-buttons mt-5">
                         <button class="btn btn-dark rounded-0" type="submit">Update Post</button>
