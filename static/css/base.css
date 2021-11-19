@@ -472,12 +472,14 @@ footer p {
 .breadcrumb-link, .breadcrumb-link:hover {
     color: black;
     margin: 3px;
+    font-weight: 700;
 }
 
 .active-breadcrumb {
     color: var(--color-black);
     margin: 3px;
     text-decoration: underline;
+    font-weight: 700;
 }
 
 .breadcrumbs-text {
@@ -620,6 +622,28 @@ footer p {
     margin-bottom: .3rem;
 }
 
+/*---- Checkout form page -------------*/
+
+@media(max-width: 540px) {
+    .subtotal {
+        font-size: 18px;
+    }
+    .ordertotal {
+        margin-left: -10px;
+    }
+}
+@media(min-width: 768px) {
+    .ordersummary {
+        font-size: 24px;
+    }
+    .ordertot {
+        margin-left: 15px;
+    }
+    .order-details p {
+        font-size: 20px;
+    }
+}
+
 /* ----- Blog --------*/
 .blog-hr {
     border: 10px solid #7bcbc8;
@@ -707,6 +731,7 @@ footer p {
 @media (max-width: 414px) {
     .about-text {
         font-size: 20px;
+        font-family: sans-serif;
     }
 }
 @media (min-width: 540px) {

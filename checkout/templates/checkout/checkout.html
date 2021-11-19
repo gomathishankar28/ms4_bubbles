@@ -25,7 +25,7 @@
                         |
                         <a href="{% url 'view_bag' %}" class="breadcrumb-link">Shopping cart</a>
                         |
-                        <span class="active-breadcrumb form-bg">Checkout</span>
+                        <span class="active-breadcrumb">Checkout</span>
                     </p>
                 </div>
             </div>
@@ -38,10 +38,10 @@
                 <p class="text-black">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
-                        <p class="mb-1 mt-0 small text-muted">Item</p>
+                        <p class="mb-1 mt-0 text-muted small ordersummary">ITEM</p>
                     </div>
-                    <div class="col-3 text-right">
-                        <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    <div class="col-3">
+                        <p class="mb-1 mt-0 text-muted small ordersummary">SUBTOTAL</p>
                     </div>
                 </div>
                 {% for item in bag_items %}
@@ -57,21 +57,21 @@
                     </div>
                     <div class="col-7 mb-4">
                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        <p class="my-0  text-muted small">Qty: {{ item.quantity }}</p>
                     </div>
-                    <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                    <div class="col-3">
+                        <p class="my-0 subtotal ordersummary">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
                 {% endfor %}
                 <hr class="line">
                 <div class="row text-black text-right">
-                    <div class="col-7 offset-2 mt-2">
+                    <div class="col-7 offset-2 mt-2 ordertot">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery:</p>
                         <p class="my-0">Grand Total:</p>
                     </div>
-                    <div class="col-3 mt-2">
+                    <div class="col-3 mt-2 ordertotal">
                         <p class="my-0">€{{ total | floatformat:2 }}</p>
                         <p class="my-0">€{{ delivery | floatformat:2 }}</p>
                         <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
