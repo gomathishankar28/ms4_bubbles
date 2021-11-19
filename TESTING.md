@@ -34,7 +34,7 @@ Following testcases were tested as part of smoke testing.
 
 ### **Results from HTML Validator**
 
-HTML was validated with [W3C Validator](https://validator.w3.org/) by direct input. Results came out good without any errors except for few warnings.
+HTML was validated with [W3C Validator](https://validator.w3.org/) by URI. Results came out good without any errors except for few warnings.
 
 
 ### **Results from  W3C CSS**
@@ -54,85 +54,112 @@ Js files were validated with [Jshint](https://jshint.com/). No Errors found
 
 *    As a prospective customer to the website, I want to easily navigate the site, so that I can easily find the products that  
  Bubbles offers.
-   > As the Website is launched, On the top-center is the Navigation bar with Products as the first link that displays what products,Bubbles offers.
+         
+         >  As the Website is launched, On the top-center is the Navigation bar with Products as the first link that displays what products,Bubbles offers.
 
 *   As a prospective customer to the website, I want to precisely know the different varieties of bathing products they sell.
 
-   > As the Website is launched, On the top-center is the Navigation bar with Products as the first link that displays what products,Bubbles offers.
+         > As the Website is launched, On the top-center is the Navigation bar with Products as the first link that displays what products,Bubbles offers.
 
 *   As a prospective customer to the website, I should be able to search based on keywords so that I can get the desired information quickly.
 
-   > As the Website is launched, On the top is the search bar that enables the user to look for products that they want.
+         > As the Website is launched, On the top is the search bar that enables the user to look for products that they want.
 
 *   As a prospective customer, I should be able to access all the different bathing products from nav menu.
-   > This is acheived by having a Dropdown Nav menu Products under which all different bathing products are listed
+         
+         > This is acheived by having a Dropdown Nav menu Products under which all different bathing products are listed
 
 *   As a new customer to the website, I want to know if there are any new arrivals.
-   > This is acheived by having a Latest Arrivals section on the Home page.
+         
+         > This is acheived by having a Latest Arrivals section on the Home page.
 
 *   As a new customer to the website, I want to know more about the Bubbles team.
-   > This is acheived by having a About section on the Home page.
+         
+         > This is acheived by having a About section on the Home page.
 
 *   As a new customer to the website, I want to see some success stories from customers.
-   > This is acheived by having a Testimonials of 5 different customers as a carousel on the Home page.
+         
+         > This is acheived by having a Testimonials of 5 different customers as a carousel on the Home page.
 
 *   As a new customer, I want to know the description of each product
-   > This is acheived by displaying a Prodcut_detail page when each product is clicked.
+         
+         > This is acheived by displaying a Prodcut_detail page when each product is clicked.
 
 *   As a new customer to website, I want to know how many products are available under each category.
-   > This is acheived by dispaying the breadcrumb on top-left of the products page which tells which category of  products, the user is currently in and number of products in each category
+         
+         > This is acheived by dispaying the breadcrumb on top-left of the products page which tells which category of  products, the user is currently in and number of products in each category
 
 *   As a customer to the website, I want to know the price of the product.
-   > This is acheived by displaying an image of the product in the products page along with the name, Pricead Rating for the product.
+         
+         > This is acheived by displaying an image of the product in the products page along with the name, Pricead Rating for the product.
 
 *   As a customer, I would like to see any reviews available for the product.
-   > This is acheived by cicking on "View Reviews" button on the product_detail page.
+         
+         > This is acheived by cicking on "View Reviews" button on the product_detail page.
 
 *   As a customer, I would like to add my own review to the product.
-   > This is acheived by clicking on "Add Review" button on the product_detail page.
+         
+         > This is acheived by clicking on "Add Review" button on the product_detail page.
 
 *   As a customer, I would like to see an average rating for each product that would help me to choose a better product.
-   > This is acheived by displaying an average rating of the product in the product_detail page which is calculated based on the user's review rating. 
+         
+         > This is acheived by displaying an average rating of the product in the product_detail page which is calculated based on the user's review rating. 
 
 *   As a customer, I would like to know the shipping and Return Policy for the products.
-   > This is acheived by displaying this information on the product_detail page.
+         
+         > This is acheived by displaying this information on the product_detail page.
 
 *   As a prospective customer to the website, I want to edit my review for the product.
-   > This is acheived by having an Edit review button against each review.
+         
+         > This is acheived by having an Edit review button against each review.
 
 *   As a prospective customer to the website, I want to delete my review for the product.
-   > This is acheived by having a delete review button against each review.
+         
+         > This is acheived by having a delete review button against each review.
 
 *   As a prospective customer to the website, I want to contact Bubbles team incase of any issues.
-   > This is acheived by having a contact form on the Home page.
+         
+         > This is acheived by having a contact form on the Home page.
 
 *  As a prospective customer to the website, I would like to easily update my cart by increasing or decreasing the quantity of the product.
-   > This is acheived by placing a increment decrement quantity Input box on the Product_detail page.
+         
+         > This is acheived by placing a increment decrement quantity Input box on the Product_detail page.
 
 *  As a prospective customer to the website, I would like to have my delivery information prefilled so that i can complete my purchase quickly.
-   > This is acheived by having a Checkbox to save the  user's  personal and shipping details while making their first purchase.
+         
+         > This is acheived by having a Checkbox to save the  user's  personal and shipping details while making their first purchase.
 
 *  As a prospective customer to the website, I would like to Edit my personal and shipping details.
+        
+         > This is acheived by providing an Edit profile form for all the registered users
 
 *  As a Prospective customer tothe website , I would like to View my previous orders.
 
+         > This is acheived by providing an view order history button on My profile page for all the registered users.
+
 *   As an Administrator, I would like to restrict only the logged in users to add/edit/delete his/her own review so that unauthorized/ untraceable changes are prevented.
-   > This is acheieved by displaying edit, delete review buttons only for the reviews the logged in user has created. Also ,to add a review, user willbe asked to login before adding a review.
+         
+         > This is acheieved by displaying edit, delete review buttons only for the reviews the logged in user has created. Also ,to add a review, user willbe asked to login before adding a review.
 
 *   As an administrator, I would like to add a new product.
-   > This is acheieved by dispalying a Add Product form by clicking on Manage Products option on the User Nav menu which will be visible only for admin user.
+         
+         > This is acheieved by dispalying a Add Product form by clicking on Manage Products option on the User Nav menu which will be visible only for admin user.
 
 *   As an administrator, I would like to add a new Blog Post.
-   > This is acheieved by dispalying a Add Post form by clicking on Manage Blog option on the User Nav menu which will be visible only for admin user..
+         
+         > This is acheieved by dispalying a Add Post form by clicking on Manage Blog option on the User Nav menu which will be visible only for admin user..
 
 *   As an administrator, both unregistered and registered users should be able to view the product and the user reviews so that the display of information is not restricted for unregistered users.
-   > This is acheieved by clicking on "Take a Look" button on the hero image and also further clicking on each product,usercan see the reviews for the product.
+         
+         > This is acheieved by clicking on "Take a Look" button on the hero image and also further clicking on each product,usercan see the reviews for the product.
 
 *   As an administrator, I should allow registered users to log out so that unauthorized accesses are prevented.
-   > This is acheieved by dispalying a Add Post form by clicking on Manage Blog option on the User Nav menu.
+         
+         > This is acheieved by dispalying a Add Post form by clicking on Manage Blog option on the User Nav menu.
 
 *   As an administrator, I would like to have field level validations on the contact entry so that incorrect or incomplete information is avoided.
-   > This is acheieved by using django-phonenumber for Mobile number field on the checkout form.
+         
+         > This is acheieved by using django-phonenumber for Mobile number field on the checkout form.
 
 
  ## Functional Testing
@@ -263,7 +290,7 @@ Website was tested in different OS listed below and results were satisfying.
 
 Performance has been tested using the Lighthouse tool of Google Chrome. The results are shown below.
 
-> ![Perfomance Results](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing//performance.jpg?raw=true)
+> ![Perfomance Results](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing//perfomance.jpg?raw=true)
 
 ## Accessibility Testing
 

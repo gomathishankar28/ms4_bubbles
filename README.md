@@ -16,7 +16,7 @@ The shop also publishes blog posts about benefits of bathing ,use of bathbombs, 
     - [Structure](#structure)
     - [Skeleton](#skeleton)
     - [Surface](#surface)
-  - [Features](#seatures)
+  - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
   - [Deployment](#deployment)
@@ -26,7 +26,7 @@ The shop also publishes blog posts about benefits of bathing ,use of bathbombs, 
 ## demo 
 [Live Website](https://ms4-bubbles.herokuapp.com/)
 
-![AmIResponsive](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/amiresponsive.jpg)
+![AmIResponsive](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/amiresponsive.jpg?raw=true)
 
 ## Introduction
 
@@ -126,7 +126,7 @@ As a customer, I would like
 
 # User Experience Design
 
-## The Strategy Plane
+### Strategy
 
 The core of this website is to:
 *   Build brand awareness for a handmade plastic-free bathing products. 
@@ -461,7 +461,7 @@ The website is designed using following technologies:
 
 # Testing
 
-**Testing section is located [here](testing.md)**
+**Testing section is located [here](https://github.com/gomathishankar28/ms4_bubbles/blob/master/TESTING.md)**
 
 ### Validating code
 
