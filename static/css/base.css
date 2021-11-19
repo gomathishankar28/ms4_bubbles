@@ -56,6 +56,7 @@ html {
     max-width: 650px;
     margin-bottom: 65px;
     margin-top: 50px;
+    height: max-content;
 }
 /* -------------HomePage -----------------*/
 .banner {
@@ -131,7 +132,7 @@ html {
 
 /* ------Testimonials---------- */
 #testimonial {
-    background: white;
+    background: #93b9bb;
 }
 .carousel-inner {
     position: relative;
@@ -210,15 +211,15 @@ html {
 #contact {
     padding: 4rem 0;
 }
-.bg-contact {
+/*.bg-contact {
     background: url('/static/images/home_page/contact.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+}*/
 .ct-contact {
-    background-color:white;
+    background-color:#93b9bb;
 }
 .contact-btn {
     color: #fff;
@@ -344,7 +345,9 @@ footer p {
 .div-logout-form {
     text-align: center!important;
 }
-
+.logout-container {
+    height: 300px;
+}
 /* Manage Product Form -widgets */
 
 .btn-file {

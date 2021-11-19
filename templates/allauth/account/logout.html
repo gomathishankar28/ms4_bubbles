@@ -14,7 +14,7 @@
     </div>
 </div>
 
-    <div class="container general-container logout-container">
+    <div class="container general-container logout-container mt-0">
         <div class="row">
             <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
                 <div class="div-logout-form">
@@ -24,7 +24,7 @@
                         {% if redirect_field_value %}
                         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                         {% endif %}
-                        <a class="btn cta btn-info text-white rounded-0 mr-2" href="{% url 'products' %}">Shop more</a>
+                        <a class="btn cta cta-button text-white rounded-0 mr-2" href="{% url 'products' %}">Shop more</a>
                         <button type="submit" class="cta cta-white rounded-0">{% trans 'Log Out' %}</button>
                     </form>
                 </div>
