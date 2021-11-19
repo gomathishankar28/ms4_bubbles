@@ -26,7 +26,7 @@ The shop also publishes blog posts about benefits of bathing ,use of bathbombs, 
 ## demo 
 [Live Website](https://ms4-bubbles.herokuapp.com/)
 
-![AmIResponsive](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/amiresponsive.jpg?raw=true)
+![AmIResponsive](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/amiresponsive.jpg)
 
 ## Introduction
 
