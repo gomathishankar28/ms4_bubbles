@@ -290,21 +290,22 @@ Website was tested in different OS listed below and results were satisfying.
 
 Performance has been tested using the Lighthouse tool of Google Chrome. The results are shown below.
 
-> ![Perfomance Results](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing//perfomance.jpg?raw=true)
+![Performance Results](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing//perfomance.jpg?raw=true)
 
 ## Accessibility Testing
 
 The website's accessibility was also tested using Lighthouse. The result are shown below.
 
-> ![Accessibility](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing/accessibility.jpg?raw=true)
+![Accessibility](https://github.com/gomathishankar28/ms4_bubbles/readme_images/testing/accessibility.jpg?raw=true)
+
 
 
 ## Best Practices and SEO Results
 
-> ![BestPractices](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing/best_practices.jpg?raw=true)
+![BestPractices](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing/best_practices.jpg?raw=true)
 
 
-> ![SEO](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing/SEO.jpg?raw=true)
+![SEO](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/testing/SEO.jpg?raw=true)
 
 
 Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/2002/01/spellchecker). The results are satisfying.
