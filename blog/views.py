@@ -1,8 +1,9 @@
+""" import post model to add/edit and display posts"""
+
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Blog, Post, Comment
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
+from .models import Post
 from .forms import CommentForm
 from .forms import PostForm
 
@@ -10,15 +11,15 @@ from .forms import PostForm
 def blog(request):
     """ BLog page to display all available posts """
 
-    posts = Post.objects.all()
+    posts = Post.objects.all()  # pylint: disable=no-member
     post_count = len(posts)
     template = 'blog/blog.html'
     context = {
         'posts': posts,
         'post_count': post_count
     }
-    
     return render(request, template, context)
+
 
 def post_detail(request, slug):
     """ Display each Post in detail along with its comments """
@@ -57,7 +58,8 @@ def add_post(request):
             messages.success(request, 'Successfully added a post!')
             return redirect(reverse('post_detail', args=[post.slug]))
         else:
-            messages.error(request, 'Failed to add the blog post. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add blog post. Check if form is valid.')
     else:
         form = PostForm()
 
@@ -84,7 +86,8 @@ def edit_post(request, slug):
             messages.success(request, 'Successfully updated  post!')
             return redirect(reverse('post_detail', args=[post.slug]))
         else:
-            messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update blog post.check if form is valid.')
     else:
         form = PostForm(instance=post)
         messages.info(request, f'You are editing {post.title}')

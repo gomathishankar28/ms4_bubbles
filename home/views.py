@@ -14,7 +14,6 @@ def index(request):
     A view to return the index page with the latest 3 products
     displayed on the latest arrival section.
     """
-    products = Product.objects.all()  
     latest_arrival_1 = get_object_or_404(Product, pk=66)
     latest_arrival_2 = get_object_or_404(Product, pk=67)
     latest_arrival_3 = get_object_or_404(Product, pk=68)

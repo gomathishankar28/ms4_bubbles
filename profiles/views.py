@@ -4,8 +4,6 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
 
-from checkout.models import Order
-
 
 @login_required
 def profile(request):
@@ -14,7 +12,6 @@ def profile(request):
     profile = get_object_or_404(UserProfile, user=request.user)
     template = 'profiles/profile.html'
     order = profile.orders.latest('order_number')
-    
     context = {
         'profile': profile,
         'on_profile_page': True,
@@ -36,7 +33,6 @@ def order_history(request):
         'orders': orders,
         'on_profile_page': True,
     }
-
     return render(request, template, context)
 
 
@@ -45,21 +41,19 @@ def edit_profile(request):
     """ Display the user's edit profile details form. """
 
     profile = get_object_or_404(UserProfile, user=request.user)
-
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(
+                request, 'Update failed. Check if form is valid.')
     else:
         form = UserProfileForm(instance=profile)
-
     template = 'profiles/edit_profile.html'
     context = {
         'form': form,
         'on_profile_page': True,
     }
-
     return render(request, template, context)
