@@ -15,7 +15,7 @@ def profile(request):
     order = Order.objects.filter(user_profile=profile)
     print(order)
     if not(order):
-        template = 'profiles/profile1.html'
+        template = 'profiles/profile_new.html'
         return render(request, template)
     else:
         order = profile.orders.latest('order_number')

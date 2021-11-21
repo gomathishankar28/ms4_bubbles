@@ -355,8 +355,8 @@ footer p {
 .div-logout-form {
     text-align: center!important;
 }
-.logout-container {
-    height: 300px;
+.login-container, .logout-container {
+    min-height: 600px;
 }
 /* Manage Product Form -widgets */
 
@@ -627,6 +627,9 @@ footer p {
 
 .form-group-buttons {
     margin-bottom: .3rem;
+}
+.qty_input {
+    max-width: 100px;
 }
 
 /*---- Checkout form page -------------*/

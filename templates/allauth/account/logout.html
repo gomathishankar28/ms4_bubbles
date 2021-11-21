@@ -9,7 +9,7 @@
 <div class="container-fluid">
     <div class="row-products">
         <div class="col">
-            <h2 class="text-center mt-5">{% trans "Log Out" %}</h2>
+            <h2 class="logo-font text-center mt-5">{% trans "Log Out" %}</h2>
         </div>
     </div>
 </div>
@@ -24,8 +24,8 @@
                         {% if redirect_field_value %}
                         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                         {% endif %}
-                        <a class="btn cta cta-button text-white rounded-0 mr-2" href="{% url 'products' %}">Shop more</a>
-                        <button type="submit" class="cta cta-white rounded-0">{% trans 'Log Out' %}</button>
+                        <a class="btn cta cta-button text-white rounded-0 mr-2 mb-5" href="{% url 'products' %}">Shop more</a>
+                        <button type="submit" class="cta cta-white rounded-0 mb-5">{% trans 'Log Out' %}</button>
                     </form>
                 </div>
             </div>
