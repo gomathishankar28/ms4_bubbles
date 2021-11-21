@@ -1,28 +1,32 @@
 from django.shortcuts import render, get_object_or_404
+from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
+from checkout.models import Order
 
 
 @login_required
 def profile(request):
     """ Display the user's profile. """
-
     profile = get_object_or_404(UserProfile, user=request.user)
-    template = 'profiles/profile.html'
-    if (profile):
-        order = profile.orders.latest('order_number')
+    print(profile)
+    order = Order.objects.filter(user_profile=profile)
+    print(order)
+    if not(order):
+        template = 'profiles/profile1.html'
+        return render(request, template)
     else:
-        messages.error(
-            'Update failed. Check if form is valid.')
-    context = {
-        'profile': profile,
-        'on_profile_page': True,
-        'order': order,
-    }
-    return render(request, template, context)
-
+        order = profile.orders.latest('order_number')
+        template = 'profiles/profile.html'
+        context = {
+            'profile': profile,
+            'on_profile_page': True,
+            'order': order,
+        }
+        return render(request, template, context)
+        
 
 @login_required
 def order_history(request):
