@@ -32,9 +32,12 @@
         </div>
         <div class="col-12 col-md-6 reviews">
             <div>
-                <h2><u>AVERAGE RATING</u</h2>
-                <p class="rating-stars" data-value="{{ product.avg_rating }}"><span>{{ product.avg_rating }}</span></p>
-                
+                <h2><u>CUSTOMER REVIEWS</u</h2>
+                {% if avg_rating %}
+                    <p class="rating-stars" data-value="{{ avg_rating }}"></p>
+                {% else %}
+                    <p class="rating-stars" data-value="{{ avg_rating }}"></p>
+                {% endif %}
             </div>
             <!-- view Reviews accordion -->
             <div class="bs-example review-accordion">

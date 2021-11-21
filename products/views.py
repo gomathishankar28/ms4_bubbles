@@ -72,13 +72,13 @@ def product_detail(request, product_id):
     reviews = Review.objects.filter(product=product)
     review_form = ReviewForm()
     avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
-    product.avg_rating = avg_rating
     product.save()
     template = 'products/product_detail.html'
     context = {
         'product': product,
         'reviews': reviews,
-        'review_form': review_form
+        'review_form': review_form,
+        'avg_rating': avg_rating
     }
 
     return render(request, template, context)

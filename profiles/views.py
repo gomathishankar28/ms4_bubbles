@@ -11,13 +11,16 @@ def profile(request):
 
     profile = get_object_or_404(UserProfile, user=request.user)
     template = 'profiles/profile.html'
-    order = profile.orders.latest('order_number')
+    if (profile):
+        order = profile.orders.latest('order_number')
+    else:
+        messages.error(
+            'Update failed. Check if form is valid.')
     context = {
         'profile': profile,
         'on_profile_page': True,
         'order': order,
     }
-    print(order)
     return render(request, template, context)
 
 
