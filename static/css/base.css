@@ -5,7 +5,7 @@ body {
     font-family: 'Akaya Telivigala', cursive;
     overflow-x: hidden;
     color: black;
-    height: 100%;;  
+    height: 100%;
 }
 p {
     font-size: 24px;
@@ -13,11 +13,8 @@ p {
 html {
     scroll-behavior: smooth;
     height: 100%; 
-    width: 100%;  
-    
+    width: 100%;   
 }
-
-
 .btn-black {
     background: black;
     color: white;
@@ -61,13 +58,18 @@ html {
 .btt-button {
     width: 50px;
 }
+@media (max-width: 280px){
+    body {
+        width: fit-content;
+    }
+}
 @media (min-width: 240px) and (max-width:600px){
     .form-bg {
         margin-left: 5px;
     }
 }
 /* -------------HomePage -----------------*/
-.banner {
+.banner { 
     background-color:black!important;
     color:white;
 }
@@ -678,7 +680,7 @@ footer p {
     padding: 5px;
 }
 .blog-article p {
-    font-size: 24px;!important
+    font-size: 24px!important;
 }
 @media (min-width: 280px) { 
     .blog-img {

@@ -3,10 +3,10 @@
 
 {% block content %}
 <!-- Header -->
-<div class="container-fluid">
+<div class="container-fluid mt-5">
     <div class="row-products">
         <div class="col text-center mt-3 mb-3 pb-1">
-            <h2 class="logo-font">Thank You</h2>
+            <h2 class="text-center">Thank You</h2>
         </div>
     </div>
     <!-- Breadcrumbs -->
@@ -74,9 +74,9 @@
                 <div class="col-2 mb-1">
                     <a href="{% url 'product_detail' item.product.id %}">
                         {% if item.product.image %}
-                        <img class=".w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                         {% else %}
-                        <img class=".w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         {% endif %}
                     </a>
                 </div>
@@ -92,12 +92,12 @@
             <!-- Order product info -->
             <hr class="line">
             <div class="row text-black text-right">
-                <div class="col-7 offset-2 mt-2 ml-5">
+                <div class="col-7 offset-2 mt-2 ml-5 subtotal">
                     <p class="my-0">Order total:</p>
                     <p class="my-0">Delivery:</p>
                     <p class="my-0">Grand Total:</p>
                 </div>
-                <div class="col-3 mt-2 ">
+                <div class="col-3 mt-2 ordertotal">
                     <p class="my-0">€{{ order.order_total|floatformat:2 }}</p>
                     <p class="my-0">€{{ order.delivery_cost|floatformat:2 }}</p>
                     <p class="my-0"><strong>€{{ order.grand_total|floatformat:2 }}</strong></p>
