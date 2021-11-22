@@ -515,7 +515,10 @@ footer p {
 }
 .card-bg {
     background-color:#93b9bb;
-    border: 2px solid #7bcbc8;
+    border: 3px solid #93b9bb ;
+}
+.card-footer {
+    border: 3px solid #93b9bb;
 }
 
 .product-details-additional {
