@@ -16,10 +16,7 @@ html {
     width: 100%;  
 }
 
-.container-fluid {
-    padding: 0;
-    margin: 0;
-}
+
 .btn-black {
     background: black;
     color: white;
@@ -737,10 +734,22 @@ footer p {
         margin-left: -10px;
     }
 }
+@media (max-width: 240px) {
+    .abt-img    {
+        width: 200px;
+        height: 200px;
+        margin-left: 10px;
+    }
+}
 @media (min-width: 240px) and (max-width: 360px) {
     .landing-page-content {
         margin-top: 100px;
         font-size: 22px;
+    }
+    .abt-img {
+        width: 270px;
+        height: 270px;
+        margin-left: 15px;
     }
 }
 @media (min-width: 360px) {
@@ -748,10 +757,15 @@ footer p {
         margin-left: 2px;
     }
 }
-@media (min-width: 414px) {
+@media (min-width: 411px) {
     .abt-row {
         margin-left: 10px;
     }
+    .abt-img {
+        width: 300px;
+        height: 300px;
+        margin-left: 28px;
+    } 
 }
 @media (max-width: 414px) {
     .about-text {
