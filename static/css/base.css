@@ -15,6 +15,7 @@ html {
     height: 100%; 
     width: 100%;  
 }
+
 .container-fluid {
     padding: 0;
     margin: 0;
@@ -58,6 +59,9 @@ html {
     margin-bottom: 65px;
     margin-top: 50px;
     height: max-content;
+}
+.btt-button {
+    width: 50px;
 }
 @media (min-width: 240px) and (max-width:600px){
     .form-bg {
@@ -118,7 +122,7 @@ html {
     background-color: #f07972;
 }
 .bag-container {
-    min-height: 500px;
+    min-height: 600px;
 }
 
 
@@ -449,6 +453,7 @@ footer p {
     text-transform: uppercase;
     padding-left: 5%;
     outline: none;
+    margin-left: 20px;
 }
 
 .dropdown-sort-products {
@@ -465,7 +470,7 @@ footer p {
     width: 48px;
     height: 48px;
     border: solid 1px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: whitesmoke;
 }
 
 .fa-arrow-up:before {
