@@ -37,14 +37,15 @@
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
-                        <div class="card-footer card-bg  pt-0 text-center">
+                        <div class="card-footer  pt-0 text-center">
                         <div class="card-body pb-0 text-center">
                             <p class="mb-0">{{ product.name }}</p>
                         </div>
                         
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 text-center font-weight-bold">€{{ product.price }}</p>
+                                    <p class="lead mb-0 text-center font-weight-bold">€&nbsp;{{ product.price }}</p>
+                                    <p><small class="mb-0 text-center text-muted text-small"><i class="fas fa-tag"></i>&nbsp;{{ product.category }}</small></p>
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a class="text-black" href="{% url 'edit_product' product.id %}">Edit</a> |

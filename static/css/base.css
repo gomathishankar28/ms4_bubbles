@@ -14,6 +14,7 @@ html {
     scroll-behavior: smooth;
     height: 100%; 
     width: 100%;  
+    
 }
 
 
@@ -264,7 +265,7 @@ footer {
     bottom: 0;   
 }
 .footer-txt {
-    font-size: 14px;
+    font-size: 12px;
 }
 .footer-link {
     text-transform: uppercase;
@@ -514,11 +515,12 @@ footer p {
     padding-left: 0;
 }
 .card-bg {
-    background-color:#93b9bb;
+    background-color:#cfd9d8;
     border: 3px solid #93b9bb ;
 }
 .card-footer {
-    border: 3px solid #93b9bb;
+    border-top: 3px solid #93b9bb;
+    background-color: #7bcbc8;
 }
 
 .product-details-additional {
@@ -537,6 +539,9 @@ footer p {
 }
 .shipping {
     padding: 20px;
+}
+.pdetail {
+    border: 3px solid #7bcbc8;
 }
 @media(min-width: 1024px) {
     .pdetail {
@@ -595,6 +600,7 @@ footer p {
   }
 .rating-stars {
     color: #d39e00;
+    margin-left: 60px;
 }
 /*------ Empty Cart Page ------*/
 
@@ -671,6 +677,30 @@ footer p {
 .blog-btn {
     padding: 5px;
 }
+.blog-article p {
+    font-size: 24px;!important
+}
+@media (min-width: 280px) { 
+    .blog-img {
+        width: 260px;
+        height: 260px;
+        margin-right: 15px;
+    }
+}
+@media (min-width: 320px) { 
+    .blog-img {
+        width: 280px;
+        height: 280px;
+        margin-left: 5px;
+    }
+}
+@media (min-width: 375px) { 
+    .blog-img {
+        width: 350px;
+        height: 350px;
+        margin-left: 15px;
+    }
+}
 @media (min-width: 540px) {  
     .blog-img {
         width: 500px;
@@ -678,9 +708,9 @@ footer p {
         
     }
 }
-@media (min-width: 800px) {  
+@media (min-width: 768px) {  
     .blog-img {
-        width: 700px;
+        width: 680px;
         height: 500px;
     }
 }

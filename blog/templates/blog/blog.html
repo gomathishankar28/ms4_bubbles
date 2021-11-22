@@ -14,7 +14,7 @@
         <div class="container-fluid">
             
                 <div class="row mt-4">
-                    <div class="col text-center pl-5 pr-5">
+                    <div class="col text-center pl-2 pr-2">
                         <p class="text-secondary">
                             Bathing has been a part of the human health for centuries. 
                             From the Roman people who loved a good bath to Scandinavians 
@@ -43,7 +43,7 @@
     <hr class="blog-hr">
     <!--- Posts --->
     <div class="posts">
-        <p class="text-right text-muted"><strong>{{ post_count }}</strong> Posts Available</p>
+        <p class="text-right text-danger text-muted"><strong>{{ post_count }}</strong> Posts Available</p>
         {% for post in posts %}
             {% if posts %}
                 <div class="row mt-4">
