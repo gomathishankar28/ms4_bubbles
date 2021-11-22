@@ -513,6 +513,10 @@ footer p {
     cursor: pointer;
     padding-left: 0;
 }
+.card-bg {
+    background-color:#93b9bb;
+    border: 2px solid #7bcbc8;
+}
 
 .product-details-additional {
     font-size: 1.2rem;
@@ -776,14 +780,18 @@ footer p {
     .abt-row {
         margin-left: 100px;
     }
+    .abt-img {
+        margin-left: 0;
+    } 
 }
-@media (min-width: 800px) and (max-width: 840px) {
+@media (min-width: 768px) and (max-width: 840px) {
     .abt-row {
         margin-left: 200px;
     }
     abt-img {
-        width:500px;
-        height:500px;
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
     }
 }
 @media (min-width: 1024px) {
