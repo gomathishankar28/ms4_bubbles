@@ -26,56 +26,54 @@
         </div>
     </div>
 </div>
-<!-- Order history items -->
+<!-- Order history header -->
 <div class="container profile-container mb-1">
-    <div class="row">
+    <div class="row p-2">
         <div class="col-12">
             {% if orders %}
-            <p class="pl-5 pr-5 text-center">
-                Below are all your recent purchases through this account, {{ user.username }}.
-            </p>
-            <!-- No previous orders -->
+                <p class="pl-5 pr-5 ">
+                    Here is the list of your orders, {{ user.username }}.
+                </p>
+            <!-- No orders for new profile-->
             {% else %}
-            <p class="pl-5 pr-5">
-                Looks like you haven't ordered anything yet, {{ user.username }}!
-                Check out our shop for amazing boutique pieces. You can also check out our blog, where we give great
-                inspiration for styling your home.
-            </p>
-            <div class="text-center mt-5">
-                <a href="{% url 'products' %}" class="btn cta-button mr-2 p-2">Shop Now</a>
-            </div>
+                <p class="pl-5 pr-5">
+                    Looks like you haven't ordered anything yet, {{ user.username }}!
+                    Check out our shop for amazing boutique pieces. You can also check out our blog, where we give great
+                    inspiration for styling your home.
+                </p>
+                <div class="text-center mt-5">
+                    <a href="{% url 'products' %}" class="btn cta-button mr-2 p-2">Shop Now</a>
+                </div>
             {% endif %}
         </div>
     </div>
 </div>
 
-<!-- Details of previous orders -->
+<!-- Retrieving previous order details -->
 <div class="container mb-5">
+    
     {% for order in orders %}
-    <div class="container profile-container mt-4 mb-2 div-profile-order">
-        <div class="row">
-            <div class="col-12 col-md-5 profile-order-details">
-                <p class="mb-1">Date: {{ order.date }}</p>
-                <p class="mb-3">Order ID: {{ order.order_number|truncatechars:15 }}</p>
-                <p class="mb-1 text-uppercase green-text">Total: €{{ order.grand_total }}</p>
-
+    <div class="container mt-4 mb-2">
+        <div class="row profileorderhistory">
+            <div class="col-12 col-md-6">
+                <p class="mb-1 text-center"><u>{{ order.date }}</u></p>
+                <p class="mb-3 text-center">Order ID: {{ order.order_number|truncatechars:10 }}</p>
+                <p class="mb-1 text-center"><u>ITEMS</u></p>
+                {% for item in order.lineitems.all %}
+                    <p class="text-center">{{ item.product.name }}
+                        <span class="text-center">
+                         - &nbsp;{{ item.quantity }}</span> 
+                    </p>
+                    
+                {% endfor %}
             </div>
-            <div class="col-12 col-md-7 profile-line-item-details">
-                <p class="mb-1">Items:</p>
-                <div class="pl-3">
-                    <ul class="list-unstyled">
-                        {% for item in order.lineitems.all %}
-                        <li>
-                            <span class="text-uppercase">{{ item.quantity }}</span> x
-                            <span class="text-uppercase">{{ item.product.name }}</span>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+            <div class="col-12 col-md-6">
+                <p class="mb-1 text-center"><u>Amount</u></p>
+                <p class="mb-3 text-center">€{{ order.grand_total }}</p>
             </div>
         </div>
     </div>
     {% endfor %}
-</div>
+
 
 {% endblock %}
