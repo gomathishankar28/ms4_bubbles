@@ -16,7 +16,9 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Blog',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, 
+                    serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=100)),
                 ('slug', models.SlugField()),
             ],
@@ -24,25 +26,36 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Post',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, 
+                    serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=100)),
                 ('slug', models.SlugField()),
                 ('author', models.CharField(max_length=255)),
                 ('intro', models.TextField()),
                 ('article', models.TextField()),
-                ('image', models.ImageField(blank=True, null=True, upload_to='')),
+                ('image', models.ImageField(
+                    blank=True, null=True, upload_to='')),
                 ('date_added', models.DateTimeField(auto_now_add=True)),
-                ('blog', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='posts', to='blog.blog')),
+                ('blog', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, 
+                    related_name='posts', to='blog.blog')),
             ],
         ),
         migrations.CreateModel(
             name='Comment',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, 
+                    serialize=False, verbose_name='ID')),
                 ('comment_desc', models.TextField()),
                 ('date_added', models.DateTimeField(auto_now_add=True)),
-                ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='blog.post')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='profiles.userprofile')),
+                ('post', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, 
+                    related_name='comments', to='blog.post')),
+                ('user', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE, 
+                    to='profiles.userprofile')),
             ],
         ),
     ]

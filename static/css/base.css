@@ -33,9 +33,6 @@ html {
 .text-black {
     color: #000 !important;
 }
-.border-black {
-    border: 1px solid black !important;
-}
 .form-bg {
     background-color: #7bcbc8;
     border: 2px solid black;
@@ -228,26 +225,7 @@ html {
 .ct-contact {
     background-color:#93b9bb;
 }
-/*.bg-contact {
-    background: url('/static/images/home_page/contact.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
-.contact-btn {
-    color: #fff;
-    background-color: black;
-    border-color: black;
-    letter-spacing: 0.05em;
-    border-radius: 0;
-    border: 1px solid black !important;
-}
-.contact-btn:hover {
-    color: #6ac4c5;
-    text-decoration: none;
-}*/
 /* ---- Acknowledgement for contact form-------*/
 #ack-btn {
     color: black;

@@ -26,7 +26,7 @@ The shop also publishes blog posts about benefits of bathing ,use of bathbombs, 
 ## demo 
 [Live Website](https://ms4-bubbles.herokuapp.com/)
 
-![AmIResponsive](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/amiresponsive.jpg?raw=true)
+![AmIResponsive](https://github.com/gomathishankar28/ms4_bubbles/blob/main/readme_images/amiresponsive.jpg?raw=true)
 
 ## Introduction
 
@@ -177,11 +177,11 @@ Please find attached Wireframe for Home page , place order form and acknowledgem
 **Wirefame mockups**
 Wireframe mockups for Home, Login, Register, Add New Contact, Edit Contact, Add Review for small, meidium and Large screens have been given below.
 
-[LARGE screen](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/wireframes/wireframes-large.pdf)
+[LARGE screen](https://github.com/gomathishankar28/ms4_bubbles/blob/main//readme_images/wireframes/wireframes-large.pdf)
 
-[MEDIUM screen](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/wireframes/wireframes-medium.pdf)
+[MEDIUM screen](https://github.com/gomathishankar28/ms4_bubbles/blob/main//readme_images/wireframes/wireframes-medium.pdf)
 
-[SMALL screen](https://github.com/gomathishankar28/ms4_bubbles/blob/master/readme_images/wireframes/wireframes-small.pdf)
+[SMALL screen](https://github.com/gomathishankar28/ms4_bubbles/blob/main//readme_images/wireframes/wireframes-small.pdf)
 
 ### Database Schema
 
@@ -404,8 +404,9 @@ This displays a form under each post for any user to write a comment about the p
 
 ## **Features to be implemented in future**
 *   Product Description to include Ingredients.
-*   Sorting products based on color and ingredients.
+*   Sorting products based on color and ingredients filter.
 *   Display Likes and dislikes for each post.
+*   Using django-phonenumber field for mobile number on models
 
 # Technologies
 
@@ -461,7 +462,7 @@ The website is designed using following technologies:
 
 # Testing
 
-**Testing section is located [here](https://github.com/gomathishankar28/ms4_bubbles/blob/master/TESTING.md)**
+**Testing section is located [here](https://github.com/gomathishankar28/ms4_bubbles/blob/main//TESTING.md)**
 
 ### Validating code
 
@@ -616,7 +617,7 @@ Once the project has been loaded into an IDE of choice, run the following comman
 ### **How to Fork the respository**
 
 1. Log into GitHub.
-2. In Github go to (https://github.com//gomathishakar28/ms3_meercq).
+2. In Github go to (https://github.com//gomathishakar28/ms3_bubbles).
 3. In the top right hand corner click "Fork".
 
 ### **Credits**
