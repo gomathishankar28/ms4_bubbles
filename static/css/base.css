@@ -56,16 +56,7 @@ html {
 .btt-button {
     width: 50px;
 }
-@media (max-width: 280px){
-    body {
-        width: fit-content;
-    }
-}
-@media (min-width: 240px) and (max-width:600px){
-    .form-bg {
-        margin-left: 5px;
-    }
-}
+
 /* -------------HomePage -----------------*/
 .banner { 
     background-color:black!important;
@@ -289,19 +280,7 @@ footer p {
 .profileorderhistory p {
     font-size: 20px;
 }
-@media (min-width: 540px){
-    .profileorderhistory {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
 
-@media (min-width: 1024px){
-    .profileorderhistory {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -358,9 +337,10 @@ footer p {
 .div-logout-form {
     text-align: center!important;
 }
-.login-container, .logout-container {
+.login-container, .logout-container, .product-container {
     min-height: 600px;
 }
+
 /* Manage Product Form -widgets */
 
 .btn-file {
@@ -501,6 +481,10 @@ footer p {
     text-transform: uppercase;
     font-size: 1.1rem;
 }
+.card-img {
+    width:  fit-content;
+
+}
 
 /*------ Products Details Page ------*/
 .product-mgmt-container {
@@ -544,21 +528,7 @@ footer p {
 .pdetail {
     border: 3px solid #7bcbc8;
 }
-@media(min-width: 1024px) {
-    .pdetail {
-        margin-left: -70px;
-    }
-}
-@media(min-width: 1280px) {
-    .pdetail {
-        margin-left: -90px;
-    }
-}
-@media(min-width: 1440px) {
-    .pdetail {
-        margin-left: -120px;
-    }
-}
+
 
 /*----- Reviews-----------*/
 
@@ -648,27 +618,7 @@ footer p {
     max-width: 100px;
 }
 
-/*---- Checkout form page -------------*/
 
-@media(max-width: 540px) {
-    .subtotal {
-        font-size: 18px;
-    }
-    .ordertotal {
-        margin-left: -10px;
-    }
-}
-@media(min-width: 768px) {
-    .ordersummary {
-        font-size: 24px;
-    }
-    .ordertot {
-        margin-left: 15px;
-    }
-    .order-details p {
-        font-size: 20px;
-    }
-}
 
 /* ----- Blog --------*/
 .blog-hr {
@@ -681,63 +631,19 @@ footer p {
 .blog-article p {
     font-size: 24px!important;
 }
-@media (min-width: 280px) { 
-    .blog-img {
-        width: 260px;
-        height: 260px;
-        margin-right: 15px;
+
+
+/* -----------Media queries ---------- */
+@media (max-width: 280px){
+    body {
+        width: fit-content;
     }
 }
-@media (min-width: 320px) { 
-    .blog-img {
-        width: 280px;
-        height: 280px;
+@media (min-width: 240px) and (max-width:600px){
+    .form-bg {
         margin-left: 5px;
     }
 }
-@media (min-width: 375px) { 
-    .blog-img {
-        width: 350px;
-        height: 350px;
-        margin-left: 15px;
-    }
-}
-@media (min-width: 540px) {  
-    .blog-img {
-        width: 500px;
-        height: 500px;
-        
-    }
-}
-@media (min-width: 768px) {  
-    .blog-img {
-        width: 680px;
-        height: 500px;
-    }
-}
-@media (min-width: 1024px) {  
-    .blog-img {
-        margin-left: 130px;
-    }
-}
-@media (min-width: 1200px) {  
-    .blog-img {
-        margin-left: 300px;
-    }
-}
-@media (min-width: 1440px) {  
-    .blog-img {
-        margin-left: 400px;
-    }
-}
-@media (min-width: 1600px) {  
-    .blog-img {
-        margin-left: 600px;
-    }
-}
-
-
-/* -----------Media queries for Home page----------- */
 
 @media (min-width: 240px) and (max-width: 414px) {
     .dropdown-menu {
@@ -893,6 +799,42 @@ footer p {
         
     }
 }
+/*---- Checkout form page -------------*/
+
+@media(max-width: 540px) {
+    .subtotal {
+        font-size: 18px;
+    }
+    .ordertotal {
+        margin-left: -10px;
+    }
+}
+@media(min-width: 768px) {
+    .ordersummary {
+        font-size: 24px;
+    }
+    .ordertot {
+        margin-left: 15px;
+    }
+    .order-details p {
+        font-size: 20px;
+    }
+}
+@media(min-width: 1024px) {
+    .pdetail {
+        margin-left: -70px;
+    }
+}
+@media(min-width: 1280px) {
+    .pdetail {
+        margin-left: -90px;
+    }
+}
+@media(min-width: 1440px) {
+    .pdetail {
+        margin-left: -120px;
+    }
+}
 @media (max-width: 1024px) {
     #footer {
         background-color: black!important;
@@ -902,4 +844,70 @@ footer p {
         bottom: 0;
     }
 }
+@media (min-width: 280px) { 
+    .blog-img {
+        width: 260px;
+        height: 260px;
+        margin-right: 15px;
+    }
+}
+@media (min-width: 320px) { 
+    .blog-img {
+        width: 280px;
+        height: 280px;
+        margin-left: 5px;
+    }
+}
+@media (min-width: 375px) { 
+    .blog-img {
+        width: 350px;
+        height: 350px;
+        margin-left: 15px;
+    }
+}
+@media (min-width: 540px) {  
+    .blog-img {
+        width: 500px;
+        height: 500px;
+        
+    }
+}
+@media (min-width: 768px) {  
+    .blog-img {
+        width: 680px;
+        height: 500px;
+    }
+}
+@media (min-width: 1024px) {  
+    .blog-img {
+        margin-left: 130px;
+    }
+}
+@media (min-width: 1200px) {  
+    .blog-img {
+        margin-left: 300px;
+    }
+}
+@media (min-width: 1440px) {  
+    .blog-img {
+        margin-left: 400px;
+    }
+}
+@media (min-width: 1600px) {  
+    .blog-img {
+        margin-left: 600px;
+    }
+}
+@media (min-width: 540px){
+    .profileorderhistory {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 
+@media (min-width: 1024px){
+    .profileorderhistory {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

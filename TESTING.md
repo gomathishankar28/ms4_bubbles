@@ -34,12 +34,12 @@ Following testcases were tested as part of smoke testing.
 
 ### **Results from HTML Validator**
 
-HTML was validated with [W3C Validator](https://validator.w3.org/) by URI. Results came out good without any errors except for few warnings.
+HTML was validated with [W3C Validator](https://validator.w3.org/) by URI. Results came out with few errors related to meta tag.
 
 
 ### **Results from  W3C CSS**
 
-CSS was validated with [W3C CSS](https://jigsaw.w3.org/css-validator/) by direct input.Results came out good
+CSS was validated with [W3C CSS](https://jigsaw.w3.org/css-validator/) by URI. Results came out with few errors related to psuedo element
 
 
 ### **Results from Jshint**
