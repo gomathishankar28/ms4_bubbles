@@ -113,7 +113,11 @@ html {
 .bag-container {
     min-height: 600px;
 }
-
+.noresults {
+    font-size: 100px;
+    color: #dc3d54;
+    background-color: #6c757d;
+}
 
 /* ---------- About ---------------- */
 #about {
