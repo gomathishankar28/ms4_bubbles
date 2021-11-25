@@ -741,6 +741,15 @@ footer p {
     .abt-row {
         margin-left: -5px;
     }
+    .noresults {
+        margin-left: 70px;
+    }
+    .noresults h2  {
+        margin-left: 50px;
+    }
+    .noresults p  {
+        margin-left: 50px;
+    }
     
 }
 @media (min-width: 1280px) {
