@@ -109,6 +109,7 @@ html {
 }
 .dropdown-item:hover {
     background-color: #f07972;
+    width: fit-content;
 }
 .bag-container {
     min-height: 600px;
