@@ -54,6 +54,7 @@
                                 {% for review in reviews %}
                                     <h5 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h5>
                                     {% if request.user.is_authenticated %} 
+                                        {% if request.user|lower == review.user|lower %}
                                             <span>
                                             <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top" class="btn">
                                                 <i class="far fa-edit"></i>
@@ -64,6 +65,7 @@
                                                 <i class="far fa-trash-alt"></i>
                                             </a>
                                             </span>
+                                        {% endif %}
                                     {% endif %} 
                                     <p class="rating-stars txt-small mt-1" data-value="{{ review.rating }}"></p>
                                     <span class="text-secondary review-desc">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
