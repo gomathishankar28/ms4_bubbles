@@ -313,11 +313,67 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 
 ## Issues found and fixed during Coding
 
-1. Displaying a profile page for a new user who hasn't placed any order.
+1. I got a page not found error when i clicked on "My profile" for a new user who has just registered but not placed any order yet.
+      This happened because the Profile page was designed to render the PERSONAL, SHIPPING and ORDER HISTORY details. And the shipping information was updated from the last order placed by the user whcih will obviously not be there for a new user who has not placed any order yet. Fixed by adding an if and else to test if the object exists and then rendering a different template.
 
-2. Calculating average rating for a product.
+            def profile(request):
+         """ Display the user's profile. """
+         profile = get_object_or_404(UserProfile, user=request.user)
+         print(profile)
+         order = Order.objects.filter(user_profile=profile)
+         print(order)
+         if not(order):
+            template = 'profiles/profile_new.html'
+            return render(request, template)
+         else:
+            order = profile.orders.latest('order_number')
+            template = 'profiles/profile.html'
+            context = {
+                  'profile': profile,
+                  'on_profile_page': True,
+                  'order': order,
+            }
+            return render(request, template, context)
 
-3. Comment form for a post.
 
+
+2. Had issues calculating average rating for a product based on customer reviews. Later found a solution to calculate average rating on product_detail view as follows
+
+         def product_detail(request, product_id):
+      
+         """ A view to show individual product details """
+         product = get_object_or_404(Product, pk=product_id)
+         reviews = Review.objects.filter(product=product)
+         review_form = ReviewForm()
+         avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+         product.save()
+         template = 'products/product_detail.html'
+         context = {
+            'product': product,
+            'reviews': reviews,
+            'review_form': review_form,
+            'avg_rating': avg_rating
+         }
+         return render(request, template, context)
+
+
+3. Wanted to restrict the edit and delete review action only to user's own reviews. This was done on the template by checking
+{% if request.user == review.user %} before displaying edit , delete buttons to the user. This did not work.Later found that I should add a lower filter for string comparisons
+
+        {% if request.user|lower == review.user|lower %}
+         <span>
+            <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top"     class="btn"><i class="far fa-edit"></i>
+            </a>
+         </span>
+         <span>
+            <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review" data-placement="top" class="btn"><i class="far fa-trash-alt"></i>
+            </a>
+         </span>
+         {% endif %}
+
+
+## Known bugs and yet to be fixed
+
+1. On small and medium screens certain page of the website load only to half the creen initially and then expand to full screen after few seconds. 
 
 
