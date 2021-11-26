@@ -825,10 +825,10 @@ footer p {
         margin-left: 70px;
     }
     .noresults h2  {
-        margin-left: 50px;
+        margin-left: 60px;
     }
-    .noresults p  {
-        margin-left: 50px;
+    .noresults h4  {
+        margin-left: 30px;
     }
     #ack-btn {
         color: black;
@@ -868,6 +868,15 @@ footer p {
     }
     .pdetail {
         margin-left: -90px;
+    }
+    .noresults {
+        margin-left: 130px!important
+    }
+    .noresults h2 {
+        margin-left: 130px!important
+    }
+    .noresults h4 {
+        margin-left: 130px!important
     }
     
 }
