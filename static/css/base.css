@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 
 /*-----Generic Styles ------*/
+html {
+    scroll-behavior: smooth;
+    height: 100%;     
+}
 body {
     font-family: 'Akaya Telivigala', cursive;
     overflow-x: hidden;
     color: black;
     height: 100%;
 }
+.general-container {
+    max-width: 650px;
+    margin-bottom: 65px;
+    margin-top: 50px;
+    height: max-content;
+}
 p {
     font-size: 24px;
-}
-html {
-    scroll-behavior: smooth;
-    height: 100%; 
-      
 }
 .btn-black {
     background: black;
@@ -36,7 +41,6 @@ html {
 .form-bg {
     background-color: #7bcbc8;
     border: 2px solid black;
-
 }
 .overlay {
 	height: 100%;
@@ -47,17 +51,9 @@ html {
 	background: white;
 	z-index: -1;
 }
-.general-container {
-    max-width: 650px;
-    margin-bottom: 65px;
-    margin-top: 50px;
-    height: max-content;
-}
 .btt-button {
     width: 50px;
 }
-
-/* -------------HomePage -----------------*/
 .banner { 
     background-color:black!important;
     color:white;
@@ -107,6 +103,18 @@ html {
 .nav-center {
     margin-top: .7rem;
 }
+.dropdown-menu {
+    margin-left: -30px!important;
+}
+.search-dd {
+    margin-left: 30px;   
+}
+.search-bg {
+    background-color: transparent;
+}
+.mobile-dd {
+    margin-left: 40px;
+}
 .dropdown-item:hover {
     background-color: #f07972;
     width: fit-content;
@@ -114,11 +122,22 @@ html {
 .bag-container {
     min-height: 600px;
 }
+/* -------------HomePage -----------------*/
+.landing-page {
+    background: url('/static/images/home_page/landing-mobile.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 4.5rem;
+    height: 800px;  
+    overflow-x: hidden; 
+}
+.landing-page-content {
+    margin-top: 100px;
+    font-size: 22px;
+}
 .noresults {
     font-size: 100px;
     color: #dc3d54;
 }
-
 /* ---------- About ---------------- */
 #about {
     background:#7bcbc8;
@@ -486,10 +505,6 @@ footer p {
     text-transform: uppercase;
     font-size: 1.1rem;
 }
-.card-img {
-    width:  fit-content;
-
-}
 
 /*------ Products Details Page ------*/
 .product-mgmt-container {
@@ -639,18 +654,6 @@ footer p {
 
 
 /* -----------Media queries ---------- */
-@media (max-width: 240px) {
-    .abt-img    {
-        width: 200px;
-        height: 200px;
-        margin-left: 10px;
-    }
-}
-@media (min-width: 240px){
-    body {
-        width: fit-content;
-    }
-}
 @media (min-width: 240px) and (max-width:600px){
     .form-bg {
         margin-left: 5px;
@@ -673,13 +676,7 @@ footer p {
 }
 
 @media (min-width: 240px) {
-    .landing-page {
-        background: url('/static/images/home_page/landing-mobile.jpg') no-repeat center center fixed;
-        background-size: cover;
-        margin-bottom: 4.5rem;
-        height: 800px;  
-        overflow-x: hidden; 
-    }
+    
     .landing-page-content {
             margin-top: 12rem;
             font-size: 30px;
@@ -690,18 +687,9 @@ footer p {
         margin-left: -10px;
     }
 }
-@media (max-width: 240px) {
-    .abt-img    {
-        width: 200px;
-        height: 200px;
-        margin-left: 10px;
-    }
-}
+
 @media (min-width: 240px) and (max-width: 360px) {
-    .landing-page-content {
-        margin-top: 100px;
-        font-size: 22px;
-    }
+    
     .abt-img {
         width: 270px;
         height: 270px;
