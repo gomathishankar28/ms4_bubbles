@@ -73,7 +73,7 @@ def add_post(request):
 
 @login_required
 def edit_post(request, slug):
-    """ Edit a Post """
+    """ Edit an existing Post """
     if not request.user.is_superuser:
         messages.error(request, 'Only our STILE team has access to this.')
         return redirect(reverse('homepage'))

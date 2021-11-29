@@ -11,8 +11,8 @@ from .forms import ContactForm
 
 def index(request):
     """
-    A view to return the index page with the latest 3 products
-    displayed on the latest arrival section.
+    A view to return the index page with the 3 newly added products
+     on the latest arrival section.
     """
     latest_arrival_1 = get_object_or_404(Product, pk=66)
     latest_arrival_2 = get_object_or_404(Product, pk=67)
