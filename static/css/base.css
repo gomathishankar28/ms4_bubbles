@@ -703,18 +703,12 @@ footer p {
     }
 }
 @media (min-width: 360px) {
-    .abt-img {
-        width: 300px;
-        height: 300px;
-    }
+    
     .footer-txt {
         font-size: 14px;
     }
 }
 @media (min-width: 375px) {
-    .abt-img {
-        margin-left: 15px;
-    }
     .blog-img {
         width: 350px;
         height: 350px;
@@ -731,10 +725,13 @@ footer p {
     .footer-icon {
         padding-left: 60px!important
     }
+    .abt-row {
+        margin-left: 20px;
+    }
 }
 @media (min-width: 540px) {
     .abt-row {
-        margin-left: 100px;
+        margin-left: 80px;
     }
     .abt-img {
         margin-left: 0;
@@ -823,7 +820,7 @@ footer p {
         margin-left: 15px;
     }
     .abt-row {
-        margin-left: -5px;
+        margin-left: 5px;
     }
     .noresults {
         margin-left: 70px;
@@ -868,7 +865,7 @@ footer p {
   }
 @media (min-width: 1280px) {
     .abt-row {
-        margin-left: 30px;
+        margin-left: 60px;
     }
     .pdetail {
         margin-left: -90px;
@@ -886,7 +883,7 @@ footer p {
 }
 @media (min-width: 1440px) {
     .abt-row {
-        margin-left: 60px;
+        margin-left: 110px;
     }
     #ack-btn {
         color: black;
