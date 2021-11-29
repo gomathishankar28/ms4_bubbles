@@ -11,7 +11,7 @@
 - [Accessibility Testing](#accessibility-testing)
 - [Best Practices and SEO Results](#best-practices-and-seo-results)
 - [Issues found and fixed during Coding](#issues-found-and-fixed-during-coding)
-- [Enhancements](#enhancements)
+- [known bugs and yet to be fixed](#known-bugs-and-yet-to-be-fixed)
 
 ## Smoke Testing
 
