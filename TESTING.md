@@ -34,13 +34,15 @@ Following testcases were tested as part of smoke testing.
 
 ### **Results from HTML Validator**
 
-HTML was validated with [W3C Validator](https://validator.w3.org/) by URI. Results came out with few errors related to meta tag.
+HTML was validated with [W3C Validator](https://validator.w3.org/) by URI. Results came out as follows.
 
+![W3C Validator Results](https://github.com/gomathishankar28/ms4_bubbles/blob/main//readme_images/testing/htmlvalidator.jpg?raw=true)
 
 ### **Results from  W3C CSS**
 
-CSS was validated with [W3C CSS](https://jigsaw.w3.org/css-validator/) by URI. Results came out with few errors related to psuedo element
+CSS was validated with [W3C CSS](https://jigsaw.w3.org/css-validator/) by URI. Results came out as follows.
 
+![W3c CSS Results](https://github.com/gomathishankar28/ms4_bubbles/blob/main//readme_images/testing/w3cresults.jpg?raw=true)
 
 ### **Results from Jshint**
 
@@ -374,6 +376,5 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 
 ## Known bugs and yet to be fixed
 
-1. On small and medium screens certain page of the website load only to half the creen initially and then expand to full screen after few seconds. 
-
+1. On small and medium screens certain page of the website load only to half the screen initially and then expand to full screen after few seconds. I was told that this was due to delay in loading the css and images. Tried fixing it by minifying css and reducing the resolution of the images , but still , I see the issue remains.
 
