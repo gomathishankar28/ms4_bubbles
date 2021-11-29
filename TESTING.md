@@ -253,7 +253,7 @@ Js files were validated with [Jshint](https://jshint.com/). No Errors found
 
 **Devices Testing**
 
- Website was tested using Chrome Dev tools in the following devices to check if the pages are rendered well.The results are satisfying<br>
+ Website was tested using Chrome Dev tools and Responsive Viewer in the following devices to check if the pages are rendered well.The results are satisfying<br>
 
    1. Galaxy Fold.<br>
    2. Moto G4<br>
@@ -314,7 +314,7 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 ## Issues found and fixed during Coding
 
 1. I got a page not found error when i clicked on "My profile" for a new user who has just registered but not placed any order yet.
-      This happened because the Profile page was designed to render the PERSONAL, SHIPPING and ORDER HISTORY details. And the shipping information was updated from the last order placed by the user whcih will obviously not be there for a new user who has not placed any order yet. Fixed by adding an if and else to test if the object exists and then rendering a different template.
+      This happened because the Profile page was designed to render the PERSONAL, SHIPPING and ORDER HISTORY details. And the shipping information was updated from the last order placed by the user which will obviously not be there for a new user who has not placed any order yet. Fixed by adding an if and else to test if the object exists and then rendering a different template.
 
             def profile(request):
          """ Display the user's profile. """

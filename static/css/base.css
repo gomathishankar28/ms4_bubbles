@@ -103,9 +103,7 @@ p {
 .nav-center {
     margin-top: .7rem;
 }
-.dropdown-menu {
-    margin-left: -30px!important;
-}
+
 .search-dd {
     margin-left: 30px;   
 }
@@ -699,7 +697,10 @@ footer p {
     .footer-icon {
         padding-left: 30px!important
     }
-    
+    .dropdown-menu {
+        width: fit-content;
+        background-color: #7bcbc8;
+    }
 }
 @media (min-width: 360px) {
     .abt-img {
@@ -818,6 +819,9 @@ footer p {
     }
 }
 @media (min-width: 1024px) {
+    .mobile-dd {
+        margin-left: 15px;
+    }
     .abt-row {
         margin-left: -5px;
     }
