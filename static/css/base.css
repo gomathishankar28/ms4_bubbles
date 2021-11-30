@@ -703,6 +703,9 @@ footer p {
     }
 }
 @media (min-width: 360px) {
+    .abt-img {
+        margin-left: -10px;
+    }
     .footer-txt {
         font-size: 14px;
     }
@@ -710,8 +713,7 @@ footer p {
 @media (min-width: 375px) {
     .abt-img {
         width: 300px;
-        height: 300px;
-        
+        height: 300px; 
     }
     .blog-img {
         width: 350px;
@@ -849,6 +851,9 @@ footer p {
     }
     .blog-img {
         margin-left: 130px;
+    }
+    .abt-img {
+        margin-left: -10px;
     }
     .footer-link {
         padding-left: 50px!important
