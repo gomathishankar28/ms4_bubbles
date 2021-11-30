@@ -149,7 +149,7 @@ p {
 .abt-img {
     width: 270px;
     height: 270px;
-    margin-left:-5px;
+    margin-left:-30px;
 }
 .abt-row {
     margin-left: 5px;
@@ -703,12 +703,19 @@ footer p {
     }
 }
 @media (min-width: 360px) {
-    
+    .abt-img {
+        margin-left: -10px
+    }
     .footer-txt {
         font-size: 14px;
     }
 }
 @media (min-width: 375px) {
+    .abt-img {
+        width: 300px;
+        height: 300px;
+        margin-left: -15px;
+    }
     .blog-img {
         width: 350px;
         height: 350px;
@@ -716,6 +723,11 @@ footer p {
     }
     .footer-txt {
         font-size: 16px;
+    }
+}
+@media (min-width: 411px) {
+    .abt-img {
+        margin-left: 0;
     }
 }
 @media (min-width: 414px) {
@@ -733,9 +745,6 @@ footer p {
     .abt-row {
         margin-left: 80px;
     }
-    .abt-img {
-        margin-left: 0;
-    } 
     .profileorderhistory {
         margin-left: 10px;
         margin-right: 10px;
@@ -782,7 +791,6 @@ footer p {
     .order-details p {
         font-size: 20px;
     }
-
 }
 @media (min-width: 768px) and (max-width: 840px) {
     .abt-row {

@@ -45,7 +45,7 @@ def order_history(request):
 
 @login_required
 def edit_profile(request):
-    """ Display the user's edit profile details form. """
+    """ Display the user's edit profile form. """
 
     profile = get_object_or_404(UserProfile, user=request.user)
     if request.method == 'POST':

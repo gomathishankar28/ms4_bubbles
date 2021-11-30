@@ -163,6 +163,12 @@ Js files were validated with [Jshint](https://jshint.com/). No Errors found
          
          > This is acheieved by using django-phonenumber for Mobile number field on the checkout form.
 
+*   As a customer, I should be able to place orders even without signing into the site.
+         > This is acheived by allowing the user to proceed with order without requesting them to login.
+
+*   As a customer, I should be able to sign in, to access personalised information
+         > This is acheived by clicking on "My profile" menu for any logged in user.
+
 
  ## Functional Testing
 
@@ -376,5 +382,6 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 
 ## Known bugs and yet to be fixed
 
-1. On small and medium screens certain page of the website load only to half the screen initially and then expand to full screen after few seconds. I was told that this was due to delay in loading the css and images. Tried fixing it by minifying css and reducing the resolution of the images , but still , I see the issue remains.
+1. On small and medium screens certain page of the website load only to half the screen initially and then expand to full screen after few seconds. I was told that this was due to delay in loading the css and images by tutor support. Tried fixing it by minifying css and reducing the resolution of the images , but still , I see the issue remains.
+
 

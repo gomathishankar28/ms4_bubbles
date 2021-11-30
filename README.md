@@ -1,8 +1,6 @@
 # [BUBBLES](https://gomathishankar28.github.io/ms4_bubbles/)
 
-is an online Handmade soap shop, which offers a variety of plastic free and vegan bathing bars.
-The shop also publishes blog posts about benefits of bathing ,use of bathbombs, where the site visitors can leave a comment.
-**Bubbles** is an educational project that serves as the **Milestone Project 4** for the **Full-Stack Software Developer programme** powered by **Code Institute**.
+Bubbles is an online store specialising in the sale of handmade soaps, which offers a variety of plastic free and vegan bathing bars. The shop aims at promoting the health benefits of bathing through its blogs which are hosted in the site. Users have an option to leave their comments on these blog posts.**Bubbles** is an educational project that serves as the **Milestone Project 4** for the **Full-Stack Software Developer programme** powered by **Code Institute**.
 
 ## Table of Contents
   - [Demo](#demo)
@@ -30,6 +28,8 @@ The shop also publishes blog posts about benefits of bathing ,use of bathbombs, 
 
 ## Introduction
 
+“People often say that motivation doesn’t last. Well, neither does bathing! that’s why we recommend it daily”- Zig Ziglar
+
 Bubbles takes great pleasure in looking after our people, our growing tribe and our planet. It aims to make the world a better place, by not only lifting spirits and tickling the senses, but by raising the bar too. And we don’t just mean soap.
 
 Almost everyone has unused products in the bathroom. Once at home, you found out that the product isn't doing what you hoped it would, or it doesn't suit your skin or hair. And so your bathroom cabinets, window sills and shelves become increasingly full of useless items that eventually end up in the trash. If we make products for every need, everyone can buy exactly what they need and we ultimately reduce waste.
@@ -53,6 +53,10 @@ Personal service is best for the environment. If we have a product that meets yo
 
 *   To have a feedback from customers which will provide more ideas for a new product.
 
+*   To convert site visitors into customers by elaborating the product catalog
+
+*   To generate orders through this website
+
 ## user Goals
 
 As a customer, I would like 
@@ -63,7 +67,13 @@ As a customer, I would like
 
 *   To be able to search for a specific bath product.
 
-*   To know the price, description of each product
+*   To know the price, description of each product.
+
+*   To be able to select different products and order through the site
+
+*   To be able to alter the shopping cart any time before placing order
+
+*   To be able to browse some generic articles that are related to the product portfolio
 
 *   To see the user reviews for each product. 
 
@@ -123,6 +133,10 @@ As a customer, I would like
 *   As an administrator, I should allow registered users to log out so that unauthorized accesses are prevented.
 
 *   As an administrator, I would like to have field level validations on the contact entry so that incorrect or incomplete information is avoided.
+
+*   As a customer, I should be able to place orders even without signing into the site.
+
+*   As a customer, I should be able to sign in, to access personalised information
 
 # User Experience Design
 
