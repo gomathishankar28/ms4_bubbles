@@ -70,6 +70,9 @@ p {
 .mobile-logo {
     margin-left: 80px;
 }
+.mobile-dd {
+    margin-left: -30px!important;
+}
 .cta-button {
     background: #f07972 ;
     color: black;
@@ -110,9 +113,7 @@ p {
 .search-bg {
     background-color: transparent;
 }
-.mobile-dd {
-    margin-left: 40px;
-}
+
 .dropdown-item:hover {
     background-color: #f07972;
     width: fit-content;
@@ -714,6 +715,7 @@ footer p {
     .abt-img {
         width: 300px;
         height: 300px; 
+        margin-left: -15px;
     }
     .blog-img {
         width: 350px;
@@ -795,10 +797,10 @@ footer p {
     .abt-row {
         margin-left: 200px;
     }
-    abt-img {
+    .abt-img {
         width: 500px;
         height: 500px;
-        margin-left: 20px;
+        margin-left: -110px;
     }
     .blog-img {
         width: 680px;
@@ -824,7 +826,7 @@ footer p {
 }
 @media (min-width: 1024px) {
     .mobile-dd {
-        margin-left: 15px;
+        margin-left: 20px!important;
     }
     .abt-row {
         margin-left: 5px;
@@ -853,7 +855,7 @@ footer p {
         margin-left: 130px;
     }
     .abt-img {
-        margin-left: -10px;
+        margin-left: -20px;
     }
     .footer-link {
         padding-left: 50px!important
