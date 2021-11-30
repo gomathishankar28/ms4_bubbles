@@ -501,7 +501,7 @@ This website is deployed on [Heroku](https://www.heroku.com/), following these s
 - [psycopg2-binary](https://pypi.org/project/psycopg2-binary/): `psycopg2-binary` is PostgreSQL database adapter for the Python programming language.
 - [dj-database-url](https://pypi.org/project/dj-database-url/): `dj-database-url` allows you to utilize the 12factor inspired DATABASE_URL environment variable to configure your Django application.
 2. Create a `requirements.txt` file and freeze all the modules with the command `pip3 freeze > requirements.txt` in the terminal.
-3. Create a `Procfile` write `web: gunicorn boutique_ado.wsgi:application` in the file.
+3. Create a `Procfile` write `web: gunicorn bubbles.wsgi:application` in the file.
 4. `git add` and `git commit` and `git push` all the changes to the Github repositoty of this project.
 5. Go to Heroku and create a **new app**. Set a name for this app and select the closest region (Europe) and click **Create app**.
 6. Go to **Resources** tab in Heroku, then in the **Add-ons** search bar look for **Heorku Postgres**(you can type postgres), select **Hobby Dev — Free** and click **Submit Order Form** button to add it to your project.
@@ -530,7 +530,7 @@ This website is deployed on [Heroku](https://www.heroku.com/), following these s
 ```
 9. Migrate the database models to the Postgres database using the following commands in the terminal:
 `python3 manage.py migrate`
-10. Load the data fixtures(color_table, flower_table, image_table, product_table) into the Postgres database using the following command:
+10. Load the data fixtures(products and categories) into the Postgres database using the following command:
 `python3 manage.py loaddata <fixture_name>`
 11. Create a superuser for the Postgres database by running the following command:
 `python3 manage.py createsuperuser`

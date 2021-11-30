@@ -327,9 +327,7 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
             def profile(request):
          """ Display the user's profile. """
          profile = get_object_or_404(UserProfile, user=request.user)
-         print(profile)
          order = Order.objects.filter(user_profile=profile)
-         print(order)
          if not(order):
             template = 'profiles/profile_new.html'
             return render(request, template)

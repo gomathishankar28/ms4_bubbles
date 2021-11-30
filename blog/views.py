@@ -48,7 +48,7 @@ def post_detail(request, slug):
 def add_post(request):
     """ Add a post to the blog """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our STILE team has access to this.')
+        messages.error(request, 'Only our BUBBLES team has access to this.')
         return redirect(reverse('homepage'))
 
     if request.method == 'POST':
@@ -75,7 +75,7 @@ def add_post(request):
 def edit_post(request, slug):
     """ Edit an existing Post """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our STILE team has access to this.')
+        messages.error(request, 'Only our BUBBLES team has access to this.')
         return redirect(reverse('homepage'))
 
     post = get_object_or_404(Post, slug=slug)
@@ -105,7 +105,7 @@ def edit_post(request, slug):
 def delete_post(request, slug):
     """ Delete a post from the blog """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our STILE team has access to this.')
+        messages.error(request, 'Only our BUBBLES team has access to this.')
         return redirect(reverse('homepage'))
 
     post = get_object_or_404(Post, slug=slug)
