@@ -73,6 +73,9 @@ p {
 .mobile-dd {
     margin-left: -30px!important;
 }
+.products-dd {
+    margin-left: 80px;
+}
 .cta-button {
     background: #f07972 ;
     color: black;
@@ -705,7 +708,7 @@ footer p {
 }
 @media (min-width: 360px) {
     .abt-img {
-        margin-left: -20px;
+        margin-left: -30px;
     }
     .footer-txt {
         font-size: 14px;
@@ -713,7 +716,7 @@ footer p {
 }
 @media (min-width: 375px) {
     .abt-img {
-        margin-left: -10px;
+        margin-left: -15px;
     }
     .blog-img {
         width: 350px;
@@ -728,7 +731,7 @@ footer p {
     .abt-img {
         width: 300px;
         height: 300px; 
-        margin-left: -10px;
+        margin-left: -20px;
     }
 }
 @media (min-width: 414px) {
@@ -831,6 +834,9 @@ footer p {
     .mobile-dd {
         margin-left: 20px!important;
     }
+    .products-dd {
+        margin-left: 40px;
+    }
     .abt-row {
         margin-left: 5px;
     }
@@ -858,7 +864,7 @@ footer p {
         margin-left: 130px;
     }
     .abt-img {
-        margin-left: -20px;
+        margin-left: -15px;
     }
     .footer-link {
         padding-left: 50px!important
