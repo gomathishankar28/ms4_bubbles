@@ -263,17 +263,19 @@ Js files were validated with [Jshint](https://jshint.com/). No Errors found
 
  Website was tested using Chrome Dev tools and Responsive Viewer in the following devices to check if the pages are rendered well.The results are satisfying<br>
 
-   1. Galaxy Fold.<br>
-   2. Moto G4<br>
-   3. Pixel 2<br>
-   4. Pixel 2xl<br>
-   5. iphone5<br>
-   6. iphone 6/7/8<br>
-   7. iphone 6/7/8 plus<br>
-   8. iphone x<br>
-   9. surface Duo<br>
-   10. ipad<br>
-   11. ipad pro.<br>
+   
+   1. Moto G4<br>
+   2. Pixel 2<br>
+   3. Pixel 2xl<br>
+   4. iphone5<br>
+   5. iphone 6/7/8<br>
+   6. iphone 6/7/8 plus<br>
+   7. iphone x<br>
+   8. surface Duo<br>
+   9. ipad<br>
+   10. ipad pro.<br>
+   11. Nest Hub.<br>
+   12. Nest Hub Max.
 
 ***BrowserTesting***
 
