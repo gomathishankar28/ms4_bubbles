@@ -385,3 +385,4 @@ Spelling was checked thoroughly using [W3C Spell Checker](https://www.w3.org/200
 1. Form validation for checkout form and manage profile form is not in place. Need to fix it by altering the model by using  django-phonenumber field and write functions to raise validation errors for other form fields wherever required.
 
 
+
